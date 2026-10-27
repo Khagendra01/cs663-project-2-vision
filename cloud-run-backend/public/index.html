@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CS663 Gemini Backend — Browser Test</title>
+<style>
+body { font-family: system-ui, sans-serif; max-width: 760px; margin: 2rem auto; padding: 0 1rem; }
+label { display: block; margin: 1rem 0 0.3rem; font-weight: 600; }
+input, textarea { width: 100%; box-sizing: border-box; padding: 0.5rem; }
+button { margin: 1rem 0.5rem 0 0; padding: 0.6rem 1rem; cursor: pointer; }
+pre { white-space: pre-wrap; background: #f2f2f2; padding: 1rem; border-radius: 6px; }
+img { max-width: 100%; margin-top: 1rem; }
+.note { color: #555; }
+</style>
+</head>
+<body>
+<h1>CS663 Gemini Backend — Browser Test</h1>
+<p class="note">Lab deliverable 1 demo page: pick an image, enter a prompt, and call both endpoints. The two results are shown side by side so they can be compared. In mock mode the responses are clearly labelled MOCK and are not real Gemini output.</p>
+
+<label for="baseUrl">Backend base URL (leave empty for this same origin)</label>
+<input id="baseUrl" placeholder="https://your-cloud-run-url.run.app">
+
+<label for="image">Image (JPEG / PNG / WebP)</label>
+<input id="image" type="file" accept="image/jpeg,image/png,image/webp">
+<img id="preview" alt="" hidden>
+
+<label for="prompt">Text prompt</label>
+<textarea id="prompt" rows="3">Describe what the dog in this image is doing, and whether it looks like it is holding a training command.</textarea>
+
+<div>
+  <button id="callBase">Call /api/gemini (base)</button>
+  <button id="callTuned">Call /api/fine-tuned-gemini (tuned)</button>
+  <button id="callBoth">Call both</button>
+</div>
+
+<h2>Base Gemini result</h2>
+<pre id="baseOut">(not called yet)</pre>
+<h2>Fine-tuned Gemini result</h2>
+<pre id="tunedOut">(not called yet)</pre>
+
+<script>
+const $ = (id) => document.getElementById(id);
+let imageBase64 = "", mimeType = "image/jpeg";
+$("image").addEventListener("change", async (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+  mimeType = file.type || "image/jpeg";
+  const buf = await file.arrayBuffer();
+  let binary = "";
+  const bytes = new Uint8Array(buf);
+  for (let i = 0; i < bytes.length; i++) binary += String.fromCharCode(bytes[i]);
+  imageBase64 = btoa(binary);
+  const preview = $("preview");
+  preview.src = URL.createObjectURL(file);
+  preview.hidden = false;
+});
+function base() { return $("baseUrl").value.trim().replace(/\/$/, ""); }
+async function call(endpoint, outId) {
+  const out = $(outId);
+  if (!imageBase64) { out.textContent = "Pick an image first."; return; }
+  out.textContent = "Calling…";
+  try {
+    const res = await fetch(base() + endpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ prompt: $("prompt").value, imageBase64, mimeType }),
+    });
+    const data = await res.json();
+    out.textContent = res.ok ? (data.text || JSON.stringify(data))
+                             : ("Error " + res.status + ": " + (data.error || JSON.stringify(data)));
+  } catch (err) {
+    out.textContent = "Request failed: " + err.message;
+  }
+}
+$("callBase").onclick = () => call("/api/gemini", "baseOut");
+$("callTuned").onclick = () => call("/api/fine-tuned-gemini", "tunedOut");
+$("callBoth").onclick = () => { call("/api/gemini", "baseOut"); call("/api/fine-tuned-gemini", "tunedOut"); };
+</script>
+</body>
+</html>

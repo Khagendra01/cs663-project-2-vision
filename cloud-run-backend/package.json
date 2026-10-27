@@ -1,0 +1,1 @@
+{"dependencies":{"@google/genai":"^1.0.0","express":"^4.21.0"},"description":"CS663 Week 11 Lab: Android backend integration — Cloud Run backend for base and fine-tuned Gemini (Project 2, Dog Training Assistant, Model B)","name":"cs663-gemini-service","scripts":{"start":"node index.js"},"type":"module","version":"1.0.0"}
