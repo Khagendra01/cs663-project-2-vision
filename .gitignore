@@ -1,0 +1,12 @@
+node_modules/
+__pycache__/
+.gradle/
+app/build/
+build/
+*.pyc
+.env
+.env.*
+!.env.example
+*.key
+*.json.key
+.DS_Store
