@@ -1,0 +1,47 @@
+[
+ {
+  "file": "sitting2/retry_sit_01.jpg",
+  "class": "sitting",
+  "title": "A dog sits on the island of Saint Martin, Bangladesh.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/A_dog_sits_on_the_island_of_Saint_Martin%2C_Bangladesh.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "license": "CC BY-SA 4.0",
+  "artist": "Tanvir Rahat",
+  "uploader": "Tanvir Rahat"
+ },
+ {
+  "file": "sitting2/retry_sit_02.jpg",
+  "class": "sitting",
+  "title": "A dog sits on the island of Saint Martin, Cox's Bazar, Bangladesh 2.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/A_dog_sits_on_the_island_of_Saint_Martin%2C_Cox%27s_Bazar%2C_Bangladesh_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "license": "CC BY-SA 4.0",
+  "artist": "Tanvir Rahat",
+  "uploader": "Tanvir Rahat"
+ },
+ {
+  "file": "sitting2/retry_sit_03.jpg",
+  "class": "sitting",
+  "title": "A Beagle sitting in a car looking outside the window.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/A_Beagle_sitting_in_a_car_looking_outside_the_window.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "license": "CC BY-SA 4.0",
+  "artist": "Slyronit",
+  "uploader": "Slyronit"
+ },
+ {
+  "file": "sitting2/retry_sit_04.jpg",
+  "class": "sitting",
+  "title": "A Beagle sitting on the sofa looking up.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/A_Beagle_sitting_on_the_sofa_looking_up.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "license": "CC BY-SA 4.0",
+  "artist": "Slyronit",
+  "uploader": "Slyronit"
+ },
+ {
+  "file": "walking/retry_walk_01.jpg",
+  "class": "walking",
+  "title": "Dog with owner walking.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Dog_with_owner_walking.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "license": "CC BY 4.0",
+  "artist": "Anish Anilkumar",
+  "uploader": "Aneeshnl"
+ }
+]
