@@ -1,0 +1,30 @@
+File:A domestic dog snoring.ogv
+  license: CC BY-SA 4.0
+  artist: <a href="https://en.wikipedia.org/wiki/User:Serial_Number_54129" class="extiw" t
+  url: https://upload.wikimedia.org/wikipedia/commons/2/23/A_domestic_dog_snoring.ogv?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+
+File:Africanis Dogs Resting In Grass.ogv
+  license: CC0
+  artist: <a href="//commons.wikimedia.org/w/index.php?title=User:Umngeni&amp;action=edit&
+  url: https://upload.wikimedia.org/wikipedia/commons/3/38/Africanis_Dogs_Resting_In_Grass.ogv?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+
+File:Batumi2025dog-laying-relax.webm
+  license: CC BY 4.0
+  artist: <a href="//commons.wikimedia.org/wiki/User:Vitaly_Zdanevich" title="User:Vitaly 
+  url: https://upload.wikimedia.org/wikipedia/commons/f/f7/Batumi2025dog-laying-relax.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+
+File:Dog wagging tail.webm
+  license: CC BY-SA 4.0
+  artist: <a href="//commons.wikimedia.org/wiki/User:Liannadavis" title="User:Liannadavis"
+  url: https://upload.wikimedia.org/wikipedia/commons/3/38/Dog_wagging_tail.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+
+File:Dog walking in the Mission in San Francisco.ogv
+  license: CC BY-SA 3.0
+  artist: <a href="//commons.wikimedia.org/wiki/User:Ragesoss" title="User:Ragesoss">Sage 
+  url: https://upload.wikimedia.org/wikipedia/commons/6/67/Dog_walking_in_the_Mission_in_San_Francisco.ogv?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+
+File:Irish Wolfhound mix, panting.ogv
+  license: CC BY-SA 3.0
+  artist: <a href="//commons.wikimedia.org/wiki/User:Ragesoss" title="User:Ragesoss">Sage 
+  url: https://upload.wikimedia.org/wikipedia/commons/1/1e/Irish_Wolfhound_mix%2C_panting.ogv?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+
