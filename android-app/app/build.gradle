@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace 'com.cs663.dogbackend'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.cs663.dogbackend"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        debug { minifyEnabled false }
+        release { minifyEnabled false }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    // No external libraries. Networking uses HttpURLConnection and
+    // org.json, both built into Android.
+}

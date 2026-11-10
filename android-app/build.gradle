@@ -1,0 +1,20 @@
+buildscript {
+    repositories {
+        // Local repo crawled via curl (egress proxy resets Gradle's HTTP
+        // client, so dependencies are pre-fetched). Listed first.
+        maven { url = uri("file:///home/hatch/maven-local") }
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.5.2'
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url = uri("file:///home/hatch/maven-local") }
+        google()
+        mavenCentral()
+    }
+}
