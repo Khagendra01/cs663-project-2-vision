@@ -1,0 +1,92 @@
+{
+ "model": "Model A - MobileNetV3Small (ImageNet), student fine-tuned",
+ "input_size": 224,
+ "batch_size": 32,
+ "seed": 42,
+ "dropout": 0.3,
+ "phase1": {
+  "epochs_run": 15,
+  "max_epochs": 20,
+  "lr": 0.001,
+  "backbone": "frozen"
+ },
+ "phase2": {
+  "epochs_run": 8,
+  "max_epochs": 8,
+  "lr": 0.0001,
+  "unfrozen_top_layers": 30
+ },
+ "counts": {
+  "train": 626,
+  "validation": 139,
+  "test": 235
+ },
+ "val_accuracy": 0.777,
+ "test_accuracy": 0.7489,
+ "per_class": {
+  "sitting": {
+   "precision": 0.6429,
+   "recall": 0.871,
+   "f1": 0.7397,
+   "support": 62
+  },
+  "standing": {
+   "precision": 0.7209,
+   "recall": 0.6327,
+   "f1": 0.6739,
+   "support": 49
+  },
+  "lying_down": {
+   "precision": 0.8667,
+   "recall": 0.8387,
+   "f1": 0.8525,
+   "support": 62
+  },
+  "walking": {
+   "precision": 0.8125,
+   "recall": 0.629,
+   "f1": 0.7091,
+   "support": 62
+  }
+ },
+ "confusion_matrix": {
+  "labels": [
+   "sitting",
+   "standing",
+   "lying_down",
+   "walking"
+  ],
+  "rows_true_cols_pred": [
+   [
+    54,
+    2,
+    4,
+    2
+   ],
+   [
+    11,
+    31,
+    2,
+    5
+   ],
+   [
+    7,
+    1,
+    52,
+    2
+   ],
+   [
+    12,
+    9,
+    2,
+    39
+   ]
+  ]
+ },
+ "class_order": [
+  "sitting",
+  "standing",
+  "lying_down",
+  "walking"
+ ]
+}

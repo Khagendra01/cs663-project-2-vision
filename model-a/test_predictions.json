@@ -1,0 +1,1882 @@
+[
+ {
+  "file": "ph_basile_morin_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_basile_morin/lying_down/ph_basile_morin_lying_down_001.jpg",
+  "source": "ph_basile_morin",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9994
+ },
+ {
+  "file": "ph_oxyman_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_oxyman/lying_down/ph_oxyman_lying_down_001.jpg",
+  "source": "ph_oxyman",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.8935
+ },
+ {
+  "file": "ph_intheblood_sitting_001.jpg",
+  "dest": "real-data-v4/ph_intheblood/sitting/ph_intheblood_sitting_001.jpg",
+  "source": "ph_intheblood",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.8112
+ },
+ {
+  "file": "ph_inugami_bargho_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_inugami_bargho/lying_down/ph_inugami_bargho_lying_down_001.jpg",
+  "source": "ph_inugami_bargho",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9997
+ },
+ {
+  "file": "ph_oxyman_lying_down_002.jpg",
+  "dest": "real-data-v4/ph_oxyman/lying_down/ph_oxyman_lying_down_002.jpg",
+  "source": "ph_oxyman",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.8523
+ },
+ {
+  "file": "ph_chaoticfluffy_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_chaoticfluffy/lying_down/ph_chaoticfluffy_lying_down_001.jpg",
+  "source": "ph_chaoticfluffy",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.8285
+ },
+ {
+  "file": "ph_mariofuoco_sitting_001.jpg",
+  "dest": "real-data-v4/ph_mariofuoco/sitting/ph_mariofuoco_sitting_001.jpg",
+  "source": "ph_mariofuoco",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9067
+ },
+ {
+  "file": "ph_panoramio_upload_bot_sitting_001.jpg",
+  "dest": "real-data-v4/ph_panoramio_upload_bot/sitting/ph_panoramio_upload_bot_sitting_001.jpg",
+  "source": "ph_panoramio_upload_bot",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9872
+ },
+ {
+  "file": "ph_solise_standing_001.jpg",
+  "dest": "real-data-v4/ph_solise/standing/ph_solise_standing_001.jpg",
+  "source": "ph_solise",
+  "true": "standing",
+  "pred": "sitting",
+  "confidence": 0.9633
+ },
+ {
+  "file": "ph_justlettersandnumbers_standing_001.jpg",
+  "dest": "real-data-v4/ph_justlettersandnumbers/standing/ph_justlettersandnumbers_standing_001.jpg",
+  "source": "ph_justlettersandnumbers",
+  "true": "standing",
+  "pred": "sitting",
+  "confidence": 0.8215
+ },
+ {
+  "file": "ph_basile_morin_standing_001.jpg",
+  "dest": "real-data-v4/ph_basile_morin/standing/ph_basile_morin_standing_001.jpg",
+  "source": "ph_basile_morin",
+  "true": "standing",
+  "pred": "lying_down",
+  "confidence": 0.9677
+ },
+ {
+  "file": "ph_marmstrong21_walking_001.jpg",
+  "dest": "real-data-v4/ph_marmstrong21/walking/ph_marmstrong21_walking_001.jpg",
+  "source": "ph_marmstrong21",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.809
+ },
+ {
+  "file": "ph_arjuno3_walking_001.jpg",
+  "dest": "real-data-v4/ph_arjuno3/walking/ph_arjuno3_walking_001.jpg",
+  "source": "ph_arjuno3",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.9456
+ },
+ {
+  "file": "ph_amin_walking_001.jpg",
+  "dest": "real-data-v4/ph_amin/walking/ph_amin_walking_001.jpg",
+  "source": "ph_amin",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.998
+ },
+ {
+  "file": "ph_sharkshockusa_walking_001.jpg",
+  "dest": "real-data-v4/ph_sharkshockusa/walking/ph_sharkshockusa_walking_001.jpg",
+  "source": "ph_sharkshockusa",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.9791
+ },
+ {
+  "file": "ph_cheep_sitting_001.jpg",
+  "dest": "real-data-v4/ph_cheep/sitting/ph_cheep_sitting_001.jpg",
+  "source": "ph_cheep",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.8349
+ },
+ {
+  "file": "ph_evnerd_sitting_001.jpg",
+  "dest": "real-data-v4/ph_evnerd/sitting/ph_evnerd_sitting_001.jpg",
+  "source": "ph_evnerd",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9987
+ },
+ {
+  "file": "ph_aneeshnl_walking_001.jpg",
+  "dest": "real-data-v4/ph_aneeshnl/walking/ph_aneeshnl_walking_001.jpg",
+  "source": "ph_aneeshnl",
+  "true": "walking",
+  "pred": "standing",
+  "confidence": 0.8212
+ },
+ {
+  "file": "vid_africanis_standing_001.jpg",
+  "dest": "real-data-v4/vid_africanis/standing/vid_africanis_standing_001.jpg",
+  "source": "vid_africanis",
+  "true": "standing",
+  "pred": "sitting",
+  "confidence": 0.9246
+ },
+ {
+  "file": "vid_africanis_standing_002.jpg",
+  "dest": "real-data-v4/vid_africanis/standing/vid_africanis_standing_002.jpg",
+  "source": "vid_africanis",
+  "true": "standing",
+  "pred": "sitting",
+  "confidence": 0.9507
+ },
+ {
+  "file": "vid_africanis_standing_003.jpg",
+  "dest": "real-data-v4/vid_africanis/standing/vid_africanis_standing_003.jpg",
+  "source": "vid_africanis",
+  "true": "standing",
+  "pred": "sitting",
+  "confidence": 0.8815
+ },
+ {
+  "file": "vid_africanis_standing_004.jpg",
+  "dest": "real-data-v4/vid_africanis/standing/vid_africanis_standing_004.jpg",
+  "source": "vid_africanis",
+  "true": "standing",
+  "pred": "sitting",
+  "confidence": 0.9652
+ },
+ {
+  "file": "vid_africanis_standing_005.jpg",
+  "dest": "real-data-v4/vid_africanis/standing/vid_africanis_standing_005.jpg",
+  "source": "vid_africanis",
+  "true": "standing",
+  "pred": "sitting",
+  "confidence": 0.917
+ },
+ {
+  "file": "vid_africanis_standing_006.jpg",
+  "dest": "real-data-v4/vid_africanis/standing/vid_africanis_standing_006.jpg",
+  "source": "vid_africanis",
+  "true": "standing",
+  "pred": "sitting",
+  "confidence": 0.7685
+ },
+ {
+  "file": "vid_africanis_standing_007.jpg",
+  "dest": "real-data-v4/vid_africanis/standing/vid_africanis_standing_007.jpg",
+  "source": "vid_africanis",
+  "true": "standing",
+  "pred": "sitting",
+  "confidence": 0.864
+ },
+ {
+  "file": "vid_africanis_standing_008.jpg",
+  "dest": "real-data-v4/vid_africanis/standing/vid_africanis_standing_008.jpg",
+  "source": "vid_africanis",
+  "true": "standing",
+  "pred": "sitting",
+  "confidence": 0.7525
+ },
+ {
+  "file": "vid_mission_walking_003.jpg",
+  "dest": "real-data-v4/vid_mission/walking/vid_mission_walking_003.jpg",
+  "source": "vid_mission",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.9942
+ },
+ {
+  "file": "vid_mission_walking_004.jpg",
+  "dest": "real-data-v4/vid_mission/walking/vid_mission_walking_004.jpg",
+  "source": "vid_mission",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.9929
+ },
+ {
+  "file": "vid_mission_walking_005.jpg",
+  "dest": "real-data-v4/vid_mission/walking/vid_mission_walking_005.jpg",
+  "source": "vid_mission",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.9822
+ },
+ {
+  "file": "vid_mission_walking_006.jpg",
+  "dest": "real-data-v4/vid_mission/walking/vid_mission_walking_006.jpg",
+  "source": "vid_mission",
+  "true": "walking",
+  "pred": "standing",
+  "confidence": 0.8807
+ },
+ {
+  "file": "vid_mission_walking_007.jpg",
+  "dest": "real-data-v4/vid_mission/walking/vid_mission_walking_007.jpg",
+  "source": "vid_mission",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.6284
+ },
+ {
+  "file": "vid_mission_walking_008.jpg",
+  "dest": "real-data-v4/vid_mission/walking/vid_mission_walking_008.jpg",
+  "source": "vid_mission",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.9471
+ },
+ {
+  "file": "vid_mission_walking_001.jpg",
+  "dest": "real-data-v4/vid_mission/walking/vid_mission_walking_001.jpg",
+  "source": "vid_mission",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.9945
+ },
+ {
+  "file": "vid_mission_walking_002.jpg",
+  "dest": "real-data-v4/vid_mission/walking/vid_mission_walking_002.jpg",
+  "source": "vid_mission",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.9958
+ },
+ {
+  "file": "vid_wagging_standing_001.jpg",
+  "dest": "real-data-v4/vid_wagging/standing/vid_wagging_standing_001.jpg",
+  "source": "vid_wagging",
+  "true": "standing",
+  "pred": "walking",
+  "confidence": 0.85
+ },
+ {
+  "file": "vid_wagging_standing_002.jpg",
+  "dest": "real-data-v4/vid_wagging/standing/vid_wagging_standing_002.jpg",
+  "source": "vid_wagging",
+  "true": "standing",
+  "pred": "walking",
+  "confidence": 0.7542
+ },
+ {
+  "file": "vid_wagging_standing_003.jpg",
+  "dest": "real-data-v4/vid_wagging/standing/vid_wagging_standing_003.jpg",
+  "source": "vid_wagging",
+  "true": "standing",
+  "pred": "walking",
+  "confidence": 0.7215
+ },
+ {
+  "file": "vid_wagging_standing_004.jpg",
+  "dest": "real-data-v4/vid_wagging/standing/vid_wagging_standing_004.jpg",
+  "source": "vid_wagging",
+  "true": "standing",
+  "pred": "walking",
+  "confidence": 0.7517
+ },
+ {
+  "file": "ph_jeeptj12_commonswiki_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_jeeptj12_commonswiki/lying_down/ph_jeeptj12_commonswiki_lying_down_001.jpg",
+  "source": "ph_jeeptj12_commonswiki",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.4908
+ },
+ {
+  "file": "ph_pippo_b_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_pippo_b/lying_down/ph_pippo_b_lying_down_001.jpg",
+  "source": "ph_pippo_b",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9975
+ },
+ {
+  "file": "ph_doggiebreath_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_doggiebreath/lying_down/ph_doggiebreath_lying_down_001.jpg",
+  "source": "ph_doggiebreath",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9997
+ },
+ {
+  "file": "ph_famartin_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_famartin/lying_down/ph_famartin_lying_down_001.jpg",
+  "source": "ph_famartin",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.8156
+ },
+ {
+  "file": "ph_tobias1984_sitting_001.jpg",
+  "dest": "real-data-v4/ph_tobias1984/sitting/ph_tobias1984_sitting_001.jpg",
+  "source": "ph_tobias1984",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9566
+ },
+ {
+  "file": "ph_gazebo_sitting_001.jpg",
+  "dest": "real-data-v4/ph_gazebo/sitting/ph_gazebo_sitting_001.jpg",
+  "source": "ph_gazebo",
+  "true": "sitting",
+  "pred": "lying_down",
+  "confidence": 0.9651
+ },
+ {
+  "file": "ph_adventurous36_standing_001.jpg",
+  "dest": "real-data-v4/ph_adventurous36/standing/ph_adventurous36_standing_001.jpg",
+  "source": "ph_adventurous36",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.9088
+ },
+ {
+  "file": "ph_adventurous36_standing_002.jpg",
+  "dest": "real-data-v4/ph_adventurous36/standing/ph_adventurous36_standing_002.jpg",
+  "source": "ph_adventurous36",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.9994
+ },
+ {
+  "file": "ph_adventurous36_standing_003.jpg",
+  "dest": "real-data-v4/ph_adventurous36/standing/ph_adventurous36_standing_003.jpg",
+  "source": "ph_adventurous36",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.946
+ },
+ {
+  "file": "ph_adventurous36_standing_004.jpg",
+  "dest": "real-data-v4/ph_adventurous36/standing/ph_adventurous36_standing_004.jpg",
+  "source": "ph_adventurous36",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.9408
+ },
+ {
+  "file": "ph_jurgennl_walking_001.jpg",
+  "dest": "real-data-v4/ph_jurgennl/walking/ph_jurgennl_walking_001.jpg",
+  "source": "ph_jurgennl",
+  "true": "walking",
+  "pred": "sitting",
+  "confidence": 0.6928
+ },
+ {
+  "file": "ph_adam63_sitting_001.jpg",
+  "dest": "real-data-v4/ph_adam63/sitting/ph_adam63_sitting_001.jpg",
+  "source": "ph_adam63",
+  "true": "sitting",
+  "pred": "walking",
+  "confidence": 0.9392
+ },
+ {
+  "file": "ph_adiogerman_sitting_001.jpg",
+  "dest": "real-data-v4/ph_adiogerman/sitting/ph_adiogerman_sitting_001.jpg",
+  "source": "ph_adiogerman",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.7611
+ },
+ {
+  "file": "ph_alexander_yerovi_sitting_001.jpg",
+  "dest": "real-data-v4/ph_alexander_yerovi/sitting/ph_alexander_yerovi_sitting_001.jpg",
+  "source": "ph_alexander_yerovi",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.4685
+ },
+ {
+  "file": "ph_arjuno3_sitting_001.jpg",
+  "dest": "real-data-v4/ph_arjuno3/sitting/ph_arjuno3_sitting_001.jpg",
+  "source": "ph_arjuno3",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.7391
+ },
+ {
+  "file": "ph_atobar_sitting_001.jpg",
+  "dest": "real-data-v4/ph_atobar/sitting/ph_atobar_sitting_001.jpg",
+  "source": "ph_atobar",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.8433
+ },
+ {
+  "file": "ph_babu_sitting_001.jpg",
+  "dest": "real-data-v4/ph_babu/sitting/ph_babu_sitting_001.jpg",
+  "source": "ph_babu",
+  "true": "sitting",
+  "pred": "lying_down",
+  "confidence": 0.6438
+ },
+ {
+  "file": "ph_betsyin_ne_sitting_001.jpg",
+  "dest": "real-data-v4/ph_betsyin_ne/sitting/ph_betsyin_ne_sitting_001.jpg",
+  "source": "ph_betsyin_ne",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9884
+ },
+ {
+  "file": "ph_busheer_sitting_001.jpg",
+  "dest": "real-data-v4/ph_busheer/sitting/ph_busheer_sitting_001.jpg",
+  "source": "ph_busheer",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9207
+ },
+ {
+  "file": "ph_cavalier_king_charles_spaniels_sitting_001.jpg",
+  "dest": "real-data-v4/ph_cavalier_king_charles_spaniels/sitting/ph_cavalier_king_charles_spaniels_sitting_001.jpg",
+  "source": "ph_cavalier_king_charles_spaniels",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9817
+ },
+ {
+  "file": "ph_cavarrone_sitting_001.jpg",
+  "dest": "real-data-v4/ph_cavarrone/sitting/ph_cavarrone_sitting_001.jpg",
+  "source": "ph_cavarrone",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.7748
+ },
+ {
+  "file": "ph_chacaliandshrek_sitting_001.jpg",
+  "dest": "real-data-v4/ph_chacaliandshrek/sitting/ph_chacaliandshrek_sitting_001.jpg",
+  "source": "ph_chacaliandshrek",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9751
+ },
+ {
+  "file": "ph_chicon_sitting_001.jpg",
+  "dest": "real-data-v4/ph_chicon/sitting/ph_chicon_sitting_001.jpg",
+  "source": "ph_chicon",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.5881
+ },
+ {
+  "file": "ph_chienghost_sitting_001.jpg",
+  "dest": "real-data-v4/ph_chienghost/sitting/ph_chienghost_sitting_001.jpg",
+  "source": "ph_chienghost",
+  "true": "sitting",
+  "pred": "lying_down",
+  "confidence": 0.7316
+ },
+ {
+  "file": "ph_chowchowtao_sitting_001.jpg",
+  "dest": "real-data-v4/ph_chowchowtao/sitting/ph_chowchowtao_sitting_001.jpg",
+  "source": "ph_chowchowtao",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9879
+ },
+ {
+  "file": "ph_chyah_sitting_001.jpg",
+  "dest": "real-data-v4/ph_chyah/sitting/ph_chyah_sitting_001.jpg",
+  "source": "ph_chyah",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9431
+ },
+ {
+  "file": "ph_devaki_surya_sitting_001.jpg",
+  "dest": "real-data-v4/ph_devaki_surya/sitting/ph_devaki_surya_sitting_001.jpg",
+  "source": "ph_devaki_surya",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.991
+ },
+ {
+  "file": "ph_diham_sitting_001.jpg",
+  "dest": "real-data-v4/ph_diham/sitting/ph_diham_sitting_001.jpg",
+  "source": "ph_diham",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9248
+ },
+ {
+  "file": "ph_dpalma01_commonswiki_sitting_001.jpg",
+  "dest": "real-data-v4/ph_dpalma01_commonswiki/sitting/ph_dpalma01_commonswiki_sitting_001.jpg",
+  "source": "ph_dpalma01_commonswiki",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.3753
+ },
+ {
+  "file": "ph_elliskimoo_sitting_001.jpg",
+  "dest": "real-data-v4/ph_elliskimoo/sitting/ph_elliskimoo_sitting_001.jpg",
+  "source": "ph_elliskimoo",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9973
+ },
+ {
+  "file": "ph_famartin_sitting_001.jpg",
+  "dest": "real-data-v4/ph_famartin/sitting/ph_famartin_sitting_001.jpg",
+  "source": "ph_famartin",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.7071
+ },
+ {
+  "file": "ph_fridapanchosexi_sitting_001.jpg",
+  "dest": "real-data-v4/ph_fridapanchosexi/sitting/ph_fridapanchosexi_sitting_001.jpg",
+  "source": "ph_fridapanchosexi",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9973
+ },
+ {
+  "file": "ph_friendlytoaster_sitting_001.jpg",
+  "dest": "real-data-v4/ph_friendlytoaster/sitting/ph_friendlytoaster_sitting_001.jpg",
+  "source": "ph_friendlytoaster",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.996
+ },
+ {
+  "file": "ph_geagea_sitting_001.jpg",
+  "dest": "real-data-v4/ph_geagea/sitting/ph_geagea_sitting_001.jpg",
+  "source": "ph_geagea",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.8945
+ },
+ {
+  "file": "ph_inugami_bargho_sitting_001.jpg",
+  "dest": "real-data-v4/ph_inugami_bargho/sitting/ph_inugami_bargho_sitting_001.jpg",
+  "source": "ph_inugami_bargho",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9906
+ },
+ {
+  "file": "ph_jip_sitting_001.jpg",
+  "dest": "real-data-v4/ph_jip/sitting/ph_jip_sitting_001.jpg",
+  "source": "ph_jip",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.638
+ },
+ {
+  "file": "ph_jason_nlw_sitting_001.jpg",
+  "dest": "real-data-v4/ph_jason_nlw/sitting/ph_jason_nlw_sitting_001.jpg",
+  "source": "ph_jason_nlw",
+  "true": "sitting",
+  "pred": "walking",
+  "confidence": 0.9906
+ },
+ {
+  "file": "ph_jsebasag_sitting_001.jpg",
+  "dest": "real-data-v4/ph_jsebasag/sitting/ph_jsebasag_sitting_001.jpg",
+  "source": "ph_jsebasag",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9896
+ },
+ {
+  "file": "ph_kiidos_sitting_001.jpg",
+  "dest": "real-data-v4/ph_kiidos/sitting/ph_kiidos_sitting_001.jpg",
+  "source": "ph_kiidos",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9883
+ },
+ {
+  "file": "ph_kjetil_r_sitting_001.jpg",
+  "dest": "real-data-v4/ph_kjetil_r/sitting/ph_kjetil_r_sitting_001.jpg",
+  "source": "ph_kjetil_r",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9708
+ },
+ {
+  "file": "ph_knopik_som_sitting_001.jpg",
+  "dest": "real-data-v4/ph_knopik_som/sitting/ph_knopik_som_sitting_001.jpg",
+  "source": "ph_knopik_som",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.6518
+ },
+ {
+  "file": "ph_mwfwiki_sitting_001.jpg",
+  "dest": "real-data-v4/ph_mwfwiki/sitting/ph_mwfwiki_sitting_001.jpg",
+  "source": "ph_mwfwiki",
+  "true": "sitting",
+  "pred": "standing",
+  "confidence": 0.7077
+ },
+ {
+  "file": "ph_martinsjmz_sitting_001.jpg",
+  "dest": "real-data-v4/ph_martinsjmz/sitting/ph_martinsjmz_sitting_001.jpg",
+  "source": "ph_martinsjmz",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.7996
+ },
+ {
+  "file": "ph_maximotard_sitting_001.jpg",
+  "dest": "real-data-v4/ph_maximotard/sitting/ph_maximotard_sitting_001.jpg",
+  "source": "ph_maximotard",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9835
+ },
+ {
+  "file": "ph_mostafameraji_sitting_001.jpg",
+  "dest": "real-data-v4/ph_mostafameraji/sitting/ph_mostafameraji_sitting_001.jpg",
+  "source": "ph_mostafameraji",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.8335
+ },
+ {
+  "file": "ph_muu_karhu_sitting_001.jpg",
+  "dest": "real-data-v4/ph_muu_karhu/sitting/ph_muu_karhu_sitting_001.jpg",
+  "source": "ph_muu_karhu",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9392
+ },
+ {
+  "file": "ph_neoprotecci_n_sitting_001.jpg",
+  "dest": "real-data-v4/ph_neoprotecci_n/sitting/ph_neoprotecci_n_sitting_001.jpg",
+  "source": "ph_neoprotecci_n",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.5926
+ },
+ {
+  "file": "ph_neoprotecci_n_animal_sitting_001.jpg",
+  "dest": "real-data-v4/ph_neoprotecci_n_animal/sitting/ph_neoprotecci_n_animal_sitting_001.jpg",
+  "source": "ph_neoprotecci_n_animal",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9325
+ },
+ {
+  "file": "ph_nouka_crawls_sitting_001.jpg",
+  "dest": "real-data-v4/ph_nouka_crawls/sitting/ph_nouka_crawls_sitting_001.jpg",
+  "source": "ph_nouka_crawls",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9817
+ },
+ {
+  "file": "ph_panoramio_upload_bot_sitting_002.jpg",
+  "dest": "real-data-v4/ph_panoramio_upload_bot/sitting/ph_panoramio_upload_bot_sitting_002.jpg",
+  "source": "ph_panoramio_upload_bot",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9438
+ },
+ {
+  "file": "ph_presto808_sitting_001.jpg",
+  "dest": "real-data-v4/ph_presto808/sitting/ph_presto808_sitting_001.jpg",
+  "source": "ph_presto808",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9994
+ },
+ {
+  "file": "ph_rachellevafidis_sitting_001.jpg",
+  "dest": "real-data-v4/ph_rachellevafidis/sitting/ph_rachellevafidis_sitting_001.jpg",
+  "source": "ph_rachellevafidis",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9533
+ },
+ {
+  "file": "ph_rangajk95_sitting_001.jpg",
+  "dest": "real-data-v4/ph_rangajk95/sitting/ph_rangajk95_sitting_001.jpg",
+  "source": "ph_rangajk95",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9702
+ },
+ {
+  "file": "ph_red_panda_bot_sitting_001.jpg",
+  "dest": "real-data-v4/ph_red_panda_bot/sitting/ph_red_panda_bot_sitting_001.jpg",
+  "source": "ph_red_panda_bot",
+  "true": "sitting",
+  "pred": "lying_down",
+  "confidence": 0.5592
+ },
+ {
+  "file": "ph_rhododendrites_sitting_001.jpg",
+  "dest": "real-data-v4/ph_rhododendrites/sitting/ph_rhododendrites_sitting_001.jpg",
+  "source": "ph_rhododendrites",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9817
+ },
+ {
+  "file": "ph_rudolf78_sitting_001.jpg",
+  "dest": "real-data-v4/ph_rudolf78/sitting/ph_rudolf78_sitting_001.jpg",
+  "source": "ph_rudolf78",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9605
+ },
+ {
+  "file": "ph_ruthrod27_sitting_001.jpg",
+  "dest": "real-data-v4/ph_ruthrod27/sitting/ph_ruthrod27_sitting_001.jpg",
+  "source": "ph_ruthrod27",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9338
+ },
+ {
+  "file": "ph_serdar144_sitting_001.jpg",
+  "dest": "real-data-v4/ph_serdar144/sitting/ph_serdar144_sitting_001.jpg",
+  "source": "ph_serdar144",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9872
+ },
+ {
+  "file": "ph_sivabalachandar03_sitting_001.jpg",
+  "dest": "real-data-v4/ph_sivabalachandar03/sitting/ph_sivabalachandar03_sitting_001.jpg",
+  "source": "ph_sivabalachandar03",
+  "true": "sitting",
+  "pred": "standing",
+  "confidence": 0.4187
+ },
+ {
+  "file": "ph_sk_catz_sitting_001.jpg",
+  "dest": "real-data-v4/ph_sk_catz/sitting/ph_sk_catz_sitting_001.jpg",
+  "source": "ph_sk_catz",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9527
+ },
+ {
+  "file": "ph_sobaki2016_sitting_001.jpg",
+  "dest": "real-data-v4/ph_sobaki2016/sitting/ph_sobaki2016_sitting_001.jpg",
+  "source": "ph_sobaki2016",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9969
+ },
+ {
+  "file": "ph_sourya33_sitting_001.jpg",
+  "dest": "real-data-v4/ph_sourya33/sitting/ph_sourya33_sitting_001.jpg",
+  "source": "ph_sourya33",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.9856
+ },
+ {
+  "file": "ph_untitled_sitting_001.jpg",
+  "dest": "real-data-v4/ph_untitled/sitting/ph_untitled_sitting_001.jpg",
+  "source": "ph_untitled",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.7834
+ },
+ {
+  "file": "ph_yukikoko_sitting_001.jpg",
+  "dest": "real-data-v4/ph_yukikoko/sitting/ph_yukikoko_sitting_001.jpg",
+  "source": "ph_yukikoko",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.4826
+ },
+ {
+  "file": "ph_famartin_sitting_002.jpg",
+  "dest": "real-data-v4/ph_famartin/sitting/ph_famartin_sitting_002.jpg",
+  "source": "ph_famartin",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.7924
+ },
+ {
+  "file": "ph_panoramio_upload_bot_sitting_003.jpg",
+  "dest": "real-data-v4/ph_panoramio_upload_bot/sitting/ph_panoramio_upload_bot_sitting_003.jpg",
+  "source": "ph_panoramio_upload_bot",
+  "true": "sitting",
+  "pred": "sitting",
+  "confidence": 0.8896
+ },
+ {
+  "file": "ph_adeletron_3030_standing_001.jpg",
+  "dest": "real-data-v4/ph_adeletron_3030/standing/ph_adeletron_3030_standing_001.jpg",
+  "source": "ph_adeletron_3030",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.9966
+ },
+ {
+  "file": "ph_adventurous36_standing_005.jpg",
+  "dest": "real-data-v4/ph_adventurous36/standing/ph_adventurous36_standing_005.jpg",
+  "source": "ph_adventurous36",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.7595
+ },
+ {
+  "file": "ph_bani_bangou_standing_001.jpg",
+  "dest": "real-data-v4/ph_bani_bangou/standing/ph_bani_bangou_standing_001.jpg",
+  "source": "ph_bani_bangou",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.5836
+ },
+ {
+  "file": "ph_eva_holderegger_walser_standing_001.jpg",
+  "dest": "real-data-v4/ph_eva_holderegger_walser/standing/ph_eva_holderegger_walser_standing_001.jpg",
+  "source": "ph_eva_holderegger_walser",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.8126
+ },
+ {
+  "file": "ph_famartin_standing_001.jpg",
+  "dest": "real-data-v4/ph_famartin/standing/ph_famartin_standing_001.jpg",
+  "source": "ph_famartin",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.656
+ },
+ {
+  "file": "ph_friendlytoaster_standing_001.jpg",
+  "dest": "real-data-v4/ph_friendlytoaster/standing/ph_friendlytoaster_standing_001.jpg",
+  "source": "ph_friendlytoaster",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.7793
+ },
+ {
+  "file": "ph_inugami_bargho_standing_001.jpg",
+  "dest": "real-data-v4/ph_inugami_bargho/standing/ph_inugami_bargho_standing_001.jpg",
+  "source": "ph_inugami_bargho",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.6123
+ },
+ {
+  "file": "ph_justlettersandnumbers_standing_002.jpg",
+  "dest": "real-data-v4/ph_justlettersandnumbers/standing/ph_justlettersandnumbers_standing_002.jpg",
+  "source": "ph_justlettersandnumbers",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.9977
+ },
+ {
+  "file": "ph_kulmalukko_standing_001.jpg",
+  "dest": "real-data-v4/ph_kulmalukko/standing/ph_kulmalukko_standing_001.jpg",
+  "source": "ph_kulmalukko",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.3958
+ },
+ {
+  "file": "ph_mdaniels5757_standing_001.jpg",
+  "dest": "real-data-v4/ph_mdaniels5757/standing/ph_mdaniels5757_standing_001.jpg",
+  "source": "ph_mdaniels5757",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.7327
+ },
+ {
+  "file": "ph_mdk572_standing_001.jpg",
+  "dest": "real-data-v4/ph_mdk572/standing/ph_mdk572_standing_001.jpg",
+  "source": "ph_mdk572",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.4049
+ },
+ {
+  "file": "ph_muu_karhu_standing_001.jpg",
+  "dest": "real-data-v4/ph_muu_karhu/standing/ph_muu_karhu_standing_001.jpg",
+  "source": "ph_muu_karhu",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.9577
+ },
+ {
+  "file": "ph_paingsoe2020_standing_001.jpg",
+  "dest": "real-data-v4/ph_paingsoe2020/standing/ph_paingsoe2020_standing_001.jpg",
+  "source": "ph_paingsoe2020",
+  "true": "standing",
+  "pred": "walking",
+  "confidence": 0.5496
+ },
+ {
+  "file": "ph_ra_ike_standing_001.jpg",
+  "dest": "real-data-v4/ph_ra_ike/standing/ph_ra_ike_standing_001.jpg",
+  "source": "ph_ra_ike",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.8089
+ },
+ {
+  "file": "ph_rawep_standing_001.jpg",
+  "dest": "real-data-v4/ph_rawep/standing/ph_rawep_standing_001.jpg",
+  "source": "ph_rawep",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.4707
+ },
+ {
+  "file": "ph_zingpix_standing_001.jpg",
+  "dest": "real-data-v4/ph_zingpix/standing/ph_zingpix_standing_001.jpg",
+  "source": "ph_zingpix",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.9073
+ },
+ {
+  "file": "ph_adeletron_3030_standing_002.jpg",
+  "dest": "real-data-v4/ph_adeletron_3030/standing/ph_adeletron_3030_standing_002.jpg",
+  "source": "ph_adeletron_3030",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.9683
+ },
+ {
+  "file": "ph_adventurous36_standing_006.jpg",
+  "dest": "real-data-v4/ph_adventurous36/standing/ph_adventurous36_standing_006.jpg",
+  "source": "ph_adventurous36",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.9935
+ },
+ {
+  "file": "ph_famartin_standing_002.jpg",
+  "dest": "real-data-v4/ph_famartin/standing/ph_famartin_standing_002.jpg",
+  "source": "ph_famartin",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.4665
+ },
+ {
+  "file": "ph_adventurous36_standing_007.jpg",
+  "dest": "real-data-v4/ph_adventurous36/standing/ph_adventurous36_standing_007.jpg",
+  "source": "ph_adventurous36",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.9715
+ },
+ {
+  "file": "ph_famartin_standing_003.jpg",
+  "dest": "real-data-v4/ph_famartin/standing/ph_famartin_standing_003.jpg",
+  "source": "ph_famartin",
+  "true": "standing",
+  "pred": "lying_down",
+  "confidence": 0.3944
+ },
+ {
+  "file": "ph_adventurous36_standing_008.jpg",
+  "dest": "real-data-v4/ph_adventurous36/standing/ph_adventurous36_standing_008.jpg",
+  "source": "ph_adventurous36",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.9191
+ },
+ {
+  "file": "ph_adventurous36_standing_009.jpg",
+  "dest": "real-data-v4/ph_adventurous36/standing/ph_adventurous36_standing_009.jpg",
+  "source": "ph_adventurous36",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.9538
+ },
+ {
+  "file": "ph_adventurous36_standing_010.jpg",
+  "dest": "real-data-v4/ph_adventurous36/standing/ph_adventurous36_standing_010.jpg",
+  "source": "ph_adventurous36",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.9937
+ },
+ {
+  "file": "ph_adventurous36_standing_011.jpg",
+  "dest": "real-data-v4/ph_adventurous36/standing/ph_adventurous36_standing_011.jpg",
+  "source": "ph_adventurous36",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.9974
+ },
+ {
+  "file": "ph_adventurous36_standing_012.jpg",
+  "dest": "real-data-v4/ph_adventurous36/standing/ph_adventurous36_standing_012.jpg",
+  "source": "ph_adventurous36",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.997
+ },
+ {
+  "file": "ph_adventurous36_standing_013.jpg",
+  "dest": "real-data-v4/ph_adventurous36/standing/ph_adventurous36_standing_013.jpg",
+  "source": "ph_adventurous36",
+  "true": "standing",
+  "pred": "sitting",
+  "confidence": 0.8606
+ },
+ {
+  "file": "ph_adventurous36_standing_014.jpg",
+  "dest": "real-data-v4/ph_adventurous36/standing/ph_adventurous36_standing_014.jpg",
+  "source": "ph_adventurous36",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.9924
+ },
+ {
+  "file": "ph_adventurous36_standing_015.jpg",
+  "dest": "real-data-v4/ph_adventurous36/standing/ph_adventurous36_standing_015.jpg",
+  "source": "ph_adventurous36",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.8932
+ },
+ {
+  "file": "ph_adventurous36_standing_016.jpg",
+  "dest": "real-data-v4/ph_adventurous36/standing/ph_adventurous36_standing_016.jpg",
+  "source": "ph_adventurous36",
+  "true": "standing",
+  "pred": "standing",
+  "confidence": 0.9723
+ },
+ {
+  "file": "ph_insertsupercoolusername_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_insertsupercoolusername/lying_down/ph_insertsupercoolusername_lying_down_001.jpg",
+  "source": "ph_insertsupercoolusername",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9925
+ },
+ {
+  "file": "ph_4nn1l2_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_4nn1l2/lying_down/ph_4nn1l2_lying_down_001.jpg",
+  "source": "ph_4nn1l2",
+  "true": "lying_down",
+  "pred": "sitting",
+  "confidence": 0.4394
+ },
+ {
+  "file": "ph_a_s_m_jobaer_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_a_s_m_jobaer/lying_down/ph_a_s_m_jobaer_lying_down_001.jpg",
+  "source": "ph_a_s_m_jobaer",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9976
+ },
+ {
+  "file": "ph_aleksey_churushkin_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_aleksey_churushkin/lying_down/ph_aleksey_churushkin_lying_down_001.jpg",
+  "source": "ph_aleksey_churushkin",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9825
+ },
+ {
+  "file": "ph_amanxseattle_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_amanxseattle/lying_down/ph_amanxseattle_lying_down_001.jpg",
+  "source": "ph_amanxseattle",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9998
+ },
+ {
+  "file": "ph_ashwini1909_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_ashwini1909/lying_down/ph_ashwini1909_lying_down_001.jpg",
+  "source": "ph_ashwini1909",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9991
+ },
+ {
+  "file": "ph_behroozianf_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_behroozianf/lying_down/ph_behroozianf_lying_down_001.jpg",
+  "source": "ph_behroozianf",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9787
+ },
+ {
+  "file": "ph_brando025_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_brando025/lying_down/ph_brando025_lying_down_001.jpg",
+  "source": "ph_brando025",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.7429
+ },
+ {
+  "file": "ph_camera007_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_camera007/lying_down/ph_camera007_lying_down_001.jpg",
+  "source": "ph_camera007",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9996
+ },
+ {
+  "file": "ph_capi16_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_capi16/lying_down/ph_capi16_lying_down_001.jpg",
+  "source": "ph_capi16",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.5588
+ },
+ {
+  "file": "ph_cpoongavanam_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_cpoongavanam/lying_down/ph_cpoongavanam_lying_down_001.jpg",
+  "source": "ph_cpoongavanam",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9606
+ },
+ {
+  "file": "ph_daniipeterectioner1_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_daniipeterectioner1/lying_down/ph_daniipeterectioner1_lying_down_001.jpg",
+  "source": "ph_daniipeterectioner1",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9602
+ },
+ {
+  "file": "ph_darnyizsoka_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_darnyizsoka/lying_down/ph_darnyizsoka_lying_down_001.jpg",
+  "source": "ph_darnyizsoka",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9981
+ },
+ {
+  "file": "ph_dr_shikha_jaggi_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_dr_shikha_jaggi/lying_down/ph_dr_shikha_jaggi_lying_down_001.jpg",
+  "source": "ph_dr_shikha_jaggi",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9994
+ },
+ {
+  "file": "ph_eeim_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_eeim/lying_down/ph_eeim_lying_down_001.jpg",
+  "source": "ph_eeim",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9049
+ },
+ {
+  "file": "ph_evolyan116_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_evolyan116/lying_down/ph_evolyan116_lying_down_001.jpg",
+  "source": "ph_evolyan116",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.8322
+ },
+ {
+  "file": "ph_fulani215_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_fulani215/lying_down/ph_fulani215_lying_down_001.jpg",
+  "source": "ph_fulani215",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.7155
+ },
+ {
+  "file": "ph_high_contrast_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_high_contrast/lying_down/ph_high_contrast_lying_down_001.jpg",
+  "source": "ph_high_contrast",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9998
+ },
+ {
+  "file": "ph_hike395_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_hike395/lying_down/ph_hike395_lying_down_001.jpg",
+  "source": "ph_hike395",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.7372
+ },
+ {
+  "file": "ph_inugami_bargho_lying_down_002.jpg",
+  "dest": "real-data-v4/ph_inugami_bargho/lying_down/ph_inugami_bargho_lying_down_002.jpg",
+  "source": "ph_inugami_bargho",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9999
+ },
+ {
+  "file": "ph_jatinpandey310_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_jatinpandey310/lying_down/ph_jatinpandey310_lying_down_001.jpg",
+  "source": "ph_jatinpandey310",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9859
+ },
+ {
+  "file": "ph_jay_sorbet_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_jay_sorbet/lying_down/ph_jay_sorbet_lying_down_001.jpg",
+  "source": "ph_jay_sorbet",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9996
+ },
+ {
+  "file": "ph_jenny2513_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_jenny2513/lying_down/ph_jenny2513_lying_down_001.jpg",
+  "source": "ph_jenny2513",
+  "true": "lying_down",
+  "pred": "sitting",
+  "confidence": 0.5789
+ },
+ {
+  "file": "ph_jeuwre_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_jeuwre/lying_down/ph_jeuwre_lying_down_001.jpg",
+  "source": "ph_jeuwre",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9996
+ },
+ {
+  "file": "ph_kushtrimkrasniqi_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_kushtrimkrasniqi/lying_down/ph_kushtrimkrasniqi_lying_down_001.jpg",
+  "source": "ph_kushtrimkrasniqi",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.8975
+ },
+ {
+  "file": "ph_mauro_cateb_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_mauro_cateb/lying_down/ph_mauro_cateb_lying_down_001.jpg",
+  "source": "ph_mauro_cateb",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.989
+ },
+ {
+  "file": "ph_minnesotajoy_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_minnesotajoy/lying_down/ph_minnesotajoy_lying_down_001.jpg",
+  "source": "ph_minnesotajoy",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9912
+ },
+ {
+  "file": "ph_mmatthias_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_mmatthias/lying_down/ph_mmatthias_lying_down_001.jpg",
+  "source": "ph_mmatthias",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9921
+ },
+ {
+  "file": "ph_monia_akter_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_monia_akter/lying_down/ph_monia_akter_lying_down_001.jpg",
+  "source": "ph_monia_akter",
+  "true": "lying_down",
+  "pred": "sitting",
+  "confidence": 0.765
+ },
+ {
+  "file": "ph_muntaqibah_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_muntaqibah/lying_down/ph_muntaqibah_lying_down_001.jpg",
+  "source": "ph_muntaqibah",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.981
+ },
+ {
+  "file": "ph_narek75_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_narek75/lying_down/ph_narek75_lying_down_001.jpg",
+  "source": "ph_narek75",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9127
+ },
+ {
+  "file": "ph_nicole_qowens_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_nicole_qowens/lying_down/ph_nicole_qowens_lying_down_001.jpg",
+  "source": "ph_nicole_qowens",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9999
+ },
+ {
+  "file": "ph_oleneitzel_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_oleneitzel/lying_down/ph_oleneitzel_lying_down_001.jpg",
+  "source": "ph_oleneitzel",
+  "true": "lying_down",
+  "pred": "sitting",
+  "confidence": 0.7743
+ },
+ {
+  "file": "ph_oo91_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_oo91/lying_down/ph_oo91_lying_down_001.jpg",
+  "source": "ph_oo91",
+  "true": "lying_down",
+  "pred": "walking",
+  "confidence": 0.7775
+ },
+ {
+  "file": "ph_oolibka_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_oolibka/lying_down/ph_oolibka_lying_down_001.jpg",
+  "source": "ph_oolibka",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.8671
+ },
+ {
+  "file": "ph_oxfordian_kissuth_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_oxfordian_kissuth/lying_down/ph_oxfordian_kissuth_lying_down_001.jpg",
+  "source": "ph_oxfordian_kissuth",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9985
+ },
+ {
+  "file": "ph_panoramio_upload_bot_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_panoramio_upload_bot/lying_down/ph_panoramio_upload_bot_lying_down_001.jpg",
+  "source": "ph_panoramio_upload_bot",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9238
+ },
+ {
+  "file": "ph_pattayapatrol_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_pattayapatrol/lying_down/ph_pattayapatrol_lying_down_001.jpg",
+  "source": "ph_pattayapatrol",
+  "true": "lying_down",
+  "pred": "sitting",
+  "confidence": 0.8814
+ },
+ {
+  "file": "ph_rhododendrites_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_rhododendrites/lying_down/ph_rhododendrites_lying_down_001.jpg",
+  "source": "ph_rhododendrites",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9115
+ },
+ {
+  "file": "ph_scotrobertson_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_scotrobertson/lying_down/ph_scotrobertson_lying_down_001.jpg",
+  "source": "ph_scotrobertson",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.993
+ },
+ {
+  "file": "ph_secretname101_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_secretname101/lying_down/ph_secretname101_lying_down_001.jpg",
+  "source": "ph_secretname101",
+  "true": "lying_down",
+  "pred": "sitting",
+  "confidence": 0.5408
+ },
+ {
+  "file": "ph_serenityweb1_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_serenityweb1/lying_down/ph_serenityweb1_lying_down_001.jpg",
+  "source": "ph_serenityweb1",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.8997
+ },
+ {
+  "file": "ph_steinsplitterbot_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_steinsplitterbot/lying_down/ph_steinsplitterbot_lying_down_001.jpg",
+  "source": "ph_steinsplitterbot",
+  "true": "lying_down",
+  "pred": "standing",
+  "confidence": 0.5373
+ },
+ {
+  "file": "ph_teneab_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_teneab/lying_down/ph_teneab_lying_down_001.jpg",
+  "source": "ph_teneab",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.884
+ },
+ {
+  "file": "ph_tm_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_tm/lying_down/ph_tm_lying_down_001.jpg",
+  "source": "ph_tm",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9995
+ },
+ {
+  "file": "ph_tobias1984_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_tobias1984/lying_down/ph_tobias1984_lying_down_001.jpg",
+  "source": "ph_tobias1984",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9554
+ },
+ {
+  "file": "ph_tw1c9e_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_tw1c9e/lying_down/ph_tw1c9e_lying_down_001.jpg",
+  "source": "ph_tw1c9e",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9967
+ },
+ {
+  "file": "ph_upior_polnocy_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_upior_polnocy/lying_down/ph_upior_polnocy_lying_down_001.jpg",
+  "source": "ph_upior_polnocy",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9766
+ },
+ {
+  "file": "ph_waugsberg_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_waugsberg/lying_down/ph_waugsberg_lying_down_001.jpg",
+  "source": "ph_waugsberg",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9999
+ },
+ {
+  "file": "ph_yukikoko_lying_down_001.jpg",
+  "dest": "real-data-v4/ph_yukikoko/lying_down/ph_yukikoko_lying_down_001.jpg",
+  "source": "ph_yukikoko",
+  "true": "lying_down",
+  "pred": "sitting",
+  "confidence": 0.9561
+ },
+ {
+  "file": "ph_eeim_lying_down_002.jpg",
+  "dest": "real-data-v4/ph_eeim/lying_down/ph_eeim_lying_down_002.jpg",
+  "source": "ph_eeim",
+  "true": "lying_down",
+  "pred": "walking",
+  "confidence": 0.5656
+ },
+ {
+  "file": "ph_nicole_qowens_lying_down_002.jpg",
+  "dest": "real-data-v4/ph_nicole_qowens/lying_down/ph_nicole_qowens_lying_down_002.jpg",
+  "source": "ph_nicole_qowens",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.9983
+ },
+ {
+  "file": "ph_panoramio_upload_bot_lying_down_002.jpg",
+  "dest": "real-data-v4/ph_panoramio_upload_bot/lying_down/ph_panoramio_upload_bot_lying_down_002.jpg",
+  "source": "ph_panoramio_upload_bot",
+  "true": "lying_down",
+  "pred": "lying_down",
+  "confidence": 0.8568
+ },
+ {
+  "file": "ph_annch_walking_001.jpg",
+  "dest": "real-data-v4/ph_annch/walking/ph_annch_walking_001.jpg",
+  "source": "ph_annch",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.724
+ },
+ {
+  "file": "ph_ascilto_walking_001.jpg",
+  "dest": "real-data-v4/ph_ascilto/walking/ph_ascilto_walking_001.jpg",
+  "source": "ph_ascilto",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.7309
+ },
+ {
+  "file": "ph_babu_walking_001.jpg",
+  "dest": "real-data-v4/ph_babu/walking/ph_babu_walking_001.jpg",
+  "source": "ph_babu",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.7927
+ },
+ {
+  "file": "ph_basotxerri_walking_001.jpg",
+  "dest": "real-data-v4/ph_basotxerri/walking/ph_basotxerri_walking_001.jpg",
+  "source": "ph_basotxerri",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.8834
+ },
+ {
+  "file": "ph_chrisking1977_walking_001.jpg",
+  "dest": "real-data-v4/ph_chrisking1977/walking/ph_chrisking1977_walking_001.jpg",
+  "source": "ph_chrisking1977",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.7242
+ },
+ {
+  "file": "ph_chyah_walking_001.jpg",
+  "dest": "real-data-v4/ph_chyah/walking/ph_chyah_walking_001.jpg",
+  "source": "ph_chyah",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.999
+ },
+ {
+  "file": "ph_flickreviewr_walking_001.jpg",
+  "dest": "real-data-v4/ph_flickreviewr/walking/ph_flickreviewr_walking_001.jpg",
+  "source": "ph_flickreviewr",
+  "true": "walking",
+  "pred": "standing",
+  "confidence": 0.9495
+ },
+ {
+  "file": "ph_fotothekbot_walking_001.jpg",
+  "dest": "real-data-v4/ph_fotothekbot/walking/ph_fotothekbot_walking_001.jpg",
+  "source": "ph_fotothekbot",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.9789
+ },
+ {
+  "file": "ph_ham_ii_walking_001.jpg",
+  "dest": "real-data-v4/ph_ham_ii/walking/ph_ham_ii_walking_001.jpg",
+  "source": "ph_ham_ii",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.9953
+ },
+ {
+  "file": "ph_inugami_bargho_walking_001.jpg",
+  "dest": "real-data-v4/ph_inugami_bargho/walking/ph_inugami_bargho_walking_001.jpg",
+  "source": "ph_inugami_bargho",
+  "true": "walking",
+  "pred": "standing",
+  "confidence": 0.6169
+ },
+ {
+  "file": "ph_iurieph_walking_001.jpg",
+  "dest": "real-data-v4/ph_iurieph/walking/ph_iurieph_walking_001.jpg",
+  "source": "ph_iurieph",
+  "true": "walking",
+  "pred": "standing",
+  "confidence": 0.6774
+ },
+ {
+  "file": "ph_kaay_walking_001.jpg",
+  "dest": "real-data-v4/ph_kaay/walking/ph_kaay_walking_001.jpg",
+  "source": "ph_kaay",
+  "true": "walking",
+  "pred": "standing",
+  "confidence": 0.6201
+ },
+ {
+  "file": "ph_kulmalukko_walking_001.jpg",
+  "dest": "real-data-v4/ph_kulmalukko/walking/ph_kulmalukko_walking_001.jpg",
+  "source": "ph_kulmalukko",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.8833
+ },
+ {
+  "file": "ph_ln9267_walking_001.jpg",
+  "dest": "real-data-v4/ph_ln9267/walking/ph_ln9267_walking_001.jpg",
+  "source": "ph_ln9267",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.9737
+ },
+ {
+  "file": "ph_lisav7_walking_001.jpg",
+  "dest": "real-data-v4/ph_lisav7/walking/ph_lisav7_walking_001.jpg",
+  "source": "ph_lisav7",
+  "true": "walking",
+  "pred": "sitting",
+  "confidence": 0.7743
+ },
+ {
+  "file": "ph_lusi_lindwurm_walking_001.jpg",
+  "dest": "real-data-v4/ph_lusi_lindwurm/walking/ph_lusi_lindwurm_walking_001.jpg",
+  "source": "ph_lusi_lindwurm",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.9532
+ },
+ {
+  "file": "ph_mosckai_yinam_walking_001.jpg",
+  "dest": "real-data-v4/ph_mosckai_yinam/walking/ph_mosckai_yinam_walking_001.jpg",
+  "source": "ph_mosckai_yinam",
+  "true": "walking",
+  "pred": "lying_down",
+  "confidence": 0.4645
+ },
+ {
+  "file": "ph_maderibeyza_walking_001.jpg",
+  "dest": "real-data-v4/ph_maderibeyza/walking/ph_maderibeyza_walking_001.jpg",
+  "source": "ph_maderibeyza",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.4493
+ },
+ {
+  "file": "ph_matlin_walking_001.jpg",
+  "dest": "real-data-v4/ph_matlin/walking/ph_matlin_walking_001.jpg",
+  "source": "ph_matlin",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.7408
+ },
+ {
+  "file": "ph_pauloleong2002_walking_001.jpg",
+  "dest": "real-data-v4/ph_pauloleong2002/walking/ph_pauloleong2002_walking_001.jpg",
+  "source": "ph_pauloleong2002",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.9728
+ },
+ {
+  "file": "ph_ras67_walking_001.jpg",
+  "dest": "real-data-v4/ph_ras67/walking/ph_ras67_walking_001.jpg",
+  "source": "ph_ras67",
+  "true": "walking",
+  "pred": "standing",
+  "confidence": 0.7169
+ },
+ {
+  "file": "ph_red_panda_bot_walking_001.jpg",
+  "dest": "real-data-v4/ph_red_panda_bot/walking/ph_red_panda_bot_walking_001.jpg",
+  "source": "ph_red_panda_bot",
+  "true": "walking",
+  "pred": "standing",
+  "confidence": 0.3483
+ },
+ {
+  "file": "ph_rhododendrites_walking_001.jpg",
+  "dest": "real-data-v4/ph_rhododendrites/walking/ph_rhododendrites_walking_001.jpg",
+  "source": "ph_rhododendrites",
+  "true": "walking",
+  "pred": "sitting",
+  "confidence": 0.6406
+ },
+ {
+  "file": "ph_rodrigo_argenton_walking_001.jpg",
+  "dest": "real-data-v4/ph_rodrigo_argenton/walking/ph_rodrigo_argenton_walking_001.jpg",
+  "source": "ph_rodrigo_argenton",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.9817
+ },
+ {
+  "file": "ph_sargun_ji_walking_001.jpg",
+  "dest": "real-data-v4/ph_sargun_ji/walking/ph_sargun_ji_walking_001.jpg",
+  "source": "ph_sargun_ji",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.9078
+ },
+ {
+  "file": "ph_scubadoctresse_walking_001.jpg",
+  "dest": "real-data-v4/ph_scubadoctresse/walking/ph_scubadoctresse_walking_001.jpg",
+  "source": "ph_scubadoctresse",
+  "true": "walking",
+  "pred": "standing",
+  "confidence": 0.5637
+ },
+ {
+  "file": "ph_ser_amantio_di_nicolao_walking_001.jpg",
+  "dest": "real-data-v4/ph_ser_amantio_di_nicolao/walking/ph_ser_amantio_di_nicolao_walking_001.jpg",
+  "source": "ph_ser_amantio_di_nicolao",
+  "true": "walking",
+  "pred": "sitting",
+  "confidence": 0.6094
+ },
+ {
+  "file": "ph_snowacinesy_walking_001.jpg",
+  "dest": "real-data-v4/ph_snowacinesy/walking/ph_snowacinesy_walking_001.jpg",
+  "source": "ph_snowacinesy",
+  "true": "walking",
+  "pred": "sitting",
+  "confidence": 0.8726
+ },
+ {
+  "file": "ph_tm_walking_001.jpg",
+  "dest": "real-data-v4/ph_tm/walking/ph_tm_walking_001.jpg",
+  "source": "ph_tm",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.9889
+ },
+ {
+  "file": "ph_twowings_walking_001.jpg",
+  "dest": "real-data-v4/ph_twowings/walking/ph_twowings_walking_001.jpg",
+  "source": "ph_twowings",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.9888
+ },
+ {
+  "file": "ph_underwaterbuffalo_walking_001.jpg",
+  "dest": "real-data-v4/ph_underwaterbuffalo/walking/ph_underwaterbuffalo_walking_001.jpg",
+  "source": "ph_underwaterbuffalo",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.5201
+ },
+ {
+  "file": "ph_wolfmann_walking_001.jpg",
+  "dest": "real-data-v4/ph_wolfmann/walking/ph_wolfmann_walking_001.jpg",
+  "source": "ph_wolfmann",
+  "true": "walking",
+  "pred": "sitting",
+  "confidence": 0.9829
+ },
+ {
+  "file": "ph_ascilto_walking_002.jpg",
+  "dest": "real-data-v4/ph_ascilto/walking/ph_ascilto_walking_002.jpg",
+  "source": "ph_ascilto",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.5158
+ },
+ {
+  "file": "ph_chyah_walking_002.jpg",
+  "dest": "real-data-v4/ph_chyah/walking/ph_chyah_walking_002.jpg",
+  "source": "ph_chyah",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 1.0
+ },
+ {
+  "file": "ph_mosckai_yinam_walking_002.jpg",
+  "dest": "real-data-v4/ph_mosckai_yinam/walking/ph_mosckai_yinam_walking_002.jpg",
+  "source": "ph_mosckai_yinam",
+  "true": "walking",
+  "pred": "sitting",
+  "confidence": 0.782
+ },
+ {
+  "file": "ph_matlin_walking_002.jpg",
+  "dest": "real-data-v4/ph_matlin/walking/ph_matlin_walking_002.jpg",
+  "source": "ph_matlin",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.9982
+ },
+ {
+  "file": "ph_ras67_walking_002.jpg",
+  "dest": "real-data-v4/ph_ras67/walking/ph_ras67_walking_002.jpg",
+  "source": "ph_ras67",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.9855
+ },
+ {
+  "file": "ph_ser_amantio_di_nicolao_walking_002.jpg",
+  "dest": "real-data-v4/ph_ser_amantio_di_nicolao/walking/ph_ser_amantio_di_nicolao_walking_002.jpg",
+  "source": "ph_ser_amantio_di_nicolao",
+  "true": "walking",
+  "pred": "lying_down",
+  "confidence": 0.7501
+ },
+ {
+  "file": "ph_snowacinesy_walking_002.jpg",
+  "dest": "real-data-v4/ph_snowacinesy/walking/ph_snowacinesy_walking_002.jpg",
+  "source": "ph_snowacinesy",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.6289
+ },
+ {
+  "file": "ph_underwaterbuffalo_walking_002.jpg",
+  "dest": "real-data-v4/ph_underwaterbuffalo/walking/ph_underwaterbuffalo_walking_002.jpg",
+  "source": "ph_underwaterbuffalo",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.8475
+ },
+ {
+  "file": "ph_wolfmann_walking_002.jpg",
+  "dest": "real-data-v4/ph_wolfmann/walking/ph_wolfmann_walking_002.jpg",
+  "source": "ph_wolfmann",
+  "true": "walking",
+  "pred": "sitting",
+  "confidence": 0.9679
+ },
+ {
+  "file": "ph_chyah_walking_003.jpg",
+  "dest": "real-data-v4/ph_chyah/walking/ph_chyah_walking_003.jpg",
+  "source": "ph_chyah",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.9996
+ },
+ {
+  "file": "ph_mosckai_yinam_walking_003.jpg",
+  "dest": "real-data-v4/ph_mosckai_yinam/walking/ph_mosckai_yinam_walking_003.jpg",
+  "source": "ph_mosckai_yinam",
+  "true": "walking",
+  "pred": "sitting",
+  "confidence": 0.773
+ },
+ {
+  "file": "ph_underwaterbuffalo_walking_003.jpg",
+  "dest": "real-data-v4/ph_underwaterbuffalo/walking/ph_underwaterbuffalo_walking_003.jpg",
+  "source": "ph_underwaterbuffalo",
+  "true": "walking",
+  "pred": "sitting",
+  "confidence": 0.7812
+ },
+ {
+  "file": "ph_mosckai_yinam_walking_004.jpg",
+  "dest": "real-data-v4/ph_mosckai_yinam/walking/ph_mosckai_yinam_walking_004.jpg",
+  "source": "ph_mosckai_yinam",
+  "true": "walking",
+  "pred": "sitting",
+  "confidence": 0.8722
+ },
+ {
+  "file": "ph_underwaterbuffalo_walking_004.jpg",
+  "dest": "real-data-v4/ph_underwaterbuffalo/walking/ph_underwaterbuffalo_walking_004.jpg",
+  "source": "ph_underwaterbuffalo",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.9558
+ },
+ {
+  "file": "ph_mosckai_yinam_walking_005.jpg",
+  "dest": "real-data-v4/ph_mosckai_yinam/walking/ph_mosckai_yinam_walking_005.jpg",
+  "source": "ph_mosckai_yinam",
+  "true": "walking",
+  "pred": "sitting",
+  "confidence": 0.4914
+ },
+ {
+  "file": "ph_underwaterbuffalo_walking_005.jpg",
+  "dest": "real-data-v4/ph_underwaterbuffalo/walking/ph_underwaterbuffalo_walking_005.jpg",
+  "source": "ph_underwaterbuffalo",
+  "true": "walking",
+  "pred": "walking",
+  "confidence": 0.8337
+ }
+]
