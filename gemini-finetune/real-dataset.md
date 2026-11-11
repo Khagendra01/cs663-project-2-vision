@@ -121,3 +121,54 @@ Files: `real-data-v3/<source>/<behaviour>/`, `real-jsonl-v3/*.jsonl`,
 Note: the fresh greedy split moved `vid_wagging` to train, so v3's test set is all photos —
 still fully held-out sources, but state the modality mix in the report. Previous caveats
 (stock footage, sitting thinnest) still apply; sitting is now 35, no longer the outlier it was.
+
+---
+
+# Expanded Dataset v4 — 1000 examples, balanced 250/class (built Nov 10, 2026; SUPERSEDES v3)
+
+At Khagendra's direction ("run in impossible loop where we will have 1000 datasets not 100"),
+v3's 171 verified images were expanded to **1000 total, exactly 250 per class**, with the same
+method as v1–v3: Wikimedia Commons only, every candidate visually verified before labelling.
+
+**Collection.** `collect_v4.py` looped Commons categories + search queries (dedupe by title and
+perceptual hash against v3 and within the pool; JPEG ≥500×320; CC / public-domain licences only)
+to a raw pool of 520/class. Walking needed two extra loop rounds (`collect_v4_walk2.py`,
+`collect_v4_walk3.py`) because leash/street searches return mostly standing or distant dogs:
+final raw walking pool 1320. Raw pools: sitting 520, standing 520, lying down 520, walking 1320
+(2880 total).
+
+**Verification (mandatory, same as v1–v3).** Every candidate was viewed on PIL contact sheets
+(`make_sheets_v4.py`, 30/sheet, filename on each cell) and dropped unless it showed one clear
+dog unambiguously doing the labelled behaviour. Dropped: wrong behaviour (incl. running for
+walking, standing still for walking), statues/paintings/toys/engravings, non-dog animals
+(cats, raccoon dogs, armadillos, sea lions, a dhole, a coyote), mixed-posture packs,
+tiny/distant dogs, person-dominant scenes. Verified keeps: sitting 284, standing 424,
+lying down 219, walking 235 (kept list: `staging-v4/manifest-kept.json` in the working
+folder; drop lists kept beside it). Assembly (`assemble_v4.py`) took a diversity-first subset
+(round-robin across uploaders) of the keeps to reach exactly 250/class — **no unverified or
+wrong-behaviour image was used to pad any class.**
+
+**Splits.** Fresh greedy split BY SOURCE (uploader; no source in two splits), thinnest class
+first, ~60/15/25 target. Whole sources land in one split, so per-class ratios vary slightly:
+
+| Split | sitting | standing | walking | lying down | Total |
+|---|---|---|---|---|---|
+| train | 150 | 176 | 150 | 150 | **626** |
+| validation | 38 | 25 | 38 | 38 | **139** |
+| test | 62 | 49 | 62 | 62 | **235** |
+| **Total** | **250** | **250** | **250** | **250** | **1000** |
+
+Files: `real-data-v4/<source>/<behaviour>/`, `real-jsonl-v4/*.jsonl`,
+`real-data-v4/provenance.json` (title, Commons URL, licence, artist, uploader for every image).
+Prompt unchanged from v3: "Look at the image of the dog. What is the dog doing? Answer with
+exactly one of: sitting, standing, lying down, walking." Build: `python3 assemble_v4.py`.
+v1–v3 files preserved untouched.
+
+**Licences and disclosure.** All 1000 images are openly licensed Wikimedia Commons stock
+(CC0 / CC BY / CC BY-SA / public domain), credited per image in `provenance.json`. This is
+still licensed stock, **not the group's own dogs** — the same disclosure as v1–v3 applies.
+Two honest caveats: (1) walking includes two historical gait-study sequences (Muybridge-style
+frame sets of the same dog, ~50 frames total) — genuine mid-stride walking frames, kept in a
+single split by the by-source split, but they are near-duplicate frames of two individual dogs;
+(2) standing is show-photo heavy (stacked/gaiting show dogs were the cleanest standing source
+on Commons).
