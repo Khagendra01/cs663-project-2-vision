@@ -1,0 +1,50 @@
+{
+ "verdict": "SUCCESS",
+ "reason": "held 'standing' for the full 8s target duration",
+ "target_label": "standing",
+ "target_duration_s": 8,
+ "target_reached_at_s": 0.0,
+ "held_s": 8.0,
+ "break_at_s": null,
+ "n_frames": 9,
+ "uncertain_ratio": 0.0,
+ "classification_mode": "backend tuned (live)",
+ "smoothed_sequence": [
+  [
+   0.0,
+   "standing"
+  ],
+  [
+   1.0,
+   "standing"
+  ],
+  [
+   2.0,
+   "standing"
+  ],
+  [
+   3.0,
+   "standing"
+  ],
+  [
+   4.0,
+   "standing"
+  ],
+  [
+   5.0,
+   "standing"
+  ],
+  [
+   6.0,
+   "standing"
+  ],
+  [
+   7.0,
+   "standing"
+  ],
+  [
+   8.0,
+   "standing"
+  ]
+ ]
+}

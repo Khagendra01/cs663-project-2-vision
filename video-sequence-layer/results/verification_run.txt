@@ -21,6 +21,6 @@ $ python3 sequence_evaluate.py --scenarios
 [PASS] scen05_walk_success: expected SUCCESS, got SUCCESS - held 'walking' for the full 5s target duration
 [PASS] scen06_down_dog_leaves_frame: expected UNCERTAIN, got UNCERTAIN - dog lost / unclear for 3s during the hold
 
-Live backend check (recorded separately in live_seq06_tuned.json): seq06 frames -> tuned endpoint classified all 7 frames standing; verdict UNCERTAIN (held 3.0s of 8s target, clip ended) - matches expected.
+Live backend check (recorded separately in live_seq06_tuned.json): seq06 frames -> tuned endpoint classified all 7 frames standing; verdict UNCERTAIN (clip ended) - matches expected. Held time is time-base dependent: 3.0s at the stored 2 fps, 6.0s when the same frames are fed at the app's 1 fps (see results/video_evaluation.md); the verdict is UNCERTAIN either way.
 
 Break-time rule (updated proposal 5.3): break_at_s is the FIRST raw observation of the wrong posture, not the confirmation frame - e.g. scen02 reports held 2.5s (raw break at t=2.5s, confirmed at t=4.0s).

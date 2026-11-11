@@ -1,0 +1,50 @@
+{
+ "verdict": "SUCCESS",
+ "reason": "held 'lying_down' for the full 8s target duration",
+ "target_label": "lying_down",
+ "target_duration_s": 8,
+ "target_reached_at_s": 0.0,
+ "held_s": 8.0,
+ "break_at_s": null,
+ "n_frames": 9,
+ "uncertain_ratio": 0.0,
+ "classification_mode": "backend tuned (live)",
+ "smoothed_sequence": [
+  [
+   0.0,
+   "lying_down"
+  ],
+  [
+   1.0,
+   "lying_down"
+  ],
+  [
+   2.0,
+   "lying_down"
+  ],
+  [
+   3.0,
+   "lying_down"
+  ],
+  [
+   4.0,
+   "lying_down"
+  ],
+  [
+   5.0,
+   "lying_down"
+  ],
+  [
+   6.0,
+   "lying_down"
+  ],
+  [
+   7.0,
+   "lying_down"
+  ],
+  [
+   8.0,
+   "lying_down"
+  ]
+ ]
+}

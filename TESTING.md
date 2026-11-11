@@ -65,8 +65,7 @@ explicitly instead of guessing.
   (5 sustained holds → SUCCESS, 1 short clip → UNCERTAIN incomplete). All 6
   judged as expected. Raw run: `video-sequence-layer/results/verification_run.txt`.
 - Live proof: seq06's 7 frames sent to the deployed tuned endpoint; all
-  classified standing; the state machine returned UNCERTAIN (held 3.0s of the
-  8s target, clip ended) — `video-sequence-layer/results/live_seq06_tuned.json`.
+  classified standing; the state machine returned UNCERTAIN (clip ended; held time is time-base dependent: 3.0s at the stored 2 fps, 6.0s at the app's 1 fps - see video_evaluation.md) — `video-sequence-layer/results/live_seq06_tuned.json`.
 
 ## 10 unique test cases
 
@@ -81,13 +80,54 @@ explicitly instead of guessing.
 | TC-07 | YOLO on upright held-out photos | 60-image v4 test sample | dog found in most | 49/60 = 81.7% (sitting 94%) | `model-c/results.md` |
 | TC-08 | YOLO failure mode — lying dog, top-down, dark ground | Batumi sequence, 20 frames | dog found | **3/20** — documented failure mode | `model-c/results.md`, `model-c/examples/ex6_*` |
 | TC-09 | Full sequence judged SUCCESS | Real clip, dog lying 10s, target lying down 8s | SUCCESS | SUCCESS — held the full 8s | `video-sequence-layer/results/verification_run.txt` (seq02) |
-| TC-10 | Live end-to-end: real frames through deployed tuned model | seq06 wagging clip (3.6s) vs 8s target, live backend mode | UNCERTAIN (too short to succeed, not a break) | UNCERTAIN — held 3.0s of 8s, clip ended | `video-sequence-layer/results/live_seq06_tuned.json` |
+| TC-10 | Live end-to-end: real frames through deployed tuned model | seq06 wagging clip (3.6s) vs 8s target, live backend mode | UNCERTAIN (too short to succeed, not a break) | UNCERTAIN — clip ended (held 6.0s of 8s at the app's 1 fps time base; 3.0s at the stored 2 fps) | `video-sequence-layer/results/live_seq06_tuned.json` |
 
 The EARLY_BREAK path is covered by the synthetic scenario suite (scen02:
-dog leaves sitting after 3.0s of a 5s target → EARLY_BREAK with the held time
+dog leaves sitting after 2.5s of a 5s target (raw break at t=2.5s, confirmed t=4.0s) → EARLY_BREAK with the held time
 reported; 6/6 scenarios pass) and by 6 of the 17 unit tests. It is synthetic
 because none of the licensed real clips contain a genuine break; no posture
 change was edited into a real clip.
+
+## End-to-end video evaluation
+
+Added 2026-11-11. The labels-mode results above check the judging logic
+(human labels in, verdict out). This section is the full pipeline: the
+actual video frames through the actual classifiers, judged by the state
+machine. Full write-up:
+`video-sequence-layer/results/video_evaluation.md`.
+
+| Sequence | Expected | Model A verdict | Tuned verdict |
+|---|---|---|---|
+| seq01 standing, Africanis | SUCCESS | **UNCERTAIN** (never established) | SUCCESS |
+| seq02 lying, Batumi | SUCCESS | SUCCESS | SUCCESS |
+| seq03 walking, Mission | SUCCESS | SUCCESS | SUCCESS |
+| seq04 lying, Snoring | SUCCESS | SUCCESS | SUCCESS |
+| seq05 lying, Panting | SUCCESS | SUCCESS | SUCCESS |
+| seq06 standing, Wagging (short) | UNCERTAIN | UNCERTAIN (never established) | UNCERTAIN (held 6.0s of 8s) |
+
+- **Model A:** attempt-level **5/6 (83.3%)**, frame-level **82/111
+  (73.9%)** — the same accuracy as its test set, and the same failure:
+  it cannot see standing in these clips. All 20 seq01 frames were
+  called sitting (conf 0.77–0.95) and all 7 seq06 frames walking
+  (tail-wag reads as gait). Smoothing cannot fix a classifier that is
+  wrong on every frame. Note seq06's Model A verdict matches only in
+  letter: it failed at the settle grace, not on the incomplete hold.
+- **Tuned Gemini (live):** attempt-level **6/6 (100%)**, frame-level
+  **110/111 (99.1%)** — one miss (seq03 frame_019, walking called
+  standing), smoothed away. 0 failed calls and 0 unparseable replies
+  in 111 calls, but ~3.5 s per call, so the app's 1 fps sampler cannot
+  keep up in wall-clock time (verdicts count frames, not wall clock).
+- **Time base, stated plainly:** stored frames are 2 fps; this run fed
+  them at t = frame index (1 fps, matching the app), not at the
+  labels-mode t = i/2. A 10 s clip is therefore a 20 s machine interval
+  here, which makes SUCCESS easier to reach than in the labels-mode
+  check, and gives each classifier twice as many frames as a live
+  attempt of the same clip would. Both classifiers were fed identical
+  streams at the identical time base, so the comparison between them
+  stands; the absolute verdicts are app-equivalent, not real-time.
+- No EARLY_BREAK occurred in either run — no clip contains a genuine
+  break. The break path is still proven only synthetically (scenarios +
+  unit tests).
 
 ## Known limitations (also in GitHub B, Section 4)
 

@@ -1,0 +1,125 @@
+sequence                     expected   verdict     held frames match
+  seq01_stand_africanis frame 1/20: 'standing' -> standing
+  seq01_stand_africanis frame 2/20: 'standing' -> standing
+  seq01_stand_africanis frame 3/20: 'standing' -> standing
+  seq01_stand_africanis frame 4/20: 'standing' -> standing
+  seq01_stand_africanis frame 5/20: 'standing' -> standing
+  seq01_stand_africanis frame 6/20: 'standing' -> standing
+  seq01_stand_africanis frame 7/20: 'standing' -> standing
+  seq01_stand_africanis frame 8/20: 'standing' -> standing
+  seq01_stand_africanis frame 9/20: 'standing' -> standing
+  seq01_stand_africanis frame 10/20: 'standing' -> standing
+  seq01_stand_africanis frame 11/20: 'standing' -> standing
+  seq01_stand_africanis frame 12/20: 'standing' -> standing
+  seq01_stand_africanis frame 13/20: 'standing' -> standing
+  seq01_stand_africanis frame 14/20: 'standing' -> standing
+  seq01_stand_africanis frame 15/20: 'standing' -> standing
+  seq01_stand_africanis frame 16/20: 'standing' -> standing
+  seq01_stand_africanis frame 17/20: 'standing' -> standing
+  seq01_stand_africanis frame 18/20: 'standing' -> standing
+  seq01_stand_africanis frame 19/20: 'standing' -> standing
+  seq01_stand_africanis frame 20/20: 'standing' -> standing
+seq01_stand_africanis        SUCCESS    SUCCESS      8.0     20  True  held 'standing' for the full 8s target duration
+  seq02_down_batumi frame 1/20: 'lying down' -> lying_down
+  seq02_down_batumi frame 2/20: 'lying down' -> lying_down
+  seq02_down_batumi frame 3/20: 'lying down' -> lying_down
+  seq02_down_batumi frame 4/20: 'lying down' -> lying_down
+  seq02_down_batumi frame 5/20: 'lying down' -> lying_down
+  seq02_down_batumi frame 6/20: 'lying down' -> lying_down
+  seq02_down_batumi frame 7/20: 'lying down' -> lying_down
+  seq02_down_batumi frame 8/20: 'lying down' -> lying_down
+  seq02_down_batumi frame 9/20: 'lying down' -> lying_down
+  seq02_down_batumi frame 10/20: 'lying down' -> lying_down
+  seq02_down_batumi frame 11/20: 'lying down' -> lying_down
+  seq02_down_batumi frame 12/20: 'lying down' -> lying_down
+  seq02_down_batumi frame 13/20: 'lying down' -> lying_down
+  seq02_down_batumi frame 14/20: 'lying down' -> lying_down
+  seq02_down_batumi frame 15/20: 'lying down' -> lying_down
+  seq02_down_batumi frame 16/20: 'lying down' -> lying_down
+  seq02_down_batumi frame 17/20: 'lying down' -> lying_down
+  seq02_down_batumi frame 18/20: 'lying down' -> lying_down
+  seq02_down_batumi frame 19/20: 'lying down' -> lying_down
+  seq02_down_batumi frame 20/20: 'lying down' -> lying_down
+seq02_down_batumi            SUCCESS    SUCCESS      8.0     20  True  held 'lying_down' for the full 8s target duration
+  seq03_walk_mission frame 1/24: 'walking' -> walking
+  seq03_walk_mission frame 2/24: 'walking' -> walking
+  seq03_walk_mission frame 3/24: 'walking' -> walking
+  seq03_walk_mission frame 4/24: 'walking' -> walking
+  seq03_walk_mission frame 5/24: 'walking' -> walking
+  seq03_walk_mission frame 6/24: 'walking' -> walking
+  seq03_walk_mission frame 7/24: 'walking' -> walking
+  seq03_walk_mission frame 8/24: 'walking' -> walking
+  seq03_walk_mission frame 9/24: 'walking' -> walking
+  seq03_walk_mission frame 10/24: 'walking' -> walking
+  seq03_walk_mission frame 11/24: 'walking' -> walking
+  seq03_walk_mission frame 12/24: 'walking' -> walking
+  seq03_walk_mission frame 13/24: 'walking' -> walking
+  seq03_walk_mission frame 14/24: 'walking' -> walking
+  seq03_walk_mission frame 15/24: 'walking' -> walking
+  seq03_walk_mission frame 16/24: 'walking' -> walking
+  seq03_walk_mission frame 17/24: 'walking' -> walking
+  seq03_walk_mission frame 18/24: 'walking' -> walking
+  seq03_walk_mission frame 19/24: 'standing' -> standing
+  seq03_walk_mission frame 20/24: 'walking' -> walking
+  seq03_walk_mission frame 21/24: 'walking' -> walking
+  seq03_walk_mission frame 22/24: 'walking' -> walking
+  seq03_walk_mission frame 23/24: 'walking' -> walking
+  seq03_walk_mission frame 24/24: 'walking' -> walking
+seq03_walk_mission           SUCCESS    SUCCESS     10.0     24  True  held 'walking' for the full 10s target duration
+  seq04_down_snoring frame 1/20: 'lying down' -> lying_down
+  seq04_down_snoring frame 2/20: 'lying down' -> lying_down
+  seq04_down_snoring frame 3/20: 'lying down' -> lying_down
+  seq04_down_snoring frame 4/20: 'lying down' -> lying_down
+  seq04_down_snoring frame 5/20: 'lying down' -> lying_down
+  seq04_down_snoring frame 6/20: 'lying down' -> lying_down
+  seq04_down_snoring frame 7/20: 'lying down' -> lying_down
+  seq04_down_snoring frame 8/20: 'lying down' -> lying_down
+  seq04_down_snoring frame 9/20: 'lying down' -> lying_down
+  seq04_down_snoring frame 10/20: 'lying down' -> lying_down
+  seq04_down_snoring frame 11/20: 'lying down' -> lying_down
+  seq04_down_snoring frame 12/20: 'lying down' -> lying_down
+  seq04_down_snoring frame 13/20: 'lying down' -> lying_down
+  seq04_down_snoring frame 14/20: 'lying down' -> lying_down
+  seq04_down_snoring frame 15/20: 'lying down' -> lying_down
+  seq04_down_snoring frame 16/20: 'lying down' -> lying_down
+  seq04_down_snoring frame 17/20: 'lying down' -> lying_down
+  seq04_down_snoring frame 18/20: 'lying down' -> lying_down
+  seq04_down_snoring frame 19/20: 'lying down' -> lying_down
+  seq04_down_snoring frame 20/20: 'lying down' -> lying_down
+seq04_down_snoring           SUCCESS    SUCCESS      8.0     20  True  held 'lying_down' for the full 8s target duration
+  seq05_down_panting frame 1/20: 'lying down' -> lying_down
+  seq05_down_panting frame 2/20: 'lying down' -> lying_down
+  seq05_down_panting frame 3/20: 'lying down' -> lying_down
+  seq05_down_panting frame 4/20: 'lying down' -> lying_down
+  seq05_down_panting frame 5/20: 'lying down' -> lying_down
+  seq05_down_panting frame 6/20: 'lying down' -> lying_down
+  seq05_down_panting frame 7/20: 'lying down' -> lying_down
+  seq05_down_panting frame 8/20: 'lying down' -> lying_down
+  seq05_down_panting frame 9/20: 'lying down' -> lying_down
+  seq05_down_panting frame 10/20: 'lying down' -> lying_down
+  seq05_down_panting frame 11/20: 'lying down' -> lying_down
+  seq05_down_panting frame 12/20: 'lying down' -> lying_down
+  seq05_down_panting frame 13/20: 'lying down' -> lying_down
+  seq05_down_panting frame 14/20: 'lying down' -> lying_down
+  seq05_down_panting frame 15/20: 'lying down' -> lying_down
+  seq05_down_panting frame 16/20: 'lying down' -> lying_down
+  seq05_down_panting frame 17/20: 'lying down' -> lying_down
+  seq05_down_panting frame 18/20: 'lying down' -> lying_down
+  seq05_down_panting frame 19/20: 'lying down' -> lying_down
+  seq05_down_panting frame 20/20: 'lying down' -> lying_down
+seq05_down_panting           SUCCESS    SUCCESS      8.0     20  True  held 'lying_down' for the full 8s target duration
+  seq06_stand_wagging_short frame 1/7: 'standing' -> standing
+  seq06_stand_wagging_short frame 2/7: 'standing' -> standing
+  seq06_stand_wagging_short frame 3/7: 'standing' -> standing
+  seq06_stand_wagging_short frame 4/7: 'standing' -> standing
+  seq06_stand_wagging_short frame 5/7: 'standing' -> standing
+  seq06_stand_wagging_short frame 6/7: 'standing' -> standing
+  seq06_stand_wagging_short frame 7/7: 'standing' -> standing
+seq06_stand_wagging_short    UNCERTAIN  UNCERTAIN    6.0      7  True  interval ended after holding 6.0s of the 8s target duration - incomplete, not a success and not a break
+
+frame-level accuracy: 110/111 = 0.991
+attempt-level accuracy: 6/6
+failed calls (after retries): 0/111
+unparseable replies: 0/111
+elapsed: 384.5s
+wrote /home/hatch/workspace/goals/cs663-project-2-dog-training-assistant/files/video-sequence-layer/results/video_predictions_tuned.json

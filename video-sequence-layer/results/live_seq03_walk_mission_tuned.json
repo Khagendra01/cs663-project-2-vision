@@ -1,0 +1,58 @@
+{
+ "verdict": "SUCCESS",
+ "reason": "held 'walking' for the full 10s target duration",
+ "target_label": "walking",
+ "target_duration_s": 10,
+ "target_reached_at_s": 0.0,
+ "held_s": 10.0,
+ "break_at_s": null,
+ "n_frames": 11,
+ "uncertain_ratio": 0.0,
+ "classification_mode": "backend tuned (live)",
+ "smoothed_sequence": [
+  [
+   0.0,
+   "walking"
+  ],
+  [
+   1.0,
+   "walking"
+  ],
+  [
+   2.0,
+   "walking"
+  ],
+  [
+   3.0,
+   "walking"
+  ],
+  [
+   4.0,
+   "walking"
+  ],
+  [
+   5.0,
+   "walking"
+  ],
+  [
+   6.0,
+   "walking"
+  ],
+  [
+   7.0,
+   "walking"
+  ],
+  [
+   8.0,
+   "walking"
+  ],
+  [
+   9.0,
+   "walking"
+  ],
+  [
+   10.0,
+   "walking"
+  ]
+ ]
+}

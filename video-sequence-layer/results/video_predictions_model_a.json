@@ -1,0 +1,1214 @@
+{
+ "model": "Model A - MobileNetV3Small (ImageNet), student fine-tuned on dataset v4",
+ "model_file": "model-a/model_a.keras",
+ "preprocessing": "PIL RGB, resize 224x224, float32 raw 0..255, no extra rescaling (backbone contains Rescaling)",
+ "class_order": [
+  "sitting",
+  "standing",
+  "lying_down",
+  "walking"
+ ],
+ "time_base": "t = frame index (1 fps effective, matches the app sampler); labels-mode verification used t = i/2 (stored 2 fps)",
+ "state_machine": {
+  "smooth_window": 3,
+  "min_confidence": 0.6,
+  "settle_grace_s": 2.0,
+  "break_confirm_s": 1.0,
+  "uncertain_timeout_s": 3.0,
+  "max_uncertain_ratio": 0.4,
+  "break_at_s": "first raw observation of the wrong posture (proposal 5.3, as implemented in state_machine.py at run time)"
+ },
+ "sequences": [
+  {
+   "id": "seq01_stand_africanis",
+   "command": "stand",
+   "target_label": "standing",
+   "target_duration_s": 8,
+   "expected_verdict": "SUCCESS",
+   "verdict": "UNCERTAIN",
+   "reason": "target posture 'standing' never established within the 2s settle grace",
+   "target_reached_at_s": null,
+   "held_s": 0.0,
+   "break_at_s": null,
+   "n_frames": 3,
+   "uncertain_ratio": 0.0,
+   "smoothed_sequence": [
+    [
+     0.0,
+     "sitting"
+    ],
+    [
+     1.0,
+     "sitting"
+    ],
+    [
+     2.0,
+     "sitting"
+    ]
+   ],
+   "frame_accuracy": 0.0,
+   "match": false,
+   "frames": [
+    {
+     "frame": "frame_001.jpg",
+     "t": 0,
+     "predicted_label": "sitting",
+     "confidence": 0.9024,
+     "ground_truth_label": "standing",
+     "correct": false
+    },
+    {
+     "frame": "frame_002.jpg",
+     "t": 1,
+     "predicted_label": "sitting",
+     "confidence": 0.774,
+     "ground_truth_label": "standing",
+     "correct": false
+    },
+    {
+     "frame": "frame_003.jpg",
+     "t": 2,
+     "predicted_label": "sitting",
+     "confidence": 0.8953,
+     "ground_truth_label": "standing",
+     "correct": false
+    },
+    {
+     "frame": "frame_004.jpg",
+     "t": 3,
+     "predicted_label": "sitting",
+     "confidence": 0.9487,
+     "ground_truth_label": "standing",
+     "correct": false
+    },
+    {
+     "frame": "frame_005.jpg",
+     "t": 4,
+     "predicted_label": "sitting",
+     "confidence": 0.9063,
+     "ground_truth_label": "standing",
+     "correct": false
+    },
+    {
+     "frame": "frame_006.jpg",
+     "t": 5,
+     "predicted_label": "sitting",
+     "confidence": 0.8531,
+     "ground_truth_label": "standing",
+     "correct": false
+    },
+    {
+     "frame": "frame_007.jpg",
+     "t": 6,
+     "predicted_label": "sitting",
+     "confidence": 0.9437,
+     "ground_truth_label": "standing",
+     "correct": false
+    },
+    {
+     "frame": "frame_008.jpg",
+     "t": 7,
+     "predicted_label": "sitting",
+     "confidence": 0.9472,
+     "ground_truth_label": "standing",
+     "correct": false
+    },
+    {
+     "frame": "frame_009.jpg",
+     "t": 8,
+     "predicted_label": "sitting",
+     "confidence": 0.8476,
+     "ground_truth_label": "standing",
+     "correct": false
+    },
+    {
+     "frame": "frame_010.jpg",
+     "t": 9,
+     "predicted_label": "sitting",
+     "confidence": 0.8987,
+     "ground_truth_label": "standing",
+     "correct": false
+    },
+    {
+     "frame": "frame_011.jpg",
+     "t": 10,
+     "predicted_label": "sitting",
+     "confidence": 0.9328,
+     "ground_truth_label": "standing",
+     "correct": false
+    },
+    {
+     "frame": "frame_012.jpg",
+     "t": 11,
+     "predicted_label": "sitting",
+     "confidence": 0.9154,
+     "ground_truth_label": "standing",
+     "correct": false
+    },
+    {
+     "frame": "frame_013.jpg",
+     "t": 12,
+     "predicted_label": "sitting",
+     "confidence": 0.9329,
+     "ground_truth_label": "standing",
+     "correct": false
+    },
+    {
+     "frame": "frame_014.jpg",
+     "t": 13,
+     "predicted_label": "sitting",
+     "confidence": 0.9435,
+     "ground_truth_label": "standing",
+     "correct": false
+    },
+    {
+     "frame": "frame_015.jpg",
+     "t": 14,
+     "predicted_label": "sitting",
+     "confidence": 0.8851,
+     "ground_truth_label": "standing",
+     "correct": false
+    },
+    {
+     "frame": "frame_016.jpg",
+     "t": 15,
+     "predicted_label": "sitting",
+     "confidence": 0.8975,
+     "ground_truth_label": "standing",
+     "correct": false
+    },
+    {
+     "frame": "frame_017.jpg",
+     "t": 16,
+     "predicted_label": "sitting",
+     "confidence": 0.884,
+     "ground_truth_label": "standing",
+     "correct": false
+    },
+    {
+     "frame": "frame_018.jpg",
+     "t": 17,
+     "predicted_label": "sitting",
+     "confidence": 0.8641,
+     "ground_truth_label": "standing",
+     "correct": false
+    },
+    {
+     "frame": "frame_019.jpg",
+     "t": 18,
+     "predicted_label": "sitting",
+     "confidence": 0.8754,
+     "ground_truth_label": "standing",
+     "correct": false
+    },
+    {
+     "frame": "frame_020.jpg",
+     "t": 19,
+     "predicted_label": "sitting",
+     "confidence": 0.9049,
+     "ground_truth_label": "standing",
+     "correct": false
+    }
+   ]
+  },
+  {
+   "id": "seq02_down_batumi",
+   "command": "down",
+   "target_label": "lying down",
+   "target_duration_s": 8,
+   "expected_verdict": "SUCCESS",
+   "verdict": "SUCCESS",
+   "reason": "held 'lying_down' for the full 8s target duration",
+   "target_reached_at_s": 0.0,
+   "held_s": 8.0,
+   "break_at_s": null,
+   "n_frames": 9,
+   "uncertain_ratio": 0.0,
+   "smoothed_sequence": [
+    [
+     0.0,
+     "lying_down"
+    ],
+    [
+     1.0,
+     "lying_down"
+    ],
+    [
+     2.0,
+     "lying_down"
+    ],
+    [
+     3.0,
+     "lying_down"
+    ],
+    [
+     4.0,
+     "lying_down"
+    ],
+    [
+     5.0,
+     "lying_down"
+    ],
+    [
+     6.0,
+     "lying_down"
+    ],
+    [
+     7.0,
+     "lying_down"
+    ],
+    [
+     8.0,
+     "lying_down"
+    ]
+   ],
+   "frame_accuracy": 1.0,
+   "match": true,
+   "frames": [
+    {
+     "frame": "frame_001.jpg",
+     "t": 0,
+     "predicted_label": "lying_down",
+     "confidence": 0.9719,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_002.jpg",
+     "t": 1,
+     "predicted_label": "lying_down",
+     "confidence": 0.999,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_003.jpg",
+     "t": 2,
+     "predicted_label": "lying_down",
+     "confidence": 0.9994,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_004.jpg",
+     "t": 3,
+     "predicted_label": "lying_down",
+     "confidence": 0.9985,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_005.jpg",
+     "t": 4,
+     "predicted_label": "lying_down",
+     "confidence": 0.9966,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_006.jpg",
+     "t": 5,
+     "predicted_label": "lying_down",
+     "confidence": 0.9986,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_007.jpg",
+     "t": 6,
+     "predicted_label": "lying_down",
+     "confidence": 0.9996,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_008.jpg",
+     "t": 7,
+     "predicted_label": "lying_down",
+     "confidence": 0.9868,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_009.jpg",
+     "t": 8,
+     "predicted_label": "lying_down",
+     "confidence": 0.9834,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_010.jpg",
+     "t": 9,
+     "predicted_label": "lying_down",
+     "confidence": 0.9969,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_011.jpg",
+     "t": 10,
+     "predicted_label": "lying_down",
+     "confidence": 0.9935,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_012.jpg",
+     "t": 11,
+     "predicted_label": "lying_down",
+     "confidence": 0.8481,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_013.jpg",
+     "t": 12,
+     "predicted_label": "lying_down",
+     "confidence": 0.975,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_014.jpg",
+     "t": 13,
+     "predicted_label": "lying_down",
+     "confidence": 0.9961,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_015.jpg",
+     "t": 14,
+     "predicted_label": "lying_down",
+     "confidence": 0.9988,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_016.jpg",
+     "t": 15,
+     "predicted_label": "lying_down",
+     "confidence": 0.995,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_017.jpg",
+     "t": 16,
+     "predicted_label": "lying_down",
+     "confidence": 0.9959,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_018.jpg",
+     "t": 17,
+     "predicted_label": "lying_down",
+     "confidence": 0.963,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_019.jpg",
+     "t": 18,
+     "predicted_label": "lying_down",
+     "confidence": 0.9912,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_020.jpg",
+     "t": 19,
+     "predicted_label": "lying_down",
+     "confidence": 0.9698,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "id": "seq03_walk_mission",
+   "command": "walk",
+   "target_label": "walking",
+   "target_duration_s": 10,
+   "expected_verdict": "SUCCESS",
+   "verdict": "SUCCESS",
+   "reason": "held 'walking' for the full 10s target duration",
+   "target_reached_at_s": 0.0,
+   "held_s": 10.0,
+   "break_at_s": null,
+   "n_frames": 11,
+   "uncertain_ratio": 0.0,
+   "smoothed_sequence": [
+    [
+     0.0,
+     "walking"
+    ],
+    [
+     1.0,
+     "walking"
+    ],
+    [
+     2.0,
+     "walking"
+    ],
+    [
+     3.0,
+     "walking"
+    ],
+    [
+     4.0,
+     "walking"
+    ],
+    [
+     5.0,
+     "walking"
+    ],
+    [
+     6.0,
+     "walking"
+    ],
+    [
+     7.0,
+     "walking"
+    ],
+    [
+     8.0,
+     "walking"
+    ],
+    [
+     9.0,
+     "walking"
+    ],
+    [
+     10.0,
+     "walking"
+    ]
+   ],
+   "frame_accuracy": 0.917,
+   "match": true,
+   "frames": [
+    {
+     "frame": "frame_001.jpg",
+     "t": 0,
+     "predicted_label": "walking",
+     "confidence": 0.9982,
+     "ground_truth_label": "walking",
+     "correct": true
+    },
+    {
+     "frame": "frame_002.jpg",
+     "t": 1,
+     "predicted_label": "walking",
+     "confidence": 0.9817,
+     "ground_truth_label": "walking",
+     "correct": true
+    },
+    {
+     "frame": "frame_003.jpg",
+     "t": 2,
+     "predicted_label": "walking",
+     "confidence": 0.9931,
+     "ground_truth_label": "walking",
+     "correct": true
+    },
+    {
+     "frame": "frame_004.jpg",
+     "t": 3,
+     "predicted_label": "walking",
+     "confidence": 0.9967,
+     "ground_truth_label": "walking",
+     "correct": true
+    },
+    {
+     "frame": "frame_005.jpg",
+     "t": 4,
+     "predicted_label": "walking",
+     "confidence": 0.9978,
+     "ground_truth_label": "walking",
+     "correct": true
+    },
+    {
+     "frame": "frame_006.jpg",
+     "t": 5,
+     "predicted_label": "walking",
+     "confidence": 0.9934,
+     "ground_truth_label": "walking",
+     "correct": true
+    },
+    {
+     "frame": "frame_007.jpg",
+     "t": 6,
+     "predicted_label": "walking",
+     "confidence": 0.9959,
+     "ground_truth_label": "walking",
+     "correct": true
+    },
+    {
+     "frame": "frame_008.jpg",
+     "t": 7,
+     "predicted_label": "walking",
+     "confidence": 0.9941,
+     "ground_truth_label": "walking",
+     "correct": true
+    },
+    {
+     "frame": "frame_009.jpg",
+     "t": 8,
+     "predicted_label": "walking",
+     "confidence": 0.9848,
+     "ground_truth_label": "walking",
+     "correct": true
+    },
+    {
+     "frame": "frame_010.jpg",
+     "t": 9,
+     "predicted_label": "walking",
+     "confidence": 0.9919,
+     "ground_truth_label": "walking",
+     "correct": true
+    },
+    {
+     "frame": "frame_011.jpg",
+     "t": 10,
+     "predicted_label": "walking",
+     "confidence": 0.8673,
+     "ground_truth_label": "walking",
+     "correct": true
+    },
+    {
+     "frame": "frame_012.jpg",
+     "t": 11,
+     "predicted_label": "walking",
+     "confidence": 0.5486,
+     "ground_truth_label": "walking",
+     "correct": true
+    },
+    {
+     "frame": "frame_013.jpg",
+     "t": 12,
+     "predicted_label": "walking",
+     "confidence": 0.6721,
+     "ground_truth_label": "walking",
+     "correct": true
+    },
+    {
+     "frame": "frame_014.jpg",
+     "t": 13,
+     "predicted_label": "standing",
+     "confidence": 0.8209,
+     "ground_truth_label": "walking",
+     "correct": false
+    },
+    {
+     "frame": "frame_015.jpg",
+     "t": 14,
+     "predicted_label": "walking",
+     "confidence": 0.7048,
+     "ground_truth_label": "walking",
+     "correct": true
+    },
+    {
+     "frame": "frame_016.jpg",
+     "t": 15,
+     "predicted_label": "standing",
+     "confidence": 0.8924,
+     "ground_truth_label": "walking",
+     "correct": false
+    },
+    {
+     "frame": "frame_017.jpg",
+     "t": 16,
+     "predicted_label": "walking",
+     "confidence": 0.5817,
+     "ground_truth_label": "walking",
+     "correct": true
+    },
+    {
+     "frame": "frame_018.jpg",
+     "t": 17,
+     "predicted_label": "walking",
+     "confidence": 0.89,
+     "ground_truth_label": "walking",
+     "correct": true
+    },
+    {
+     "frame": "frame_019.jpg",
+     "t": 18,
+     "predicted_label": "walking",
+     "confidence": 0.507,
+     "ground_truth_label": "walking",
+     "correct": true
+    },
+    {
+     "frame": "frame_020.jpg",
+     "t": 19,
+     "predicted_label": "walking",
+     "confidence": 0.9511,
+     "ground_truth_label": "walking",
+     "correct": true
+    },
+    {
+     "frame": "frame_021.jpg",
+     "t": 20,
+     "predicted_label": "walking",
+     "confidence": 0.97,
+     "ground_truth_label": "walking",
+     "correct": true
+    },
+    {
+     "frame": "frame_022.jpg",
+     "t": 21,
+     "predicted_label": "walking",
+     "confidence": 0.974,
+     "ground_truth_label": "walking",
+     "correct": true
+    },
+    {
+     "frame": "frame_023.jpg",
+     "t": 22,
+     "predicted_label": "walking",
+     "confidence": 0.9909,
+     "ground_truth_label": "walking",
+     "correct": true
+    },
+    {
+     "frame": "frame_024.jpg",
+     "t": 23,
+     "predicted_label": "walking",
+     "confidence": 0.9985,
+     "ground_truth_label": "walking",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "id": "seq04_down_snoring",
+   "command": "down",
+   "target_label": "lying down",
+   "target_duration_s": 8,
+   "expected_verdict": "SUCCESS",
+   "verdict": "SUCCESS",
+   "reason": "held 'lying_down' for the full 8s target duration",
+   "target_reached_at_s": 0.0,
+   "held_s": 8.0,
+   "break_at_s": null,
+   "n_frames": 9,
+   "uncertain_ratio": 0.0,
+   "smoothed_sequence": [
+    [
+     0.0,
+     "lying_down"
+    ],
+    [
+     1.0,
+     "lying_down"
+    ],
+    [
+     2.0,
+     "lying_down"
+    ],
+    [
+     3.0,
+     "lying_down"
+    ],
+    [
+     4.0,
+     "lying_down"
+    ],
+    [
+     5.0,
+     "lying_down"
+    ],
+    [
+     6.0,
+     "lying_down"
+    ],
+    [
+     7.0,
+     "lying_down"
+    ],
+    [
+     8.0,
+     "lying_down"
+    ]
+   ],
+   "frame_accuracy": 1.0,
+   "match": true,
+   "frames": [
+    {
+     "frame": "frame_001.jpg",
+     "t": 0,
+     "predicted_label": "lying_down",
+     "confidence": 0.9998,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_002.jpg",
+     "t": 1,
+     "predicted_label": "lying_down",
+     "confidence": 0.9996,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_003.jpg",
+     "t": 2,
+     "predicted_label": "lying_down",
+     "confidence": 0.9996,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_004.jpg",
+     "t": 3,
+     "predicted_label": "lying_down",
+     "confidence": 0.9997,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_005.jpg",
+     "t": 4,
+     "predicted_label": "lying_down",
+     "confidence": 0.9999,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_006.jpg",
+     "t": 5,
+     "predicted_label": "lying_down",
+     "confidence": 0.9998,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_007.jpg",
+     "t": 6,
+     "predicted_label": "lying_down",
+     "confidence": 0.9999,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_008.jpg",
+     "t": 7,
+     "predicted_label": "lying_down",
+     "confidence": 1.0,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_009.jpg",
+     "t": 8,
+     "predicted_label": "lying_down",
+     "confidence": 1.0,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_010.jpg",
+     "t": 9,
+     "predicted_label": "lying_down",
+     "confidence": 1.0,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_011.jpg",
+     "t": 10,
+     "predicted_label": "lying_down",
+     "confidence": 1.0,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_012.jpg",
+     "t": 11,
+     "predicted_label": "lying_down",
+     "confidence": 0.9997,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_013.jpg",
+     "t": 12,
+     "predicted_label": "lying_down",
+     "confidence": 0.9999,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_014.jpg",
+     "t": 13,
+     "predicted_label": "lying_down",
+     "confidence": 1.0,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_015.jpg",
+     "t": 14,
+     "predicted_label": "lying_down",
+     "confidence": 1.0,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_016.jpg",
+     "t": 15,
+     "predicted_label": "lying_down",
+     "confidence": 0.9999,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_017.jpg",
+     "t": 16,
+     "predicted_label": "lying_down",
+     "confidence": 1.0,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_018.jpg",
+     "t": 17,
+     "predicted_label": "lying_down",
+     "confidence": 0.9999,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_019.jpg",
+     "t": 18,
+     "predicted_label": "lying_down",
+     "confidence": 0.9992,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_020.jpg",
+     "t": 19,
+     "predicted_label": "lying_down",
+     "confidence": 0.9994,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "id": "seq05_down_panting",
+   "command": "down",
+   "target_label": "lying down",
+   "target_duration_s": 8,
+   "expected_verdict": "SUCCESS",
+   "verdict": "SUCCESS",
+   "reason": "held 'lying_down' for the full 8s target duration",
+   "target_reached_at_s": 0.0,
+   "held_s": 8.0,
+   "break_at_s": null,
+   "n_frames": 9,
+   "uncertain_ratio": 0.0,
+   "smoothed_sequence": [
+    [
+     0.0,
+     "lying_down"
+    ],
+    [
+     1.0,
+     "lying_down"
+    ],
+    [
+     2.0,
+     "lying_down"
+    ],
+    [
+     3.0,
+     "lying_down"
+    ],
+    [
+     4.0,
+     "lying_down"
+    ],
+    [
+     5.0,
+     "lying_down"
+    ],
+    [
+     6.0,
+     "lying_down"
+    ],
+    [
+     7.0,
+     "lying_down"
+    ],
+    [
+     8.0,
+     "lying_down"
+    ]
+   ],
+   "frame_accuracy": 1.0,
+   "match": true,
+   "frames": [
+    {
+     "frame": "frame_001.jpg",
+     "t": 0,
+     "predicted_label": "lying_down",
+     "confidence": 0.904,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_002.jpg",
+     "t": 1,
+     "predicted_label": "lying_down",
+     "confidence": 0.9193,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_003.jpg",
+     "t": 2,
+     "predicted_label": "lying_down",
+     "confidence": 0.9207,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_004.jpg",
+     "t": 3,
+     "predicted_label": "lying_down",
+     "confidence": 0.9759,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_005.jpg",
+     "t": 4,
+     "predicted_label": "lying_down",
+     "confidence": 0.9546,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_006.jpg",
+     "t": 5,
+     "predicted_label": "lying_down",
+     "confidence": 0.9542,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_007.jpg",
+     "t": 6,
+     "predicted_label": "lying_down",
+     "confidence": 0.9723,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_008.jpg",
+     "t": 7,
+     "predicted_label": "lying_down",
+     "confidence": 0.9693,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_009.jpg",
+     "t": 8,
+     "predicted_label": "lying_down",
+     "confidence": 0.9169,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_010.jpg",
+     "t": 9,
+     "predicted_label": "lying_down",
+     "confidence": 0.9684,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_011.jpg",
+     "t": 10,
+     "predicted_label": "lying_down",
+     "confidence": 0.9319,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_012.jpg",
+     "t": 11,
+     "predicted_label": "lying_down",
+     "confidence": 0.947,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_013.jpg",
+     "t": 12,
+     "predicted_label": "lying_down",
+     "confidence": 0.9488,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_014.jpg",
+     "t": 13,
+     "predicted_label": "lying_down",
+     "confidence": 0.9819,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_015.jpg",
+     "t": 14,
+     "predicted_label": "lying_down",
+     "confidence": 0.9685,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_016.jpg",
+     "t": 15,
+     "predicted_label": "lying_down",
+     "confidence": 0.9901,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_017.jpg",
+     "t": 16,
+     "predicted_label": "lying_down",
+     "confidence": 0.986,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_018.jpg",
+     "t": 17,
+     "predicted_label": "lying_down",
+     "confidence": 0.9449,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_019.jpg",
+     "t": 18,
+     "predicted_label": "lying_down",
+     "confidence": 0.9209,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    },
+    {
+     "frame": "frame_020.jpg",
+     "t": 19,
+     "predicted_label": "lying_down",
+     "confidence": 0.9876,
+     "ground_truth_label": "lying_down",
+     "correct": true
+    }
+   ]
+  },
+  {
+   "id": "seq06_stand_wagging_short",
+   "command": "stand",
+   "target_label": "standing",
+   "target_duration_s": 8,
+   "expected_verdict": "UNCERTAIN",
+   "verdict": "UNCERTAIN",
+   "reason": "target posture 'standing' never established within the 2s settle grace",
+   "target_reached_at_s": null,
+   "held_s": 0.0,
+   "break_at_s": null,
+   "n_frames": 3,
+   "uncertain_ratio": 0.0,
+   "smoothed_sequence": [
+    [
+     0.0,
+     "walking"
+    ],
+    [
+     1.0,
+     "walking"
+    ],
+    [
+     2.0,
+     "walking"
+    ]
+   ],
+   "frame_accuracy": 0.0,
+   "match": true,
+   "frames": [
+    {
+     "frame": "frame_001.jpg",
+     "t": 0,
+     "predicted_label": "walking",
+     "confidence": 0.8256,
+     "ground_truth_label": "standing",
+     "correct": false
+    },
+    {
+     "frame": "frame_002.jpg",
+     "t": 1,
+     "predicted_label": "walking",
+     "confidence": 0.9522,
+     "ground_truth_label": "standing",
+     "correct": false
+    },
+    {
+     "frame": "frame_003.jpg",
+     "t": 2,
+     "predicted_label": "walking",
+     "confidence": 0.9044,
+     "ground_truth_label": "standing",
+     "correct": false
+    },
+    {
+     "frame": "frame_004.jpg",
+     "t": 3,
+     "predicted_label": "walking",
+     "confidence": 0.9788,
+     "ground_truth_label": "standing",
+     "correct": false
+    },
+    {
+     "frame": "frame_005.jpg",
+     "t": 4,
+     "predicted_label": "walking",
+     "confidence": 0.9879,
+     "ground_truth_label": "standing",
+     "correct": false
+    },
+    {
+     "frame": "frame_006.jpg",
+     "t": 5,
+     "predicted_label": "walking",
+     "confidence": 0.9315,
+     "ground_truth_label": "standing",
+     "correct": false
+    },
+    {
+     "frame": "frame_007.jpg",
+     "t": 6,
+     "predicted_label": "walking",
+     "confidence": 0.8824,
+     "ground_truth_label": "standing",
+     "correct": false
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "sequences": 6,
+  "attempt_level_accuracy": 0.833,
+  "correct_verdicts": "5/6",
+  "frame_level_accuracy": 0.739,
+  "correct_frames": "82/111"
+ }
+}
