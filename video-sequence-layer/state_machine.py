@@ -92,7 +92,13 @@ class Verdict:
     target_duration_s: float
     target_reached_at_s: float | None = None
     held_s: float = 0.0               # time target was held before break/end
-    break_at_s: float | None = None   # when the (smoothed) break began
+    # when the break began: the FIRST raw observation of the wrong
+    # posture, not the later confirmation frame (updated proposal 5.3:
+    # "record the break timestamp at the first observation of that
+    # confirmed sustained change"). The smoother lags the raw stream by
+    # up to smooth_window - 1 frames, so break_at_s is earlier than the
+    # frame where the break was confirmed.
+    break_at_s: float | None = None
     n_frames: int = 0
     uncertain_ratio: float = 0.0
     smoothed_sequence: list = field(default_factory=list)  # [(t, label)]
@@ -145,6 +151,11 @@ class CommandSession:
         self._verdict: Verdict | None = None
         self._reached_at: float | None = None
         self._break_since: float | None = None
+        # t of the first RAW (unsmoothed) wrong-posture observation
+        # while the hold was in progress; becomes break_at_s if the
+        # break confirms (proposal 5.3). Reset whenever the smoothed
+        # label returns to the target, so a one-frame glitch is forgotten.
+        self._pending_break_start: float | None = None
         self._uncertain_since: float | None = None
         self._last_t: float | None = None
         self._n = 0
@@ -171,10 +182,27 @@ class CommandSession:
             return self._verdict
         self._n += 1
         self._last_t = obs.t
+        # The raw label, if it is a usable confident dog observation at
+        # all - this is what the break timestamp is taken from (proposal
+        # 5.3), before smoothing delays it by up to smooth_window - 1
+        # frames.
+        raw = canonical_label(obs.label)
+        if (not obs.dog_present or raw == UNCERTAIN_FRAME
+                or (obs.confidence is not None
+                    and obs.confidence < self.cfg.min_confidence)):
+            raw = UNCERTAIN_FRAME
         smoothed = self.smoother.push(obs)
         if smoothed == UNCERTAIN_FRAME:
             self._n_uncertain += 1
         self._seq.append((round(obs.t, 3), smoothed))
+
+        # First raw sighting of a wrong posture during the hold. (Before
+        # the target is reached the dog is simply not there yet, so
+        # nothing is recorded.)
+        if (self._reached_at is not None and raw != UNCERTAIN_FRAME
+                and raw != self.target
+                and self._pending_break_start is None):
+            self._pending_break_start = obs.t
 
         # Lost / unclear for too long -> UNCERTAIN (only while tracking;
         # before the target is reached the settle grace governs instead).
@@ -204,6 +232,16 @@ class CommandSession:
         # Tracking the hold.
         if smoothed == self.target:
             self._break_since = None
+            # A wrong raw frame the smoother voted down is a glitch:
+            # forget it only once a RAW frame shows the dog back in the
+            # target posture. Do NOT reset on a smoothed target while
+            # the raw stream still shows the wrong posture - the
+            # smoother lags the raw stream by up to smooth_window - 1
+            # frames, and resetting here would erase the break's true
+            # start time (this bug was caught by the scen02 check: the
+            # break reported 3.0s instead of the raw 2.5s).
+            if raw == self.target:
+                self._pending_break_start = None
             if obs.t - self._reached_at >= self.cfg.target_duration_s:
                 return self._make(
                     "SUCCESS",
@@ -215,13 +253,21 @@ class CommandSession:
             if self._break_since is None:
                 self._break_since = obs.t
             if obs.t - self._break_since >= self.cfg.break_confirm_s:
+                # Break timestamp = first raw sighting of the wrong
+                # posture (proposal 5.3), not the confirmation frame.
+                # Fall back to the smoothed start if no raw sighting
+                # was recorded (cannot happen in practice: a smoothed
+                # non-target label implies a raw one preceded it).
+                break_at = (self._pending_break_start
+                            if self._pending_break_start is not None
+                            else self._break_since)
                 return self._make(
                     "EARLY_BREAK",
                     f"left '{self.target}' after holding "
-                    f"{self._break_since - self._reached_at:.1f}s of the "
+                    f"{break_at - self._reached_at:.1f}s of the "
                     f"{self.cfg.target_duration_s:.0f}s target",
-                    break_at=self._break_since,
-                    held=self._break_since - self._reached_at)
+                    break_at=break_at,
+                    held=break_at - self._reached_at)
         return None
 
     def finish(self) -> Verdict:
