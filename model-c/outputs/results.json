@@ -1,0 +1,2500 @@
+{
+ "weights": "yolov8n.pt",
+ "conf_threshold": 0.25,
+ "sets": {
+  "frames111": {
+   "n_images": 111,
+   "n_with_dog": 65,
+   "detection_rate": 0.5856,
+   "total_dogs": 73,
+   "mean_confidence": 0.6673
+  },
+  "v4test60": {
+   "n_images": 60,
+   "n_with_dog": 49,
+   "detection_rate": 0.8167,
+   "total_dogs": 53,
+   "mean_confidence": 0.7587
+  }
+ },
+ "images": [
+  {
+   "set": "frames111",
+   "file": "seq01_stand_africanis_frames__frame_001.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq01_stand_africanis_frames/frame_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     147.8,
+     15.5,
+     328.6,
+     356.8
+    ]
+   ],
+   "confidences": [
+    0.355
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq01_stand_africanis_frames__frame_002.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq01_stand_africanis_frames/frame_002.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     151.0,
+     22.3,
+     324.7,
+     357.6
+    ]
+   ],
+   "confidences": [
+    0.904
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq01_stand_africanis_frames__frame_003.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq01_stand_africanis_frames/frame_003.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     171.1,
+     23.2,
+     328.5,
+     357.1
+    ]
+   ],
+   "confidences": [
+    0.927
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq01_stand_africanis_frames__frame_004.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq01_stand_africanis_frames/frame_004.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     192.7,
+     40.2,
+     347.3,
+     358.0
+    ]
+   ],
+   "confidences": [
+    0.928
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq01_stand_africanis_frames__frame_005.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq01_stand_africanis_frames/frame_005.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     193.2,
+     29.2,
+     344.4,
+     356.7
+    ]
+   ],
+   "confidences": [
+    0.927
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq01_stand_africanis_frames__frame_006.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq01_stand_africanis_frames/frame_006.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     190.5,
+     20.8,
+     341.3,
+     357.5
+    ]
+   ],
+   "confidences": [
+    0.898
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq01_stand_africanis_frames__frame_007.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq01_stand_africanis_frames/frame_007.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     192.8,
+     33.1,
+     346.4,
+     358.0
+    ]
+   ],
+   "confidences": [
+    0.939
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq01_stand_africanis_frames__frame_008.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq01_stand_africanis_frames/frame_008.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     179.0,
+     29.6,
+     344.6,
+     357.6
+    ]
+   ],
+   "confidences": [
+    0.567
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq01_stand_africanis_frames__frame_009.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq01_stand_africanis_frames/frame_009.jpg",
+   "n_dogs": 2,
+   "boxes": [
+    [
+     164.8,
+     26.6,
+     333.7,
+     357.3
+    ],
+    [
+     375.5,
+     132.4,
+     425.7,
+     209.2
+    ]
+   ],
+   "confidences": [
+    0.829,
+    0.415
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq01_stand_africanis_frames__frame_010.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq01_stand_africanis_frames/frame_010.jpg",
+   "n_dogs": 2,
+   "boxes": [
+    [
+     162.0,
+     37.7,
+     335.8,
+     357.4
+    ],
+    [
+     373.4,
+     135.8,
+     422.5,
+     201.0
+    ]
+   ],
+   "confidences": [
+    0.864,
+    0.489
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq01_stand_africanis_frames__frame_011.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq01_stand_africanis_frames/frame_011.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     156.5,
+     33.5,
+     329.3,
+     356.9
+    ]
+   ],
+   "confidences": [
+    0.493
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq01_stand_africanis_frames__frame_012.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq01_stand_africanis_frames/frame_012.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     132.9,
+     34.6,
+     309.8,
+     351.2
+    ]
+   ],
+   "confidences": [
+    0.467
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq01_stand_africanis_frames__frame_013.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq01_stand_africanis_frames/frame_013.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq01_stand_africanis_frames__frame_014.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq01_stand_africanis_frames/frame_014.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq01_stand_africanis_frames__frame_015.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq01_stand_africanis_frames/frame_015.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq01_stand_africanis_frames__frame_016.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq01_stand_africanis_frames/frame_016.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq01_stand_africanis_frames__frame_017.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq01_stand_africanis_frames/frame_017.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq01_stand_africanis_frames__frame_018.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq01_stand_africanis_frames/frame_018.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq01_stand_africanis_frames__frame_019.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq01_stand_africanis_frames/frame_019.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq01_stand_africanis_frames__frame_020.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq01_stand_africanis_frames/frame_020.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq02_down_batumi_frames__frame_001.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq02_down_batumi_frames/frame_001.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq02_down_batumi_frames__frame_002.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq02_down_batumi_frames/frame_002.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq02_down_batumi_frames__frame_003.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq02_down_batumi_frames/frame_003.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq02_down_batumi_frames__frame_004.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq02_down_batumi_frames/frame_004.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq02_down_batumi_frames__frame_005.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq02_down_batumi_frames/frame_005.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     62.1,
+     143.9,
+     640.0,
+     859.6
+    ]
+   ],
+   "confidences": [
+    0.401
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq02_down_batumi_frames__frame_006.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq02_down_batumi_frames/frame_006.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     83.8,
+     171.5,
+     639.0,
+     872.5
+    ]
+   ],
+   "confidences": [
+    0.476
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq02_down_batumi_frames__frame_007.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq02_down_batumi_frames/frame_007.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     99.8,
+     226.7,
+     638.7,
+     759.7
+    ]
+   ],
+   "confidences": [
+    0.742
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq02_down_batumi_frames__frame_008.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq02_down_batumi_frames/frame_008.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq02_down_batumi_frames__frame_009.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq02_down_batumi_frames/frame_009.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq02_down_batumi_frames__frame_010.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq02_down_batumi_frames/frame_010.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq02_down_batumi_frames__frame_011.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq02_down_batumi_frames/frame_011.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq02_down_batumi_frames__frame_012.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq02_down_batumi_frames/frame_012.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq02_down_batumi_frames__frame_013.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq02_down_batumi_frames/frame_013.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq02_down_batumi_frames__frame_014.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq02_down_batumi_frames/frame_014.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq02_down_batumi_frames__frame_015.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq02_down_batumi_frames/frame_015.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq02_down_batumi_frames__frame_016.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq02_down_batumi_frames/frame_016.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq02_down_batumi_frames__frame_017.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq02_down_batumi_frames/frame_017.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq02_down_batumi_frames__frame_018.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq02_down_batumi_frames/frame_018.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq02_down_batumi_frames__frame_019.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq02_down_batumi_frames/frame_019.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq02_down_batumi_frames__frame_020.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq02_down_batumi_frames/frame_020.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq03_walk_mission_frames__frame_001.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq03_walk_mission_frames/frame_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     390.0,
+     126.1,
+     429.2,
+     211.3
+    ]
+   ],
+   "confidences": [
+    0.903
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq03_walk_mission_frames__frame_002.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq03_walk_mission_frames/frame_002.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     345.3,
+     118.4,
+     393.4,
+     211.2
+    ]
+   ],
+   "confidences": [
+    0.903
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq03_walk_mission_frames__frame_003.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq03_walk_mission_frames/frame_003.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     336.3,
+     116.3,
+     390.3,
+     221.4
+    ]
+   ],
+   "confidences": [
+    0.688
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq03_walk_mission_frames__frame_004.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq03_walk_mission_frames/frame_004.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     342.4,
+     125.8,
+     427.7,
+     233.3
+    ]
+   ],
+   "confidences": [
+    0.931
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq03_walk_mission_frames__frame_005.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq03_walk_mission_frames/frame_005.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     374.5,
+     127.1,
+     481.3,
+     247.3
+    ]
+   ],
+   "confidences": [
+    0.844
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq03_walk_mission_frames__frame_006.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq03_walk_mission_frames/frame_006.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     409.9,
+     129.2,
+     543.8,
+     262.8
+    ]
+   ],
+   "confidences": [
+    0.557
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq03_walk_mission_frames__frame_007.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq03_walk_mission_frames/frame_007.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     404.0,
+     155.1,
+     566.3,
+     282.9
+    ]
+   ],
+   "confidences": [
+    0.69
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq03_walk_mission_frames__frame_008.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq03_walk_mission_frames/frame_008.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     401.8,
+     145.7,
+     573.3,
+     314.9
+    ]
+   ],
+   "confidences": [
+    0.859
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq03_walk_mission_frames__frame_009.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq03_walk_mission_frames/frame_009.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq03_walk_mission_frames__frame_010.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq03_walk_mission_frames/frame_010.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq03_walk_mission_frames__frame_011.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq03_walk_mission_frames/frame_011.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq03_walk_mission_frames__frame_012.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq03_walk_mission_frames/frame_012.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     178.2,
+     117.2,
+     479.4,
+     288.5
+    ]
+   ],
+   "confidences": [
+    0.855
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq03_walk_mission_frames__frame_013.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq03_walk_mission_frames/frame_013.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     158.9,
+     108.1,
+     469.7,
+     298.0
+    ]
+   ],
+   "confidences": [
+    0.408
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq03_walk_mission_frames__frame_014.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq03_walk_mission_frames/frame_014.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     192.0,
+     89.7,
+     485.6,
+     305.2
+    ]
+   ],
+   "confidences": [
+    0.517
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq03_walk_mission_frames__frame_015.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq03_walk_mission_frames/frame_015.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     228.3,
+     106.2,
+     510.5,
+     309.1
+    ]
+   ],
+   "confidences": [
+    0.369
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq03_walk_mission_frames__frame_016.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq03_walk_mission_frames/frame_016.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     241.7,
+     115.1,
+     526.6,
+     291.8
+    ]
+   ],
+   "confidences": [
+    0.34
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq03_walk_mission_frames__frame_017.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq03_walk_mission_frames/frame_017.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     245.2,
+     93.2,
+     483.7,
+     287.4
+    ]
+   ],
+   "confidences": [
+    0.69
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq03_walk_mission_frames__frame_018.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq03_walk_mission_frames/frame_018.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     223.3,
+     123.6,
+     453.1,
+     299.6
+    ]
+   ],
+   "confidences": [
+    0.584
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq03_walk_mission_frames__frame_019.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq03_walk_mission_frames/frame_019.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq03_walk_mission_frames__frame_020.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq03_walk_mission_frames/frame_020.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq03_walk_mission_frames__frame_021.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq03_walk_mission_frames/frame_021.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq03_walk_mission_frames__frame_022.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq03_walk_mission_frames/frame_022.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     188.7,
+     158.7,
+     332.6,
+     295.2
+    ]
+   ],
+   "confidences": [
+    0.415
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq03_walk_mission_frames__frame_023.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq03_walk_mission_frames/frame_023.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq03_walk_mission_frames__frame_024.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq03_walk_mission_frames/frame_024.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq04_down_snoring_frames__frame_001.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq04_down_snoring_frames/frame_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     10.8,
+     60.5,
+     342.3,
+     366.2
+    ]
+   ],
+   "confidences": [
+    0.552
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq04_down_snoring_frames__frame_002.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq04_down_snoring_frames/frame_002.jpg",
+   "n_dogs": 2,
+   "boxes": [
+    [
+     11.1,
+     58.4,
+     339.8,
+     363.0
+    ],
+    [
+     1.1,
+     50.3,
+     640.0,
+     1162.1
+    ]
+   ],
+   "confidences": [
+    0.467,
+    0.317
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq04_down_snoring_frames__frame_003.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq04_down_snoring_frames/frame_003.jpg",
+   "n_dogs": 2,
+   "boxes": [
+    [
+     18.6,
+     57.2,
+     343.2,
+     364.3
+    ],
+    [
+     2.6,
+     156.2,
+     636.1,
+     1159.5
+    ]
+   ],
+   "confidences": [
+    0.517,
+    0.446
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq04_down_snoring_frames__frame_004.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq04_down_snoring_frames/frame_004.jpg",
+   "n_dogs": 2,
+   "boxes": [
+    [
+     2.3,
+     75.7,
+     629.6,
+     1162.0
+    ],
+    [
+     35.5,
+     55.6,
+     352.8,
+     365.5
+    ]
+   ],
+   "confidences": [
+    0.411,
+    0.375
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq04_down_snoring_frames__frame_005.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq04_down_snoring_frames/frame_005.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     1.7,
+     69.7,
+     640.0,
+     1160.6
+    ]
+   ],
+   "confidences": [
+    0.416
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq04_down_snoring_frames__frame_006.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq04_down_snoring_frames/frame_006.jpg",
+   "n_dogs": 2,
+   "boxes": [
+    [
+     2.1,
+     57.9,
+     638.8,
+     1161.5
+    ],
+    [
+     41.5,
+     56.8,
+     381.8,
+     362.2
+    ]
+   ],
+   "confidences": [
+    0.428,
+    0.307
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq04_down_snoring_frames__frame_007.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq04_down_snoring_frames/frame_007.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     1.9,
+     53.1,
+     635.9,
+     1159.4
+    ]
+   ],
+   "confidences": [
+    0.659
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq04_down_snoring_frames__frame_008.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq04_down_snoring_frames/frame_008.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     1.6,
+     54.9,
+     640.0,
+     1162.2
+    ]
+   ],
+   "confidences": [
+    0.525
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq04_down_snoring_frames__frame_009.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq04_down_snoring_frames/frame_009.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     1.4,
+     82.9,
+     640.0,
+     1164.0
+    ]
+   ],
+   "confidences": [
+    0.432
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq04_down_snoring_frames__frame_010.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq04_down_snoring_frames/frame_010.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq04_down_snoring_frames__frame_011.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq04_down_snoring_frames/frame_011.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq04_down_snoring_frames__frame_012.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq04_down_snoring_frames/frame_012.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq04_down_snoring_frames__frame_013.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq04_down_snoring_frames/frame_013.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq04_down_snoring_frames__frame_014.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq04_down_snoring_frames/frame_014.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq04_down_snoring_frames__frame_015.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq04_down_snoring_frames/frame_015.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq04_down_snoring_frames__frame_016.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq04_down_snoring_frames/frame_016.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq04_down_snoring_frames__frame_017.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq04_down_snoring_frames/frame_017.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq04_down_snoring_frames__frame_018.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq04_down_snoring_frames/frame_018.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq04_down_snoring_frames__frame_019.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq04_down_snoring_frames/frame_019.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq04_down_snoring_frames__frame_020.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq04_down_snoring_frames/frame_020.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq05_down_panting_frames__frame_001.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq05_down_panting_frames/frame_001.jpg",
+   "n_dogs": 2,
+   "boxes": [
+    [
+     100.6,
+     16.4,
+     474.0,
+     356.0
+    ],
+    [
+     174.2,
+     69.7,
+     639.6,
+     355.8
+    ]
+   ],
+   "confidences": [
+    0.833,
+    0.366
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq05_down_panting_frames__frame_002.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq05_down_panting_frames/frame_002.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     78.1,
+     4.9,
+     479.7,
+     356.2
+    ]
+   ],
+   "confidences": [
+    0.535
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq05_down_panting_frames__frame_003.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq05_down_panting_frames/frame_003.jpg",
+   "n_dogs": 2,
+   "boxes": [
+    [
+     159.7,
+     2.6,
+     639.0,
+     355.8
+    ],
+    [
+     418.8,
+     83.8,
+     639.8,
+     353.3
+    ]
+   ],
+   "confidences": [
+    0.636,
+    0.258
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq05_down_panting_frames__frame_004.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq05_down_panting_frames/frame_004.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     139.5,
+     3.3,
+     639.1,
+     357.8
+    ]
+   ],
+   "confidences": [
+    0.754
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq05_down_panting_frames__frame_005.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq05_down_panting_frames/frame_005.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     69.7,
+     0.1,
+     638.0,
+     355.6
+    ]
+   ],
+   "confidences": [
+    0.816
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq05_down_panting_frames__frame_006.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq05_down_panting_frames/frame_006.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     141.3,
+     2.8,
+     639.8,
+     356.2
+    ]
+   ],
+   "confidences": [
+    0.776
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq05_down_panting_frames__frame_007.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq05_down_panting_frames/frame_007.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     120.7,
+     2.9,
+     639.1,
+     357.3
+    ]
+   ],
+   "confidences": [
+    0.842
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq05_down_panting_frames__frame_008.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq05_down_panting_frames/frame_008.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     134.5,
+     1.5,
+     639.5,
+     356.8
+    ]
+   ],
+   "confidences": [
+    0.837
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq05_down_panting_frames__frame_009.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq05_down_panting_frames/frame_009.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     151.1,
+     2.1,
+     639.4,
+     356.9
+    ]
+   ],
+   "confidences": [
+    0.897
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq05_down_panting_frames__frame_010.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq05_down_panting_frames/frame_010.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     151.4,
+     1.8,
+     638.9,
+     355.1
+    ]
+   ],
+   "confidences": [
+    0.886
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq05_down_panting_frames__frame_011.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq05_down_panting_frames/frame_011.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     158.1,
+     3.0,
+     639.2,
+     356.2
+    ]
+   ],
+   "confidences": [
+    0.848
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq05_down_panting_frames__frame_012.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq05_down_panting_frames/frame_012.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     165.0,
+     5.3,
+     638.8,
+     355.5
+    ]
+   ],
+   "confidences": [
+    0.887
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq05_down_panting_frames__frame_013.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq05_down_panting_frames/frame_013.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     163.4,
+     5.0,
+     639.0,
+     354.7
+    ]
+   ],
+   "confidences": [
+    0.861
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq05_down_panting_frames__frame_014.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq05_down_panting_frames/frame_014.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     162.2,
+     6.3,
+     638.9,
+     354.0
+    ]
+   ],
+   "confidences": [
+    0.808
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq05_down_panting_frames__frame_015.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq05_down_panting_frames/frame_015.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     168.5,
+     5.7,
+     638.4,
+     354.6
+    ]
+   ],
+   "confidences": [
+    0.845
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq05_down_panting_frames__frame_016.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq05_down_panting_frames/frame_016.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     127.0,
+     33.7,
+     637.5,
+     354.3
+    ]
+   ],
+   "confidences": [
+    0.657
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq05_down_panting_frames__frame_017.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq05_down_panting_frames/frame_017.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     127.3,
+     39.7,
+     638.5,
+     355.3
+    ]
+   ],
+   "confidences": [
+    0.689
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq05_down_panting_frames__frame_018.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq05_down_panting_frames/frame_018.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq05_down_panting_frames__frame_019.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq05_down_panting_frames/frame_019.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "frames111",
+   "file": "seq05_down_panting_frames__frame_020.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq05_down_panting_frames/frame_020.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     56.3,
+     5.7,
+     519.7,
+     356.3
+    ]
+   ],
+   "confidences": [
+    0.333
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq06_stand_wagging_short_frames__frame_001.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq06_stand_wagging_short_frames/frame_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     129.6,
+     3.2,
+     444.0,
+     292.3
+    ]
+   ],
+   "confidences": [
+    0.879
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq06_stand_wagging_short_frames__frame_002.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq06_stand_wagging_short_frames/frame_002.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     127.4,
+     54.6,
+     448.2,
+     291.7
+    ]
+   ],
+   "confidences": [
+    0.918
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq06_stand_wagging_short_frames__frame_003.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq06_stand_wagging_short_frames/frame_003.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     127.3,
+     31.9,
+     444.9,
+     292.8
+    ]
+   ],
+   "confidences": [
+    0.903
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq06_stand_wagging_short_frames__frame_004.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq06_stand_wagging_short_frames/frame_004.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     52.3,
+     57.3,
+     448.0,
+     292.3
+    ]
+   ],
+   "confidences": [
+    0.92
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq06_stand_wagging_short_frames__frame_005.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq06_stand_wagging_short_frames/frame_005.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     19.8,
+     48.9,
+     448.1,
+     288.9
+    ]
+   ],
+   "confidences": [
+    0.913
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq06_stand_wagging_short_frames__frame_006.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq06_stand_wagging_short_frames/frame_006.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     51.9,
+     57.6,
+     447.7,
+     291.5
+    ]
+   ],
+   "confidences": [
+    0.906
+   ]
+  },
+  {
+   "set": "frames111",
+   "file": "seq06_stand_wagging_short_frames__frame_007.jpg",
+   "source": "../video-sequence-layer/video-sequences/seq06_stand_wagging_short_frames/frame_007.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     127.2,
+     32.1,
+     444.6,
+     292.8
+    ]
+   ],
+   "confidences": [
+    0.886
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_adiogerman_sitting_001.jpg",
+   "source": "sample-v4-test60/ph_adiogerman_sitting_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     136.7,
+     166.5,
+     525.0,
+     925.0
+    ]
+   ],
+   "confidences": [
+    0.886
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_adventurous36_standing_012.jpg",
+   "source": "sample-v4-test60/ph_adventurous36_standing_012.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     40.6,
+     12.1,
+     619.4,
+     526.5
+    ]
+   ],
+   "confidences": [
+    0.876
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_aleksey_churushkin_lying_down_001.jpg",
+   "source": "sample-v4-test60/ph_aleksey_churushkin_lying_down_001.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_ascilto_walking_001.jpg",
+   "source": "sample-v4-test60/ph_ascilto_walking_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     158.9,
+     257.5,
+     268.2,
+     354.5
+    ]
+   ],
+   "confidences": [
+    0.251
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_ascilto_walking_002.jpg",
+   "source": "sample-v4-test60/ph_ascilto_walking_002.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     118.3,
+     513.6,
+     235.9,
+     722.0
+    ]
+   ],
+   "confidences": [
+    0.753
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_ashwini1909_lying_down_001.jpg",
+   "source": "sample-v4-test60/ph_ashwini1909_lying_down_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     57.4,
+     22.4,
+     610.5,
+     463.7
+    ]
+   ],
+   "confidences": [
+    0.801
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_babu_walking_001.jpg",
+   "source": "sample-v4-test60/ph_babu_walking_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     257.4,
+     182.3,
+     364.5,
+     347.0
+    ]
+   ],
+   "confidences": [
+    0.897
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_betsyin_ne_sitting_001.jpg",
+   "source": "sample-v4-test60/ph_betsyin_ne_sitting_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     38.1,
+     116.0,
+     310.3,
+     356.4
+    ]
+   ],
+   "confidences": [
+    0.895
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_brando025_lying_down_001.jpg",
+   "source": "sample-v4-test60/ph_brando025_lying_down_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     5.3,
+     229.5,
+     636.0,
+     702.8
+    ]
+   ],
+   "confidences": [
+    0.38
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_busheer_sitting_001.jpg",
+   "source": "sample-v4-test60/ph_busheer_sitting_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     169.6,
+     52.3,
+     478.7,
+     477.3
+    ]
+   ],
+   "confidences": [
+    0.921
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_capi16_lying_down_001.jpg",
+   "source": "sample-v4-test60/ph_capi16_lying_down_001.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_cavalier_king_charles_spaniels_sitting_001.jpg",
+   "source": "sample-v4-test60/ph_cavalier_king_charles_spaniels_sitting_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     70.1,
+     143.7,
+     628.6,
+     750.2
+    ]
+   ],
+   "confidences": [
+    0.915
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_chacaliandshrek_sitting_001.jpg",
+   "source": "sample-v4-test60/ph_chacaliandshrek_sitting_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     114.6,
+     197.6,
+     532.2,
+     716.8
+    ]
+   ],
+   "confidences": [
+    0.85
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_chowchowtao_sitting_001.jpg",
+   "source": "sample-v4-test60/ph_chowchowtao_sitting_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     297.6,
+     93.9,
+     631.4,
+     421.1
+    ]
+   ],
+   "confidences": [
+    0.813
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_doggiebreath_lying_down_001.jpg",
+   "source": "sample-v4-test60/ph_doggiebreath_lying_down_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     78.2,
+     91.2,
+     471.1,
+     567.7
+    ]
+   ],
+   "confidences": [
+    0.571
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_elliskimoo_sitting_001.jpg",
+   "source": "sample-v4-test60/ph_elliskimoo_sitting_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     36.6,
+     82.4,
+     630.6,
+     894.6
+    ]
+   ],
+   "confidences": [
+    0.832
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_eva_holderegger_walser_standing_001.jpg",
+   "source": "sample-v4-test60/ph_eva_holderegger_walser_standing_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     116.8,
+     65.9,
+     610.8,
+     477.9
+    ]
+   ],
+   "confidences": [
+    0.928
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_famartin_standing_001.jpg",
+   "source": "sample-v4-test60/ph_famartin_standing_001.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_fotothekbot_walking_001.jpg",
+   "source": "sample-v4-test60/ph_fotothekbot_walking_001.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_friendlytoaster_sitting_001.jpg",
+   "source": "sample-v4-test60/ph_friendlytoaster_sitting_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     32.5,
+     241.0,
+     577.6,
+     876.2
+    ]
+   ],
+   "confidences": [
+    0.925
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_fulani215_lying_down_001.jpg",
+   "source": "sample-v4-test60/ph_fulani215_lying_down_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     32.3,
+     204.7,
+     640.0,
+     583.4
+    ]
+   ],
+   "confidences": [
+    0.41
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_geagea_sitting_001.jpg",
+   "source": "sample-v4-test60/ph_geagea_sitting_001.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_high_contrast_lying_down_001.jpg",
+   "source": "sample-v4-test60/ph_high_contrast_lying_down_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     63.4,
+     31.2,
+     580.3,
+     390.1
+    ]
+   ],
+   "confidences": [
+    0.305
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_jatinpandey310_lying_down_001.jpg",
+   "source": "sample-v4-test60/ph_jatinpandey310_lying_down_001.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_ln9267_walking_001.jpg",
+   "source": "sample-v4-test60/ph_ln9267_walking_001.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_mariofuoco_sitting_001.jpg",
+   "source": "sample-v4-test60/ph_mariofuoco_sitting_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     77.4,
+     193.6,
+     380.5,
+     923.0
+    ]
+   ],
+   "confidences": [
+    0.903
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_marmstrong21_walking_001.jpg",
+   "source": "sample-v4-test60/ph_marmstrong21_walking_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     397.8,
+     291.6,
+     530.4,
+     374.1
+    ]
+   ],
+   "confidences": [
+    0.897
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_matlin_walking_002.jpg",
+   "source": "sample-v4-test60/ph_matlin_walking_002.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     199.3,
+     173.0,
+     257.8,
+     322.0
+    ]
+   ],
+   "confidences": [
+    0.826
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_mdk572_standing_001.jpg",
+   "source": "sample-v4-test60/ph_mdk572_standing_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     76.0,
+     1.5,
+     551.2,
+     419.9
+    ]
+   ],
+   "confidences": [
+    0.745
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_mosckai_yinam_walking_004.jpg",
+   "source": "sample-v4-test60/ph_mosckai_yinam_walking_004.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     274.1,
+     141.4,
+     557.4,
+     498.4
+    ]
+   ],
+   "confidences": [
+    0.852
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_muntaqibah_lying_down_001.jpg",
+   "source": "sample-v4-test60/ph_muntaqibah_lying_down_001.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_nouka_crawls_sitting_001.jpg",
+   "source": "sample-v4-test60/ph_nouka_crawls_sitting_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     124.8,
+     147.2,
+     520.8,
+     927.2
+    ]
+   ],
+   "confidences": [
+    0.516
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_oleneitzel_lying_down_001.jpg",
+   "source": "sample-v4-test60/ph_oleneitzel_lying_down_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     94.2,
+     132.2,
+     499.4,
+     375.8
+    ]
+   ],
+   "confidences": [
+    0.804
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_oxyman_lying_down_001.jpg",
+   "source": "sample-v4-test60/ph_oxyman_lying_down_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     139.5,
+     148.9,
+     513.3,
+     343.0
+    ]
+   ],
+   "confidences": [
+    0.667
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_panoramio_upload_bot_sitting_001.jpg",
+   "source": "sample-v4-test60/ph_panoramio_upload_bot_sitting_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     278.5,
+     116.2,
+     411.1,
+     325.7
+    ]
+   ],
+   "confidences": [
+    0.909
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_panoramio_upload_bot_sitting_002.jpg",
+   "source": "sample-v4-test60/ph_panoramio_upload_bot_sitting_002.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     71.0,
+     40.4,
+     443.4,
+     407.5
+    ]
+   ],
+   "confidences": [
+    0.713
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_pippo_b_lying_down_001.jpg",
+   "source": "sample-v4-test60/ph_pippo_b_lying_down_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     2.6,
+     133.6,
+     554.2,
+     368.7
+    ]
+   ],
+   "confidences": [
+    0.668
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_presto808_sitting_001.jpg",
+   "source": "sample-v4-test60/ph_presto808_sitting_001.jpg",
+   "n_dogs": 2,
+   "boxes": [
+    [
+     110.1,
+     90.1,
+     578.6,
+     871.9
+    ],
+    [
+     162.3,
+     537.4,
+     562.7,
+     874.8
+    ]
+   ],
+   "confidences": [
+    0.841,
+    0.316
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_ra_ike_standing_001.jpg",
+   "source": "sample-v4-test60/ph_ra_ike_standing_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     100.1,
+     34.1,
+     534.8,
+     446.2
+    ]
+   ],
+   "confidences": [
+    0.826
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_red_panda_bot_sitting_001.jpg",
+   "source": "sample-v4-test60/ph_red_panda_bot_sitting_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     57.5,
+     55.1,
+     597.6,
+     848.0
+    ]
+   ],
+   "confidences": [
+    0.896
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_scotrobertson_lying_down_001.jpg",
+   "source": "sample-v4-test60/ph_scotrobertson_lying_down_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     45.1,
+     184.0,
+     568.3,
+     441.8
+    ]
+   ],
+   "confidences": [
+    0.773
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_scubadoctresse_walking_001.jpg",
+   "source": "sample-v4-test60/ph_scubadoctresse_walking_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     150.9,
+     121.4,
+     459.3,
+     282.1
+    ]
+   ],
+   "confidences": [
+    0.72
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_sivabalachandar03_sitting_001.jpg",
+   "source": "sample-v4-test60/ph_sivabalachandar03_sitting_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     100.6,
+     31.9,
+     550.2,
+     580.6
+    ]
+   ],
+   "confidences": [
+    0.858
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_sk_catz_sitting_001.jpg",
+   "source": "sample-v4-test60/ph_sk_catz_sitting_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     122.7,
+     26.6,
+     423.6,
+     789.6
+    ]
+   ],
+   "confidences": [
+    0.838
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_snowacinesy_walking_002.jpg",
+   "source": "sample-v4-test60/ph_snowacinesy_walking_002.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     136.7,
+     122.4,
+     338.0,
+     351.9
+    ]
+   ],
+   "confidences": [
+    0.859
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_solise_standing_001.jpg",
+   "source": "sample-v4-test60/ph_solise_standing_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     142.3,
+     158.9,
+     472.8,
+     829.1
+    ]
+   ],
+   "confidences": [
+    0.91
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_tm_lying_down_001.jpg",
+   "source": "sample-v4-test60/ph_tm_lying_down_001.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_tm_walking_001.jpg",
+   "source": "sample-v4-test60/ph_tm_walking_001.jpg",
+   "n_dogs": 2,
+   "boxes": [
+    [
+     400.3,
+     301.1,
+     445.0,
+     351.1
+    ],
+    [
+     353.9,
+     323.7,
+     395.0,
+     380.2
+    ]
+   ],
+   "confidences": [
+    0.848,
+    0.794
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_tobias1984_lying_down_001.jpg",
+   "source": "sample-v4-test60/ph_tobias1984_lying_down_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     93.9,
+     150.5,
+     486.7,
+     366.9
+    ]
+   ],
+   "confidences": [
+    0.939
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_twowings_walking_001.jpg",
+   "source": "sample-v4-test60/ph_twowings_walking_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     77.7,
+     443.1,
+     192.1,
+     623.9
+    ]
+   ],
+   "confidences": [
+    0.515
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_underwaterbuffalo_walking_004.jpg",
+   "source": "sample-v4-test60/ph_underwaterbuffalo_walking_004.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "v4test60",
+   "file": "ph_yukikoko_lying_down_001.jpg",
+   "source": "sample-v4-test60/ph_yukikoko_lying_down_001.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     267.3,
+     127.6,
+     514.7,
+     371.3
+    ]
+   ],
+   "confidences": [
+    0.959
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "vid_africanis_standing_003.jpg",
+   "source": "sample-v4-test60/vid_africanis_standing_003.jpg",
+   "n_dogs": 2,
+   "boxes": [
+    [
+     160.0,
+     35.3,
+     334.7,
+     357.7
+    ],
+    [
+     372.9,
+     135.7,
+     421.8,
+     207.4
+    ]
+   ],
+   "confidences": [
+    0.928,
+    0.413
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "vid_africanis_standing_005.jpg",
+   "source": "sample-v4-test60/vid_africanis_standing_005.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     91.9,
+     44.8,
+     283.3,
+     357.2
+    ]
+   ],
+   "confidences": [
+    0.938
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "vid_africanis_standing_006.jpg",
+   "source": "sample-v4-test60/vid_africanis_standing_006.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     98.1,
+     29.3,
+     320.1,
+     356.9
+    ]
+   ],
+   "confidences": [
+    0.586
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "vid_africanis_standing_007.jpg",
+   "source": "sample-v4-test60/vid_africanis_standing_007.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     109.0,
+     12.3,
+     325.8,
+     358.3
+    ]
+   ],
+   "confidences": [
+    0.781
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "vid_mission_walking_003.jpg",
+   "source": "sample-v4-test60/vid_mission_walking_003.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     338.2,
+     116.6,
+     388.4,
+     214.4
+    ]
+   ],
+   "confidences": [
+    0.911
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "vid_mission_walking_005.jpg",
+   "source": "sample-v4-test60/vid_mission_walking_005.jpg",
+   "n_dogs": 0,
+   "boxes": [],
+   "confidences": []
+  },
+  {
+   "set": "v4test60",
+   "file": "vid_mission_walking_008.jpg",
+   "source": "sample-v4-test60/vid_mission_walking_008.jpg",
+   "n_dogs": 2,
+   "boxes": [
+    [
+     183.5,
+     165.4,
+     318.6,
+     299.5
+    ],
+    [
+     245.2,
+     173.7,
+     319.5,
+     279.3
+    ]
+   ],
+   "confidences": [
+    0.797,
+    0.329
+   ]
+  },
+  {
+   "set": "v4test60",
+   "file": "vid_wagging_standing_002.jpg",
+   "source": "sample-v4-test60/vid_wagging_standing_002.jpg",
+   "n_dogs": 1,
+   "boxes": [
+    [
+     128.2,
+     1.2,
+     441.1,
+     295.7
+    ]
+   ],
+   "confidences": [
+    0.926
+   ]
+  }
+ ]
+}
