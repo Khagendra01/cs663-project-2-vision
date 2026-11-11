@@ -1,0 +1,42 @@
+{
+ "verdict": "UNCERTAIN",
+ "reason": "interval ended after holding 3.0s of the 8s target duration - incomplete, not a success and not a break",
+ "target_label": "standing",
+ "target_duration_s": 8.0,
+ "target_reached_at_s": 0.0,
+ "held_s": 3.0,
+ "break_at_s": null,
+ "n_frames": 7,
+ "uncertain_ratio": 0.0,
+ "classification_mode": "backend tuned (live)",
+ "smoothed_sequence": [
+  [
+   0.0,
+   "standing"
+  ],
+  [
+   0.5,
+   "standing"
+  ],
+  [
+   1.0,
+   "standing"
+  ],
+  [
+   1.5,
+   "standing"
+  ],
+  [
+   2.0,
+   "standing"
+  ],
+  [
+   2.5,
+   "standing"
+  ],
+  [
+   3.0,
+   "standing"
+  ]
+ ]
+}

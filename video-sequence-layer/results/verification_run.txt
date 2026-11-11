@@ -1,0 +1,23 @@
+$ python3 -m unittest test_state_machine
+Ran 17 tests in 0.002s
+
+OK
+
+$ python3 sequence_evaluate.py --all-sequences
+[PASS] seq01_stand_africanis: expected SUCCESS, got SUCCESS - held 'standing' for the full 8s target duration
+[PASS] seq02_down_batumi: expected SUCCESS, got SUCCESS - held 'lying_down' for the full 8s target duration
+[PASS] seq03_walk_mission: expected SUCCESS, got SUCCESS - held 'walking' for the full 10s target duration
+[PASS] seq04_down_snoring: expected SUCCESS, got SUCCESS - held 'lying_down' for the full 8s target duration
+[PASS] seq05_down_panting: expected SUCCESS, got SUCCESS - held 'lying_down' for the full 8s target duration
+[PASS] seq06_stand_wagging_short: expected UNCERTAIN, got UNCERTAIN - interval ended after holding 3.0s of the 8s target duration - incomplete, not a success and not a break
+NOTE: labels mode validates the judging pipeline against human-verified frame labels; it is not a classifier score.
+
+$ python3 sequence_evaluate.py --scenarios
+[PASS] scen01_stay_success: expected SUCCESS, got SUCCESS - held 'sitting' for the full 5s target duration
+[PASS] scen02_stay_early_break: expected EARLY_BREAK, got EARLY_BREAK - left 'sitting' after holding 3.0s of the 5s target
+[PASS] scen03_down_success_noisy: expected SUCCESS, got SUCCESS - held 'lying_down' for the full 5s target duration
+[PASS] scen04_stand_never_sits: expected UNCERTAIN, got UNCERTAIN - target posture 'sitting' never established within the 2s settle grace
+[PASS] scen05_walk_success: expected SUCCESS, got SUCCESS - held 'walking' for the full 5s target duration
+[PASS] scen06_down_dog_leaves_frame: expected UNCERTAIN, got UNCERTAIN - dog lost / unclear for 3s during the hold
+
+Live backend check (recorded separately in live_seq06_tuned.json): seq06 frames -> tuned endpoint classified all 7 frames standing; verdict UNCERTAIN (held 3.0s of 8s target, clip ended) - matches expected.

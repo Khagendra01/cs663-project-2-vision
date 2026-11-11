@@ -1,0 +1,37 @@
+[
+ {
+  "t": 0.0,
+  "label": "standing",
+  "confidence": 1.0
+ },
+ {
+  "t": 0.5,
+  "label": "standing",
+  "confidence": 1.0
+ },
+ {
+  "t": 1.0,
+  "label": "standing",
+  "confidence": 1.0
+ },
+ {
+  "t": 1.5,
+  "label": "standing",
+  "confidence": 1.0
+ },
+ {
+  "t": 2.0,
+  "label": "standing",
+  "confidence": 1.0
+ },
+ {
+  "t": 2.5,
+  "label": "standing",
+  "confidence": 1.0
+ },
+ {
+  "t": 3.0,
+  "label": "standing",
+  "confidence": 1.0
+ }
+]

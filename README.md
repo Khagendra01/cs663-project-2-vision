@@ -11,7 +11,8 @@ Proposal graded 28/30. Final deliverable (Project 2 - Results) due Dec 1, 2026.
 
 | Folder | Contents |
 |---|---|
-| `gemini-finetune/` | The custom dataset, fine-tuning pipeline, and evaluation for the Gemini model (Model B) |
+| `gemini-finetune/` | The custom dataset (v4: 1,000 images, 250/class), fine-tuning pipeline, and evaluation for the Gemini model (Model B) |
+| `video-sequence-layer/` | The video half of the project: temporal state machine (frame postures → SUCCESS / EARLY_BREAK / UNCERTAIN, with smoothing), 17 unit tests, sequence evaluation harness, and 6 real-video test sequences. See its own README. |
 | `cloud-run-backend/` | Cloud Run backend (Node / Express, `@google/genai`) that serves the base and fine-tuned Gemini models to the Android app |
 | `android-app/` | Android app (package `com.cs663.dogbackend`) for the Cloud Run lab: camera / photo picker, prompt field, calls both backend endpoints and shows base vs tuned results. Built APK: `android-app/app-debug.apk` |
 | `docs/` | Proposal, accomplishment report, lab deliverables, and project plans |
