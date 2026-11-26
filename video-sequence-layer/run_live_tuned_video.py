@@ -5,9 +5,19 @@ Runs every stored frame of all 6 real-video sequences through the
 deployed tuned endpoint using sequence_evaluate.py's backend_label
 (same prompt, same retries, same {prompt, imageBase64, mimeType} call
 the Android app makes), then feeds each sequence's predicted label
-stream into the temporal state machine with the same config as the
-Model A video run (smooth_window=3, target/duration/command from
-manifest.json, t = frame index = 1 fps effective, matching the app).
+stream into the temporal state machine with the same rules as the
+Model A video run (target/duration/command from manifest.json).
+
+Judging rules (--rules, see sequence_evaluate.py):
+  app    (default) the Android app's rules (state_machine.py), t = real
+         clip time = frame_index / 2 (frames stored at 2 fps). Writes
+         results/video_predictions_tuned_app_rules.json and
+         results/live_<seq>_tuned_app_rules.json.
+  nov11  the Nov 11 run: state_machine_nov11.py, smooth_window=3,
+         t = frame index (1 fps effective). Writes
+         results/video_predictions_tuned.json and live_<seq>_tuned.json.
+This makes one live backend call per frame (111 calls). To re-judge the
+stored Nov 11 replies with no network calls, use rerun_nov25.py.
 
 This driver exists because sequence_evaluate.py --out only records the
 verdict, not the per-frame raw replies; it imports backend_label and
@@ -16,10 +26,9 @@ backend client. A frame whose call fails after all retries is recorded
 as a failed call with label None (an uncertain frame); a reply that
 does not parse to one of the 4 labels is recorded with its raw text.
 
-Usage: python3 run_live_tuned_video.py
-Writes: results/video_predictions_tuned.json and
-        results/live_<seq>_tuned.json per sequence.
+Usage: python3 run_live_tuned_video.py [--rules app|nov11]
 """
+import argparse
 import json
 import sys
 import time
@@ -27,14 +36,18 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-from sequence_evaluate import backend_label, verdict_dict
-from state_machine import (FrameObservation, SessionConfig, canonical_label,
-                           run_sequence)
+from sequence_evaluate import (RULES, backend_label, judge,
+                               rules_description, verdict_dict)
+from state_machine import FrameObservation, canonical_label
 
 BACKEND_URL = "https://cs663-gemini-service-917815040923.us-central1.run.app"
 
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--rules", choices=RULES, default="app")
+    args = ap.parse_args()
+    suffix = "" if args.rules == "nov11" else "_app_rules"
     manifest = json.load(open(HERE / "video-sequences" / "manifest.json"))
     results = {
         "model": "Model B - fine-tuned Gemini (tuned endpoint, live)",
@@ -43,20 +56,13 @@ def main():
         "prompt": "Look at the image of the dog. What is the dog doing? "
                   "Answer with exactly one of: sitting, standing, "
                   "lying down, walking.",
-        "time_base": "t = frame index (1 fps effective, matches the app "
-                     "sampler); the earlier live_seq06_tuned.json proof "
-                     "used the harness default fps=2 (t = i/2)",
-        "state_machine": {
-            "smooth_window": 3,
-            "min_confidence": 0.6,
-            "settle_grace_s": 2.0,
-            "break_confirm_s": 1.0,
-            "uncertain_timeout_s": 3.0,
-            "max_uncertain_ratio": 0.4,
-            "break_at_s": "first raw observation of the wrong posture "
-                          "(proposal 5.3, as implemented in "
-                          "state_machine.py at run time)",
-        },
+        "time_base": ("t = frame index (1 fps effective, matches the app "
+                      "sampler); the earlier live_seq06_tuned.json proof "
+                      "used the harness default fps=2 (t = i/2)"
+                      if args.rules == "nov11" else
+                      "t = frame_index / 2 (real clip time, frames stored "
+                      "at 2 fps)"),
+        "state_machine": rules_description(args.rules),
         "sequences": [],
     }
     total_frames = 0
@@ -88,9 +94,10 @@ def main():
             ok = parsed == truth
             total_frames += 1
             correct_frames += ok
-            obs.append(FrameObservation(t=float(i), label=raw))
+            t = float(i) if args.rules == "nov11" else i / m["sample_fps"]
+            obs.append(FrameObservation(t=t, label=raw))
             frame_rows.append({
-                "frame": f.name, "t": i,
+                "frame": f.name, "t": t if args.rules != "nov11" else i,
                 "predicted_label": parsed,
                 "raw_text": raw,
                 "call_failed": raw is None,
@@ -101,16 +108,15 @@ def main():
             })
             print(f"  {m['id']} frame {i + 1}/{len(frames)}: "
                   f"{raw!r} -> {parsed}", flush=True)
-        cfg = SessionConfig(target_duration_s=m["target_duration_s"],
-                            smooth_window=3)
-        v = run_sequence(obs, m["target_label"], cfg, command=m["command"])
+        v = judge(obs, m["target_label"], m["target_duration_s"],
+                  command=m["command"], rules=args.rules)
         vd = verdict_dict(v, "backend tuned (live)")
         match = v.verdict == m["expected_verdict"]
         correct_verdicts += match
         print(f"{m['id']:28s} {m['expected_verdict']:10s} {v.verdict:10s} "
               f"{v.held_s:5.1f} {len(frames):6d} {str(match):>5s}  "
               f"{v.reason}", flush=True)
-        (HERE / "results" / f"live_{m['id']}_tuned.json").write_text(
+        (HERE / "results" / f"live_{m['id']}_tuned{suffix}.json").write_text(
             json.dumps(vd, indent=1))
         results["sequences"].append({
             "id": m["id"],
@@ -141,7 +147,7 @@ def main():
         "total_calls": total_frames,
         "elapsed_s": elapsed,
     }
-    out = HERE / "results" / "video_predictions_tuned.json"
+    out = HERE / "results" / f"video_predictions_tuned{suffix}.json"
     out.write_text(json.dumps(results, indent=1))
     print(f"\nframe-level accuracy: {correct_frames}/{total_frames} = "
           f"{correct_frames / total_frames:.3f}")

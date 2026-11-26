@@ -403,40 +403,40 @@ other animal in view could also be taken as "the dog".
 ## 7. Temporal engine — the state machine
 
 The reference implementation is
-`video-sequence-layer/state_machine.py` (pure stdlib; 17/17 unit
-tests, `test_state_machine.py`). The app runs a Java port
-(`SequenceSession.java`, 21 JUnit tests in GitHub B). **The Python
-reference is now behind the Java one.** It still has the Nov 11 rules
-below and produced the Nov 11 video-evaluation numbers, which stay
-valid for what they measured; the current app's rules are the Java
-ones. The two implementations differ in these places, stated here
-rather than hidden:
+`video-sequence-layer/state_machine.py` (pure stdlib). The app runs
+the same rules in Java (`SequenceSession.java`, 21 JUnit tests in
+GitHub B). Since Nov 25 the Python reference follows the app's rules:
+`test_state_machine.py` has 42 tests (the original 17, the 21 app tests
+ported one to one, and 4 configuration tests), 42/42 pass. The rules
+that produced the Nov 11 video-evaluation numbers are frozen in
+`state_machine_nov11.py` and selected with `--rules nov11`; those
+numbers stay valid for what they measured. The Nov 11 rules differ
+from the app's in these places:
 
-1. The Python reference has **no READY gate and no response-window
-   phases** — it uses one settle grace (2 s) for every command. The
-   READY gate and the Sit/Down response window exist only in the Java
-   app (Section 7.1).
-2. The Python reference's lost/unclear rule is a **timeout**
+1. The Nov 11 rules have **no response-window phases** — one settle
+   grace (2 s) for every command. The READY gate is app UI and exists
+   only in the Java app (Section 7.1).
+2. The Nov 11 lost/unclear rule is a **timeout**
    (`uncertain_timeout_s = 3.0` s of unclear frames during a hold).
    The current Java app uses **1.5 s** with no dog or no confident
    label (the v1 Java app used 2 consecutive no-label frames, the
    1 fps analogue of the proposal's >1.0 s).
-3. The Python dataclass default smoothing window is 5; every harness
-   run in this project passes `smooth_window=3`. The v1 Java app
+3. The Nov 11 dataclass default smoothing window is 5, but every Nov 11
+   harness run passed `smooth_window=3`. The v1 Java app
    hard-coded 3; the current Java app uses **5**, the proposal's
    value.
 4. **Time base.** The current Java machine is time-based: t is
    elapsed seconds since START (clip time in replay), at any fps. The
-   Python reference also takes t, but the Nov 11 video evaluation fed
+   Nov 11 module also takes t, but the Nov 11 video evaluation fed
    it t = frame index (1 fps); the labels-mode and scenario checks fed
    t = i/2 (stored 2 fps), Section 8.
 5. **Break confirm and confidence.** Java: break confirm 0.6 s and a
-   0.65 Model A softmax gate. Python: break confirm 1 s and a 0.6
+   0.65 Model A softmax gate. Nov 11 rules: break confirm 1 s and a 0.6
    threshold that only fires when a confidence is supplied.
 6. **Raw-frame timing.** Java takes both the reach time and the break
    time from raw (unsmoothed) frames and needs both the smoothed and
    the raw label to be the target on the frame that decides SUCCESS.
-   Python takes the break time from raw frames only.
+   The Nov 11 rules take the break time from raw frames only.
 
 ### Rules (as implemented)
 
@@ -678,7 +678,7 @@ No EARLY_BREAK occurred in either video run, because none of the
 licensed real clips contains a genuine break. The break path is proven
 by: the 6 synthetic scenarios (scen02: dog leaves sitting after
 holding **2.5 s** of a 5 s target — raw break at t = 2.5 s, confirmed
-at t = 4.0 s — → EARLY_BREAK), 6 of the 17 unit tests, and the 80
+at t = 4.0 s — → EARLY_BREAK, Nov 11 rules), 6 of the original 17 unit tests, and the 80
 EARLY_BREAK rows of the scenario corpus. No posture change was edited
 into a real clip. The Nov 25 emulator run adds one EARLY_BREAK on a
 **constructed splice** (seq05 lying frames followed by seq01 standing
@@ -724,9 +724,9 @@ venv/bin/python detect_dogs.py --set frames111=../video-sequence-layer/video-seq
 # -> outputs/results.json, annotated images, crops
 
 # Temporal layer unit tests — video-sequence-layer/
-python3 -m unittest test_state_machine        # 17 tests
+python3 -m unittest test_state_machine        # 42 tests (app rules)
 python3 sequence_evaluate.py --all-sequences  # labels mode, 6 sequences
-python3 sequence_evaluate.py --scenarios      # synthetic scenarios, 6/6
+python3 sequence_evaluate.py --scenarios      # synthetic scenarios: 4/6 under the app rules (Sit/Down rule), 6/6 with --rules nov11
 
 # End-to-end video evaluation — video-sequence-layer/
 ~/tfvenv/bin/python evaluate_model_a_video.py  # Model A over 111 frames

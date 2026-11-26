@@ -28,6 +28,19 @@ Examples:
       --target walking --duration 10 --out result.json
   python3 sequence_evaluate.py --all-sequences     # labels mode, manifest check
   python3 sequence_evaluate.py --scenarios         # synthetic scenarios check
+
+Judging rules (--rules):
+  app    (default) state_machine.py - the same rules and numbers as the
+         Android app: smooth window 5, min confidence 0.65, settle grace
+         2 s, break confirm 0.6 s, lost 1.5 s; Sit / Down judged as
+         reach-then-hold (3 s response window, 0.6 s hold), other
+         commands as a hold of --duration (override with --shape).
+  nov11  state_machine_nov11.py with the Nov 11 numbers (smooth window
+         3, min confidence 0.6, break confirm 1 s, lost 3 s, every
+         command a hold) - reproduces results/verification_run.txt and
+         the Nov 10-11 scenario checks exactly.
+  --smooth-window / --min-confidence / --break-confirm / --lost override
+  the chosen rule set's numbers.
 """
 import argparse
 import base64
@@ -41,8 +54,11 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-from state_machine import (SessionConfig, canonical_label, run_sequence,
-                           FrameObservation)
+import state_machine_nov11
+from state_machine import (PRESETS, FrameObservation, canonical_label,
+                           config_for_command, run_sequence)
+
+RULES = ("app", "nov11")
 
 PROMPT = ("Look at the image of the dog. What is the dog doing? "
           "Answer with exactly one of: sitting, standing, lying down, walking.")
@@ -115,11 +131,69 @@ def verdict_dict(v, mode):
     }
 
 
+def session_config(rules, command, duration, shape="auto", **overrides):
+    """SessionConfig for one attempt under the chosen rule set.
+
+    rules="app": config_for_command() (Sit / Down -> reach-then-hold
+    unless shape says otherwise). rules="nov11": the frozen Nov 11
+    module's SessionConfig with the Nov 11 numbers (hold shape only).
+    Overrides that are None are ignored.
+    """
+    overrides = {k: v for k, v in overrides.items() if v is not None}
+    if rules == "nov11":
+        if shape == "reach":
+            raise ValueError("the Nov 11 rules have no reach-then-hold shape")
+        kw = dict(PRESETS["nov11"])
+        kw.update(overrides)
+        return state_machine_nov11.SessionConfig(
+            target_duration_s=float(duration), **kw)
+    if rules != "app":
+        raise ValueError(f"unknown rules {rules!r}; one of {RULES}")
+    return config_for_command(command, duration, preset="app", shape=shape,
+                              **overrides)
+
+
+def judge(obs, target, duration, command=None, rules="app", shape="auto",
+          **overrides):
+    """Run one label stream through the chosen rule set -> Verdict."""
+    cfg = session_config(rules, command, duration, shape, **overrides)
+    runner = (state_machine_nov11.run_sequence if rules == "nov11"
+              else run_sequence)
+    return runner(obs, target, cfg, command=command)
+
+
+def rules_description(rules):
+    """Machine-readable record of the judging rules, for result files."""
+    if rules == "nov11":
+        return {"rules": "nov11 (state_machine_nov11.py, frozen Nov 11)",
+                **PRESETS["nov11"],
+                "command_shape": "every command judged as a hold of the "
+                                 "target duration",
+                "break_at_s": "first raw observation of the wrong posture"}
+    return {"rules": "app (state_machine.py, same rules as the Android "
+                     "app's SequenceSession)",
+            **PRESETS["app"],
+            "command_shape": "Sit / Down: reach within 3 s, then hold "
+                             "0.6 s; other commands: hold the target "
+                             "duration (settle grace 2 s)",
+            "response_window_s": 3.0, "hold_after_reach_s": 0.6,
+            "confirm_grace_s": 1.0,
+            "reach_time": "first raw target frame of the confirmed run",
+            "break_at_s": "first frame after the last raw target frame"}
+
+
+def _overrides(args):
+    return dict(smooth_window=getattr(args, "smooth_window", None),
+                min_confidence=getattr(args, "min_confidence", None),
+                break_confirm_s=getattr(args, "break_confirm", None),
+                uncertain_timeout_s=getattr(args, "lost", None))
+
+
 def evaluate(args, obs, mode):
-    cfg = SessionConfig(target_duration_s=args.duration,
-                        smooth_window=args.smooth_window)
-    return verdict_dict(run_sequence(obs, args.target, cfg,
-                                     command=args.command), mode)
+    v = judge(obs, args.target, args.duration, command=args.command,
+              rules=getattr(args, "rules", "app"),
+              shape=getattr(args, "shape", "auto"), **_overrides(args))
+    return verdict_dict(v, mode)
 
 
 def main():
@@ -133,7 +207,23 @@ def main():
     ap.add_argument("--command")
     ap.add_argument("--duration", type=float, default=5.0)
     ap.add_argument("--fps", type=float, default=2.0)
-    ap.add_argument("--smooth-window", type=int, default=3)
+    ap.add_argument("--rules", choices=RULES, default="app",
+                    help="app (default): the Android app's rules; nov11: "
+                         "the frozen Nov 11 rules and numbers")
+    ap.add_argument("--shape", choices=["auto", "hold", "reach"],
+                    default="auto",
+                    help="command shape (app rules): auto = Sit/Down "
+                         "reach-then-hold, others hold")
+    ap.add_argument("--smooth-window", type=int, default=None,
+                    help="majority-vote window in frames (default: 5 with "
+                         "--rules app, 3 with --rules nov11)")
+    ap.add_argument("--min-confidence", type=float, default=None,
+                    help="default 0.65 (app) / 0.6 (nov11)")
+    ap.add_argument("--break-confirm", type=float, default=None,
+                    help="seconds; default 0.6 (app) / 1.0 (nov11)")
+    ap.add_argument("--lost", type=float, default=None,
+                    help="seconds unclear -> UNCERTAIN; default 1.5 (app) "
+                         "/ 3.0 (nov11)")
     ap.add_argument("--out")
     ap.add_argument("--all-sequences", action="store_true")
     ap.add_argument("--scenarios", action="store_true")
@@ -143,9 +233,10 @@ def main():
         manifest = json.load(open(HERE / "video-sequences" / "manifest.json"))
         ok = True
         for m in manifest:
-            a = argparse.Namespace(
-                target=m["target_label"], duration=m["target_duration_s"],
-                smooth_window=3, command=m["command"])
+            a = argparse.Namespace(**{**vars(args),
+                                      "target": m["target_label"],
+                                      "duration": m["target_duration_s"],
+                                      "command": m["command"]})
             obs = labels_from_file(
                 HERE / "video-sequences" / m["labels"], m["sample_fps"])
             got = evaluate(a, obs, "labels (verified ground truth)")
@@ -155,6 +246,8 @@ def main():
                   f"got {got['verdict']} - {got['reason']}")
         print("NOTE: labels mode validates the judging pipeline against "
               "human-verified frame labels; it is not a classifier score.")
+        print(f"rules: {args.rules} (expected verdicts were set for the "
+              "Nov 10 rules; see results/video_evaluation.md)")
         sys.exit(0 if ok else 1)
 
     if args.scenarios:
@@ -162,16 +255,18 @@ def main():
         cfgd = data["config"]
         ok = True
         for sc in data["scenarios"]:
-            a = argparse.Namespace(
-                target=sc["target_label"],
-                duration=cfgd["target_duration_s"], smooth_window=3,
-                command=sc["command"])
+            a = argparse.Namespace(**{**vars(args),
+                                      "target": sc["target_label"],
+                                      "duration": cfgd["target_duration_s"],
+                                      "command": sc["command"]})
             obs = labels_from_file_from_list(sc["labels"])
             got = evaluate(a, obs, "labels (synthetic scenario)")
             mark = "PASS" if got["verdict"] == sc["expected_verdict"] else "FAIL"
             ok &= mark == "PASS"
             print(f"[{mark}] {sc['id']}: expected {sc['expected_verdict']}, "
                   f"got {got['verdict']} - {got['reason']}")
+        print(f"rules: {args.rules} (expected verdicts were set for the "
+              "Nov 10 rules; see results/video_evaluation.md)")
         sys.exit(0 if ok else 1)
 
     if not args.target:

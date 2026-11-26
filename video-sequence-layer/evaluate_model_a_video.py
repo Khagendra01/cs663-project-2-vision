@@ -4,14 +4,18 @@
 Loads files/model-a/model_a.keras (MobileNetV3Small, 4 classes) and
 classifies every stored frame of all 6 real-video sequences, then feeds
 each sequence's PREDICTED label stream into the temporal state machine
-with the same config the labels-mode verification used
-(smooth_window=3, target/duration/command from manifest.json).
+(target/duration/command from manifest.json).
 
-Time base: t = frame index (1 fps effective), matching the Android app's
-sampler. NOTE this differs from the labels-mode verification, which ran
-at the stored 2 fps (t = i/2). The state machine's time constants
-(settle grace 2s, target 8/10s, break confirm 1s, uncertain timeout 3s)
-are therefore interpreted in frame-index seconds here.
+Judging rules (--rules, see sequence_evaluate.py):
+  app    (default) the Android app's rules (state_machine.py), t = real
+         clip time = frame_index / 2 (the frames were stored at 2 fps).
+         Writes results/video_predictions_model_a_app_rules.json.
+  nov11  the Nov 11 run exactly: state_machine_nov11.py, smooth_window=3,
+         t = frame index (1 fps effective, the app's sampler at the
+         time). Writes results/video_predictions_model_a.json (the file
+         the Nov 11 section of results/video_evaluation.md quotes).
+The stored predictions can also be re-judged without TensorFlow by
+rerun_nov25.py.
 
 Preprocessing (exactly as in model-a/train_model_a.py): PIL RGB,
 resize 224x224, float32 raw 0..255 pixels, NO extra Rescaling - the
@@ -20,12 +24,13 @@ first layer. Class order: ["sitting", "standing", "lying_down",
 "walking"] (project order, argmax index).
 
 Softmax confidence is passed to the state machine, so frames below its
-min_confidence (0.6) count as uncertain frames, exactly as the machine
-is designed to treat them.
+min_confidence (0.65 app rules, 0.6 Nov 11 rules) count as uncertain
+frames, exactly as the machine is designed to treat them.
 
-Usage: ~/tfvenv/bin/python evaluate_model_a_video.py
-Writes: results/video_predictions_model_a.json
+Usage: ~/tfvenv/bin/python evaluate_model_a_video.py [--rules app|nov11]
+                                                     [--out FILE]
 """
+import argparse
 import json
 import sys
 from pathlib import Path
@@ -36,8 +41,8 @@ from PIL import Image
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 sys.path.insert(0, str(HERE))
-from state_machine import (FrameObservation, SessionConfig, canonical_label,
-                           run_sequence)
+from sequence_evaluate import RULES, judge, rules_description
+from state_machine import FrameObservation, canonical_label
 
 CLASS_NAMES = ["sitting", "standing", "lying_down", "walking"]
 IMG_SIZE = 224
@@ -65,6 +70,13 @@ def predict(model, frames):
 
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--rules", choices=RULES, default="app")
+    ap.add_argument("--out")
+    args = ap.parse_args()
+    out = Path(args.out) if args.out else HERE / "results" / (
+        "video_predictions_model_a.json" if args.rules == "nov11"
+        else "video_predictions_model_a_app_rules.json")
     from tensorflow import keras
     model = keras.models.load_model(MODEL_PATH)
     manifest = json.load(open(HERE / "video-sequences" / "manifest.json"))
@@ -76,20 +88,12 @@ def main():
         "preprocessing": "PIL RGB, resize 224x224, float32 raw 0..255, "
                          "no extra rescaling (backbone contains Rescaling)",
         "class_order": CLASS_NAMES,
-        "time_base": "t = frame index (1 fps effective, matches the app "
-                     "sampler); labels-mode verification used t = i/2 "
-                     "(stored 2 fps)",
-        "state_machine": {
-            "smooth_window": 3,
-            "min_confidence": 0.6,
-            "settle_grace_s": 2.0,
-            "break_confirm_s": 1.0,
-            "uncertain_timeout_s": 3.0,
-            "max_uncertain_ratio": 0.4,
-            "break_at_s": "first raw observation of the wrong posture "
-                          "(proposal 5.3, as implemented in "
-                          "state_machine.py at run time)",
-        },
+        "time_base": ("t = frame index (1 fps effective, matches the app "
+                      "sampler); labels-mode verification used t = i/2 "
+                      "(stored 2 fps)" if args.rules == "nov11" else
+                      "t = frame_index / 2 (real clip time, frames stored "
+                      "at 2 fps)"),
+        "state_machine": rules_description(args.rules),
         "sequences": [],
     }
 
@@ -110,18 +114,18 @@ def main():
             ok = label == truth
             total_frames += 1
             correct_frames += ok
-            obs.append(FrameObservation(t=float(i), label=label,
+            t = float(i) if args.rules == "nov11" else i / m["sample_fps"]
+            obs.append(FrameObservation(t=t, label=label,
                                         confidence=conf))
             frame_rows.append({
-                "frame": f.name, "t": i,
+                "frame": f.name, "t": t if args.rules != "nov11" else i,
                 "predicted_label": label,
                 "confidence": round(conf, 4),
                 "ground_truth_label": truth,
                 "correct": ok,
             })
-        cfg = SessionConfig(target_duration_s=m["target_duration_s"],
-                            smooth_window=3)
-        v = run_sequence(obs, m["target_label"], cfg, command=m["command"])
+        v = judge(obs, m["target_label"], m["target_duration_s"],
+                  command=m["command"], rules=args.rules)
         match = v.verdict == m["expected_verdict"]
         correct_verdicts += match
         print(f"{m['id']:28s} {m['expected_verdict']:10s} {v.verdict:10s} "
@@ -154,7 +158,6 @@ def main():
         "frame_level_accuracy": round(correct_frames / total_frames, 3),
         "correct_frames": f"{correct_frames}/{total_frames}",
     }
-    out = HERE / "results" / "video_predictions_model_a.json"
     out.write_text(json.dumps(results, indent=1))
     print(f"\nframe-level accuracy: {correct_frames}/{total_frames} = "
           f"{correct_frames / total_frames:.3f}")

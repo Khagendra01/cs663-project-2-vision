@@ -13,7 +13,7 @@ appears in training.
 | Model B (Gemini, fine-tuned, dataset v3) | 43 held-out images | **tuned 88.4%** vs base 86.0% |
 | Model C+ (YOLOv8n, COCO pretrained) | 60 held-out v4 photos | dog detected in **81.7%** (49/60) |
 | Model C+ (YOLOv8n) | 111 video-sequence frames | dog detected in **58.6%** (65/111) |
-| Temporal layer (state machine) | 17 unit tests | **17/17 pass** |
+| Temporal layer (state machine) | 42 Python unit tests (app rules, incl. the 21 app tests ported) + 21 Java tests in the app | **42/42 and 21/21 pass** |
 | Temporal layer | 6 real-video sequences (labels mode) | **6/6 expected verdicts** |
 | Temporal layer | 6 synthetic scenarios | **6/6 expected verdicts** |
 | Temporal layer, live | seq06 frames via deployed tuned endpoint | verdict **UNCERTAIN**, matches expected |
@@ -71,9 +71,11 @@ On-device pipeline below; posture there comes from Model A on the full frame.
 
 ## Temporal layer
 
-- Unit tests: `video-sequence-layer/test_state_machine.py` — 17 tests covering
-  settle grace, smoothing, the sustained-break rule, lost-dog and low-quality
-  UNCERTAIN paths, progress reporting. All pass.
+- Unit tests: `video-sequence-layer/test_state_machine.py` — 42 tests (Nov 25):
+  the original 17 (settle grace, smoothing, the sustained-break rule, lost-dog
+  and low-quality UNCERTAIN paths, progress reporting), the app's 21 tests
+  ported one to one, and 4 configuration tests. All pass. The Nov 11 rules
+  are kept in `state_machine_nov11.py` (`--rules nov11`).
 - Real sequences: 6 clips cut from real dog videos with human-verified labels
   (5 sustained holds → SUCCESS, 1 short clip → UNCERTAIN incomplete). All 6
   judged as expected. Raw run: `video-sequence-layer/results/verification_run.txt`.
@@ -106,7 +108,7 @@ Nov 25 from GitHub B (TC-11 to TC-15 on the Android emulator, not a phone).
 
 The EARLY_BREAK path is covered by the synthetic scenario suite (scen02:
 dog leaves sitting after 2.5s of a 5s target (raw break at t=2.5s, confirmed t=4.0s) → EARLY_BREAK with the held time
-reported; 6/6 scenarios pass) and by 6 of the 17 unit tests. It is synthetic
+reported; 6/6 scenarios pass with `--rules nov11`) and by 6 of the original 17 unit tests. It is synthetic
 because none of the licensed real clips contain a genuine break; no posture
 change was edited into a real clip. TC-14 (Nov 25, emulator) is the first break
 run through the real models, on a clip constructed by joining frames of two real
@@ -185,7 +187,8 @@ call to tuned Gemini):
   grace, a break must persist 0.6 s, >1.5 s lost/unclear → UNCERTAIN, 3 s
   response window for Sit/Down (Stand, Stay and Walk use the 2 s settle grace),
   0.6 s hold after reach. 21 unit tests, 21/21 pass. The Python
-  `video-sequence-layer/state_machine.py` (the Nov 11 rules) is now behind it.
+  `video-sequence-layer/state_machine.py` follows the same rules since Nov 25
+  (42/42 tests); the Nov 11 rules are kept in `state_machine_nov11.py`.
 - **Gemini off the per-frame path:** Model B (tuned Gemini) re-checks 2–3
   decisive frames after the verdict and breaks READY ties; base Gemini writes
   the coaching tip and is told not to re-judge.
