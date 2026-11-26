@@ -9,8 +9,8 @@ varied systematically (seeded RNG for reproducibility), the trainer
 advice is produced by fixed rules (below), and - critically - the
 verdict stated in every example is not asserted by the template: the
 label stream is fed through the real temporal state machine
-(../video-sequence-layer/state_machine.py, imported) and the builder
-asserts the machine's verdict equals the pattern's intended verdict.
+(../video-sequence-layer/state_machine_nov11.py - the Nov 11 rules,
+imported) and the builder asserts the machine's verdict equals the pattern's intended verdict.
 If a generated pattern does not judge the way it was designed to, the
 build fails instead of emitting an inconsistent example.
 
@@ -46,7 +46,13 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 FILES = HERE.parents[1]                       # .../files
 sys.path.insert(0, str(FILES / "video-sequence-layer"))
-from state_machine import FrameObservation, SessionConfig, run_sequence  # noqa: E402
+# Pinned to the frozen Nov 11 rules this dataset was generated and
+# validated with (commit 947da56), so a rebuild reproduces
+# scenarios.jsonl. The current, app-matching rules are in
+# state_machine.py; video-sequence-layer/rerun_nov25.py re-judges this
+# file with them and reports where the verdicts differ.
+from state_machine_nov11 import (FrameObservation,  # noqa: E402
+                                 SessionConfig, run_sequence)
 
 SYSTEM = ("You are an expert dog training assistant analyzing posture "
           "sequences.")
