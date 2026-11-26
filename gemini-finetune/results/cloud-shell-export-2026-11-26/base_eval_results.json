@@ -1,0 +1,664 @@
+{
+  "metrics": {
+    "model": "gemini-3.5-flash",
+    "prompt": "Look at the image of the dog. What is the dog doing? Answer with exactly one of: sitting, standing, lying down, walking.",
+    "total": 43,
+    "correct": 0,
+    "overall_accuracy": 0.0,
+    "per_class": {
+      "sitting": {
+        "support": 9,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "standing": {
+        "support": 11,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "walking": {
+        "support": 9,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "lying down": {
+        "support": 14,
+        "correct": 0,
+        "accuracy": 0.0
+      }
+    },
+    "confusion_matrix": {
+      "sitting": {
+        "sitting": 0,
+        "standing": 0,
+        "walking": 0,
+        "lying down": 0
+      },
+      "standing": {
+        "sitting": 0,
+        "standing": 0,
+        "walking": 0,
+        "lying down": 0
+      },
+      "walking": {
+        "sitting": 0,
+        "standing": 0,
+        "walking": 0,
+        "lying down": 0
+      },
+      "lying down": {
+        "sitting": 0,
+        "standing": 0,
+        "walking": 0,
+        "lying down": 0
+      }
+    },
+    "errors": [
+      {
+        "index": 0,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_acabashi_standing_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 1,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_amin_walking_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 2,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_aneeshnl_walking_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 3,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_canarian_standing_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 4,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_danml283_sitting_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 5,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_doggiebreath_lying_down_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 6,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_embedded_data_bot_lying_down_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 7,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_embedded_data_bot_standing_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 8,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_f_lying_down_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 9,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_f_sitting_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 10,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_f_standing_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 11,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_f_standing_002.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 12,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_f_standing_003.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 13,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_f_standing_004.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 14,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_f_standing_005.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 15,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_famartin_lying_down_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 16,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_fumikas_sagisavas_lying_down_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 17,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_gazebo_sitting_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 18,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_heylenny_standing_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 19,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_john2510_lying_down_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 20,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_john2510_lying_down_002.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 21,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_julesvernex2_walking_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 22,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_justlettersandnumbers_standing_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 23,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_maor_x_walking_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 24,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_maxd2_sitting_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 25,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_miyagawa_lying_down_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 26,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_newalbanycommunityfoundation_walking_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 27,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_oxyman_lying_down_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 28,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_oxyman_lying_down_002.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 29,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_peterjconley_sitting_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 30,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_pippo_b_lying_down_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 31,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_sardaka_walking_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 32,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_sardaka_walking_002.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 33,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_sevela_p_lying_down_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 34,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_sharkshockusa_walking_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 35,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_sintegrity_sitting_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 36,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_supreme_chungus_walking_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 37,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_teles_lying_down_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 38,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_tobias1984_sitting_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 39,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_tupungato_lying_down_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 40,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_uusijani_sitting_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 41,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_uusijani_standing_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      },
+      {
+        "index": 42,
+        "fileUri": "gs://cs663-dog-training-dog-data/images/ph_zaqarbal_sitting_001.jpg",
+        "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+      }
+    ],
+    "error_count": 43
+  },
+  "predictions": [
+    {
+      "index": 0,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_acabashi_standing_001.jpg",
+      "true_label": "standing",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 1,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_amin_walking_001.jpg",
+      "true_label": "walking",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 2,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_aneeshnl_walking_001.jpg",
+      "true_label": "walking",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 3,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_canarian_standing_001.jpg",
+      "true_label": "standing",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 4,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_danml283_sitting_001.jpg",
+      "true_label": "sitting",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 5,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_doggiebreath_lying_down_001.jpg",
+      "true_label": "lying down",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 6,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_embedded_data_bot_lying_down_001.jpg",
+      "true_label": "lying down",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 7,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_embedded_data_bot_standing_001.jpg",
+      "true_label": "standing",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 8,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_f_lying_down_001.jpg",
+      "true_label": "lying down",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 9,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_f_sitting_001.jpg",
+      "true_label": "sitting",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 10,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_f_standing_001.jpg",
+      "true_label": "standing",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 11,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_f_standing_002.jpg",
+      "true_label": "standing",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 12,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_f_standing_003.jpg",
+      "true_label": "standing",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 13,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_f_standing_004.jpg",
+      "true_label": "standing",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 14,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_f_standing_005.jpg",
+      "true_label": "standing",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 15,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_famartin_lying_down_001.jpg",
+      "true_label": "lying down",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 16,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_fumikas_sagisavas_lying_down_001.jpg",
+      "true_label": "lying down",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 17,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_gazebo_sitting_001.jpg",
+      "true_label": "sitting",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 18,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_heylenny_standing_001.jpg",
+      "true_label": "standing",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 19,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_john2510_lying_down_001.jpg",
+      "true_label": "lying down",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 20,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_john2510_lying_down_002.jpg",
+      "true_label": "lying down",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 21,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_julesvernex2_walking_001.jpg",
+      "true_label": "walking",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 22,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_justlettersandnumbers_standing_001.jpg",
+      "true_label": "standing",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 23,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_maor_x_walking_001.jpg",
+      "true_label": "walking",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 24,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_maxd2_sitting_001.jpg",
+      "true_label": "sitting",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 25,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_miyagawa_lying_down_001.jpg",
+      "true_label": "lying down",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 26,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_newalbanycommunityfoundation_walking_001.jpg",
+      "true_label": "walking",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 27,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_oxyman_lying_down_001.jpg",
+      "true_label": "lying down",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 28,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_oxyman_lying_down_002.jpg",
+      "true_label": "lying down",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 29,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_peterjconley_sitting_001.jpg",
+      "true_label": "sitting",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 30,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_pippo_b_lying_down_001.jpg",
+      "true_label": "lying down",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 31,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_sardaka_walking_001.jpg",
+      "true_label": "walking",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 32,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_sardaka_walking_002.jpg",
+      "true_label": "walking",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 33,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_sevela_p_lying_down_001.jpg",
+      "true_label": "lying down",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 34,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_sharkshockusa_walking_001.jpg",
+      "true_label": "walking",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 35,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_sintegrity_sitting_001.jpg",
+      "true_label": "sitting",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 36,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_supreme_chungus_walking_001.jpg",
+      "true_label": "walking",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 37,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_teles_lying_down_001.jpg",
+      "true_label": "lying down",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 38,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_tobias1984_sitting_001.jpg",
+      "true_label": "sitting",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 39,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_tupungato_lying_down_001.jpg",
+      "true_label": "lying down",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 40,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_uusijani_sitting_001.jpg",
+      "true_label": "sitting",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 41,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_uusijani_standing_001.jpg",
+      "true_label": "standing",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    },
+    {
+      "index": 42,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_zaqarbal_sitting_001.jpg",
+      "true_label": "sitting",
+      "raw_prediction": null,
+      "predicted_label": null,
+      "correct": false,
+      "error": "404 Publisher model `projects/cs663-dog-training/locations/us-central1/publishers/google/models/gemini-3.5-flash` was not found or your project does not have access to it. Ensure you are using a valid model name and that the model is available in the specified region. For more information, see: https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations."
+    }
+  ]
+}

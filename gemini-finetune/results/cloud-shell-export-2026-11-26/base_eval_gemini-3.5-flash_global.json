@@ -1,0 +1,452 @@
+{
+  "metrics": {
+    "model": "gemini-3.5-flash",
+    "location": "global",
+    "project": "cs663-dog-training",
+    "prompt": "Look at the image of the dog. What is the dog doing? Answer with exactly one of: sitting, standing, lying down, walking.",
+    "test_file": "/tmp/test_gcs.jsonl",
+    "total": 43,
+    "correct": 37,
+    "overall_accuracy": 0.8604651162790697,
+    "per_class": {
+      "sitting": {
+        "support": 9,
+        "correct": 8,
+        "accuracy": 0.8888888888888888
+      },
+      "standing": {
+        "support": 11,
+        "correct": 8,
+        "accuracy": 0.7272727272727273
+      },
+      "walking": {
+        "support": 9,
+        "correct": 8,
+        "accuracy": 0.8888888888888888
+      },
+      "lying down": {
+        "support": 14,
+        "correct": 13,
+        "accuracy": 0.9285714285714286
+      }
+    },
+    "confusion_matrix": {
+      "sitting": {
+        "sitting": 8,
+        "standing": 1,
+        "walking": 0,
+        "lying down": 0
+      },
+      "standing": {
+        "sitting": 0,
+        "standing": 8,
+        "walking": 1,
+        "lying down": 0
+      },
+      "walking": {
+        "sitting": 0,
+        "standing": 1,
+        "walking": 8,
+        "lying down": 0
+      },
+      "lying down": {
+        "sitting": 0,
+        "standing": 0,
+        "walking": 0,
+        "lying down": 13
+      }
+    },
+    "invalid_count": 3,
+    "error_count": 0,
+    "errors": []
+  },
+  "predictions": [
+    {
+      "index": 0,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_acabashi_standing_001.jpg",
+      "true_label": "standing",
+      "raw_prediction": "walking",
+      "predicted_label": "walking",
+      "correct": false,
+      "error": null
+    },
+    {
+      "index": 1,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_amin_walking_001.jpg",
+      "true_label": "walking",
+      "raw_prediction": "walking",
+      "predicted_label": "walking",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 2,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_aneeshnl_walking_001.jpg",
+      "true_label": "walking",
+      "raw_prediction": "walking",
+      "predicted_label": "walking",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 3,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_canarian_standing_001.jpg",
+      "true_label": "standing",
+      "raw_prediction": "standing",
+      "predicted_label": "standing",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 4,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_danml283_sitting_001.jpg",
+      "true_label": "sitting",
+      "raw_prediction": "sitting",
+      "predicted_label": "sitting",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 5,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_doggiebreath_lying_down_001.jpg",
+      "true_label": "lying down",
+      "raw_prediction": "lying down",
+      "predicted_label": "lying down",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 6,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_embedded_data_bot_lying_down_001.jpg",
+      "true_label": "lying down",
+      "raw_prediction": "lying down",
+      "predicted_label": "lying down",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 7,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_embedded_data_bot_standing_001.jpg",
+      "true_label": "standing",
+      "raw_prediction": "standing",
+      "predicted_label": "standing",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 8,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_f_lying_down_001.jpg",
+      "true_label": "lying down",
+      "raw_prediction": "lying down",
+      "predicted_label": "lying down",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 9,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_f_sitting_001.jpg",
+      "true_label": "sitting",
+      "raw_prediction": "sitting",
+      "predicted_label": "sitting",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 10,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_f_standing_001.jpg",
+      "true_label": "standing",
+      "raw_prediction": "The dog is standing.",
+      "predicted_label": "invalid",
+      "correct": false,
+      "error": null
+    },
+    {
+      "index": 11,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_f_standing_002.jpg",
+      "true_label": "standing",
+      "raw_prediction": "The dog is **standing**.",
+      "predicted_label": "invalid",
+      "correct": false,
+      "error": null
+    },
+    {
+      "index": 12,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_f_standing_003.jpg",
+      "true_label": "standing",
+      "raw_prediction": "standing",
+      "predicted_label": "standing",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 13,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_f_standing_004.jpg",
+      "true_label": "standing",
+      "raw_prediction": "standing",
+      "predicted_label": "standing",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 14,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_f_standing_005.jpg",
+      "true_label": "standing",
+      "raw_prediction": "standing",
+      "predicted_label": "standing",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 15,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_famartin_lying_down_001.jpg",
+      "true_label": "lying down",
+      "raw_prediction": "lying down",
+      "predicted_label": "lying down",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 16,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_fumikas_sagisavas_lying_down_001.jpg",
+      "true_label": "lying down",
+      "raw_prediction": "lying down",
+      "predicted_label": "lying down",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 17,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_gazebo_sitting_001.jpg",
+      "true_label": "sitting",
+      "raw_prediction": "standing",
+      "predicted_label": "standing",
+      "correct": false,
+      "error": null
+    },
+    {
+      "index": 18,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_heylenny_standing_001.jpg",
+      "true_label": "standing",
+      "raw_prediction": "standing",
+      "predicted_label": "standing",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 19,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_john2510_lying_down_001.jpg",
+      "true_label": "lying down",
+      "raw_prediction": "lying down",
+      "predicted_label": "lying down",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 20,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_john2510_lying_down_002.jpg",
+      "true_label": "lying down",
+      "raw_prediction": "lying down",
+      "predicted_label": "lying down",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 21,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_julesvernex2_walking_001.jpg",
+      "true_label": "walking",
+      "raw_prediction": "walking",
+      "predicted_label": "walking",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 22,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_justlettersandnumbers_standing_001.jpg",
+      "true_label": "standing",
+      "raw_prediction": "standing",
+      "predicted_label": "standing",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 23,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_maor_x_walking_001.jpg",
+      "true_label": "walking",
+      "raw_prediction": "walking",
+      "predicted_label": "walking",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 24,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_maxd2_sitting_001.jpg",
+      "true_label": "sitting",
+      "raw_prediction": "sitting",
+      "predicted_label": "sitting",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 25,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_miyagawa_lying_down_001.jpg",
+      "true_label": "lying down",
+      "raw_prediction": "lying down",
+      "predicted_label": "lying down",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 26,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_newalbanycommunityfoundation_walking_001.jpg",
+      "true_label": "walking",
+      "raw_prediction": "walking",
+      "predicted_label": "walking",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 27,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_oxyman_lying_down_001.jpg",
+      "true_label": "lying down",
+      "raw_prediction": "lying down",
+      "predicted_label": "lying down",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 28,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_oxyman_lying_down_002.jpg",
+      "true_label": "lying down",
+      "raw_prediction": "lying down",
+      "predicted_label": "lying down",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 29,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_peterjconley_sitting_001.jpg",
+      "true_label": "sitting",
+      "raw_prediction": "sitting",
+      "predicted_label": "sitting",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 30,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_pippo_b_lying_down_001.jpg",
+      "true_label": "lying down",
+      "raw_prediction": "lying down",
+      "predicted_label": "lying down",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 31,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_sardaka_walking_001.jpg",
+      "true_label": "walking",
+      "raw_prediction": "walking",
+      "predicted_label": "walking",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 32,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_sardaka_walking_002.jpg",
+      "true_label": "walking",
+      "raw_prediction": "standing",
+      "predicted_label": "standing",
+      "correct": false,
+      "error": null
+    },
+    {
+      "index": 33,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_sevela_p_lying_down_001.jpg",
+      "true_label": "lying down",
+      "raw_prediction": "lying down",
+      "predicted_label": "lying down",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 34,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_sharkshockusa_walking_001.jpg",
+      "true_label": "walking",
+      "raw_prediction": "walking",
+      "predicted_label": "walking",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 35,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_sintegrity_sitting_001.jpg",
+      "true_label": "sitting",
+      "raw_prediction": "sitting",
+      "predicted_label": "sitting",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 36,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_supreme_chungus_walking_001.jpg",
+      "true_label": "walking",
+      "raw_prediction": "walking",
+      "predicted_label": "walking",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 37,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_teles_lying_down_001.jpg",
+      "true_label": "lying down",
+      "raw_prediction": "lying down",
+      "predicted_label": "lying down",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 38,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_tobias1984_sitting_001.jpg",
+      "true_label": "sitting",
+      "raw_prediction": "sitting",
+      "predicted_label": "sitting",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 39,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_tupungato_lying_down_001.jpg",
+      "true_label": "lying down",
+      "raw_prediction": "The dog is **lying down**.",
+      "predicted_label": "invalid",
+      "correct": false,
+      "error": null
+    },
+    {
+      "index": 40,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_uusijani_sitting_001.jpg",
+      "true_label": "sitting",
+      "raw_prediction": "sitting",
+      "predicted_label": "sitting",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 41,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_uusijani_standing_001.jpg",
+      "true_label": "standing",
+      "raw_prediction": "standing",
+      "predicted_label": "standing",
+      "correct": true,
+      "error": null
+    },
+    {
+      "index": 42,
+      "fileUri": "gs://cs663-dog-training-dog-data/images/ph_zaqarbal_sitting_001.jpg",
+      "true_label": "sitting",
+      "raw_prediction": "sitting",
+      "predicted_label": "sitting",
+      "correct": true,
+      "error": null
+    }
+  ]
+}

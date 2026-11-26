@@ -1,0 +1,5 @@
+Tuning job 1708100736908263424 dog-training-gemini-v1, gemini-3.5-flash, us-central1
+Created 2026-10-30T06:56:49Z ended 2026-10-30T23:53:57Z SUCCEEDED, 1 epoch, adapter 4, LR mult 1.0
+Step 1: loss train 0.17 val 0.349; acc train 0.9692 val 0.9663; inferences train 357 val 356
+Step 2 checkpoint 1 epoch 1: loss train 0.263 val 0.347; acc train 0.949 val 0.966; inferences train 352 val 356
+Source: Vertex console Monitor charts + checkpoint table; gcloud describe JSON has no loss fields; no loss files in GCS.

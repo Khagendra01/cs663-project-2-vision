@@ -1,0 +1,141 @@
+{
+  "baseModel": "gemini-3.5-flash",
+  "createTime": "2026-10-30T06:56:49.437582Z",
+  "endTime": "2026-10-30T23:53:57.559645Z",
+  "experiment": "projects/917815040923/locations/us-central1/metadataStores/default/contexts/tuning-experiment-20261030000035353847",
+  "name": "projects/917815040923/locations/us-central1/tuningJobs/1708100736908263424",
+  "startTime": "2026-10-30T06:57:58.178259Z",
+  "state": "JOB_STATE_SUCCEEDED",
+  "supervisedTuningSpec": {
+    "hyperParameters": {
+      "adapterSize": "ADAPTER_SIZE_FOUR",
+      "epochCount": "1",
+      "learningRateMultiplier": 1.0
+    },
+    "trainingDatasetUri": "gs://cs663-dog-training-dog-data/datasets/train.jsonl",
+    "validationDatasetUri": "gs://cs663-dog-training-dog-data/datasets/validation.jsonl"
+  },
+  "tunedModel": {
+    "checkpoints": [
+      {
+        "checkpointId": "1",
+        "endpoint": "projects/917815040923/locations/us/endpoints/514008491845746688",
+        "epoch": "1",
+        "step": "2"
+      }
+    ],
+    "endpoint": "projects/917815040923/locations/us/endpoints/514008491845746688",
+    "model": "projects/917815040923/locations/us/models/83175855617998848@1"
+  },
+  "tunedModelDisplayName": "dog-training-gemini-v1",
+  "tuningDataStats": {
+    "supervisedTuningDataStats": {
+      "totalBillableTokenCount": "117334",
+      "tuningDatasetExampleCount": "102",
+      "userDatasetExamples": [
+        {
+          "parts": [
+            {
+              "text": "<media0>Look at the image of the dog. What is the dog doing? Answer with exactly one of: sitting, standing, lying down, walking."
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "parts": [
+            {
+              "text": "standing"
+            }
+          ],
+          "role": "model"
+        },
+        {
+          "parts": [
+            {
+              "text": "<media0>Look at the image of the dog. What is the dog doing? Answer with exactly one of: sitting, standing, lying down, walking."
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "parts": [
+            {
+              "text": "standing"
+            }
+          ],
+          "role": "model"
+        },
+        {
+          "parts": [
+            {
+              "text": "<media0>Look at the image of the dog. What is the dog doing? Answer with exactly one of: sitting, standing, lying down, walking."
+            }
+          ],
+          "role": "user"
+        },
+        {
+          "parts": [
+            {
+              "text": "standing"
+            }
+          ],
+          "role": "model"
+        }
+      ],
+      "userInputTokenDistribution": {
+        "buckets": [
+          {
+            "count": 102.0,
+            "left": 1149.0,
+            "right": 1149.0
+          }
+        ],
+        "max": 1149.0,
+        "mean": 1149.0,
+        "median": 1149.0,
+        "min": 1149.0,
+        "p5": 1149.0,
+        "p95": 1149.0,
+        "sum": "117198"
+      },
+      "userMessagePerExampleDistribution": {
+        "buckets": [
+          {
+            "count": 102.0,
+            "left": 2.0,
+            "right": 2.0
+          }
+        ],
+        "max": 2.0,
+        "mean": 2.0,
+        "median": 2.0,
+        "min": 2.0,
+        "p5": 2.0,
+        "p95": 2.0,
+        "sum": "204"
+      },
+      "userOutputTokenDistribution": {
+        "buckets": [
+          {
+            "count": 68.0,
+            "left": 1.0,
+            "right": 1.0
+          },
+          {
+            "count": 34.0,
+            "left": 2.0,
+            "right": 2.0
+          }
+        ],
+        "max": 2.0,
+        "mean": 1.3333333333333333,
+        "median": 1.0,
+        "min": 1.0,
+        "p5": 1.0,
+        "p95": 2.0,
+        "sum": "136"
+      }
+    }
+  },
+  "updateTime": "2026-10-30T23:53:57.559645Z"
+}
